@@ -10,15 +10,12 @@ void Hardware::Init()
     seed.SetAudioBlockSize(4);
     sample_rate = seed.AudioSampleRate();
 
-    // --- ADC Configuration ---
-    // No Knobs/ADC in new hardware for now
-
     // --- Encoders ---
     // Encoder 1: Pins 4, 5, 6 (A, B, Click)
-    encoder1.Init(seed.GetPin(4), seed.GetPin(5), seed.GetPin(6), seed.AudioCallbackRate());
+    encoder1.Init(seed.GetPin(5), seed.GetPin(4), seed.GetPin(6), seed.AudioCallbackRate());
     
     // Encoder 2: Pins 7, 8, 9 (A, B, Click)
-    encoder2.Init(seed.GetPin(7), seed.GetPin(8), seed.GetPin(9), seed.AudioCallbackRate());
+    encoder2.Init(seed.GetPin(8), seed.GetPin(7), seed.GetPin(9), seed.AudioCallbackRate());
 
     // --- Buttons ---
     // Pins 1, 2, 3
@@ -30,14 +27,11 @@ void Hardware::Init()
     Reset();
 }
 
-void Hardware::ProcessTestControls()
+void Hardware::ProcessControls()
 {
     encoder1.Debounce();
     encoder2.Debounce();
     button1.Debounce();
     button2.Debounce();
     button3.Debounce();
-
-    enc1_count += encoder1.Increment();
-    enc2_count += encoder2.Increment();
 }

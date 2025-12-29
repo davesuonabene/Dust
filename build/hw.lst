@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccPbbhbW.s 			page 1
+ARM GAS  /tmp/ccyh1ZDZ.s 			page 1
 
 
    1              		.cpu cortex-m7
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccPbbhbW.s 			page 1
   46              	.LVL1:
   10:hw.cpp        ****     seed.SetAudioBlockSize(4);
   47              		.loc 1 10 5 is_stmt 1 view .LVU4
-ARM GAS  /tmp/ccPbbhbW.s 			page 2
+ARM GAS  /tmp/ccyh1ZDZ.s 			page 2
 
 
   48              		.loc 1 10 27 is_stmt 0 view .LVU5
@@ -73,161 +73,158 @@ ARM GAS  /tmp/ccPbbhbW.s 			page 1
   56 0016 FFF7FEFF 		bl	_ZN5daisy9DaisySeed15AudioSampleRateEv
   57              	.LVL3:
   12:hw.cpp        **** 
-  13:hw.cpp        ****     // --- ADC Configuration ---
-  14:hw.cpp        ****     // No Knobs/ADC in new hardware for now
-  15:hw.cpp        **** 
-  16:hw.cpp        ****     // --- Encoders ---
-  17:hw.cpp        ****     // Encoder 1: Pins 4, 5, 6 (A, B, Click)
-  18:hw.cpp        ****     encoder1.Init(seed.GetPin(4), seed.GetPin(5), seed.GetPin(6), seed.AudioCallbackRate());
-  58              		.loc 1 18 18 view .LVU8
-  59 001a 0420     		movs	r0, #4
+  13:hw.cpp        ****     // --- Encoders ---
+  14:hw.cpp        ****     // Encoder 1: Pins 4, 5, 6 (A, B, Click)
+  15:hw.cpp        ****     encoder1.Init(seed.GetPin(5), seed.GetPin(4), seed.GetPin(6), seed.AudioCallbackRate());
+  58              		.loc 1 15 18 view .LVU8
+  59 001a 0520     		movs	r0, #5
   11:hw.cpp        ****     sample_rate = seed.AudioSampleRate();
   60              		.loc 1 11 17 discriminator 1 view .LVU9
-  61 001c 84ED680A 		vstr.32	s0, [r4, #416]
-  62              		.loc 1 18 5 is_stmt 1 view .LVU10
-  63              		.loc 1 18 18 is_stmt 0 view .LVU11
+  61 001c 84ED660A 		vstr.32	s0, [r4, #408]
+  62              		.loc 1 15 5 is_stmt 1 view .LVU10
+  63              		.loc 1 15 18 is_stmt 0 view .LVU11
   64 0020 FFF7FEFF 		bl	_ZN5daisy9DaisySeed6GetPinEh
   65              	.LVL4:
   66 0024 0346     		mov	r3, r0	@ movhi
-  67              		.loc 1 18 18 discriminator 1 view .LVU12
-  68 0026 0520     		movs	r0, #5
-  69              		.loc 1 18 18 view .LVU13
+  67              		.loc 1 15 18 discriminator 1 view .LVU12
+  68 0026 0420     		movs	r0, #4
+  69              		.loc 1 15 18 view .LVU13
   70 0028 ADF80430 		strh	r3, [sp, #4]	@ movhi
-  71              		.loc 1 18 18 discriminator 1 view .LVU14
+  71              		.loc 1 15 18 discriminator 1 view .LVU14
   72 002c FFF7FEFF 		bl	_ZN5daisy9DaisySeed6GetPinEh
   73              	.LVL5:
   74 0030 0346     		mov	r3, r0	@ movhi
-  75              		.loc 1 18 18 discriminator 2 view .LVU15
+  75              		.loc 1 15 18 discriminator 2 view .LVU15
   76 0032 0620     		movs	r0, #6
-  77              		.loc 1 18 18 discriminator 1 view .LVU16
+  77              		.loc 1 15 18 discriminator 1 view .LVU16
   78 0034 ADF80830 		strh	r3, [sp, #8]	@ movhi
-  79              		.loc 1 18 18 discriminator 2 view .LVU17
+  79              		.loc 1 15 18 discriminator 2 view .LVU17
   80 0038 FFF7FEFF 		bl	_ZN5daisy9DaisySeed6GetPinEh
   81              	.LVL6:
   82 003c 0346     		mov	r3, r0	@ movhi
-  83              		.loc 1 18 18 discriminator 3 view .LVU18
+  83              		.loc 1 15 18 discriminator 3 view .LVU18
   84 003e 2046     		mov	r0, r4
-  85              		.loc 1 18 18 discriminator 2 view .LVU19
+  85              		.loc 1 15 18 discriminator 2 view .LVU19
   86 0040 ADF80C30 		strh	r3, [sp, #12]	@ movhi
-  87              		.loc 1 18 18 discriminator 3 view .LVU20
+  87              		.loc 1 15 18 discriminator 3 view .LVU20
   88 0044 FFF7FEFF 		bl	_ZNK5daisy9DaisySeed17AudioCallbackRateEv
   89              	.LVL7:
-  90              		.loc 1 18 18 discriminator 4 view .LVU21
+  90              		.loc 1 15 18 discriminator 4 view .LVU21
   91 0048 0199     		ldr	r1, [sp, #4]
   92 004a 04F17400 		add	r0, r4, #116
   93 004e DDE90223 		ldrd	r2, r3, [sp, #8]
   94 0052 FFF7FEFF 		bl	_ZN5daisy7Encoder4InitENS_3PinES1_S1_f
   95              	.LVL8:
-ARM GAS  /tmp/ccPbbhbW.s 			page 3
+  16:hw.cpp        ****     
+  17:hw.cpp        ****     // Encoder 2: Pins 7, 8, 9 (A, B, Click)
+  18:hw.cpp        ****     encoder2.Init(seed.GetPin(8), seed.GetPin(7), seed.GetPin(9), seed.AudioCallbackRate());
+ARM GAS  /tmp/ccyh1ZDZ.s 			page 3
 
 
-  19:hw.cpp        ****     
-  20:hw.cpp        ****     // Encoder 2: Pins 7, 8, 9 (A, B, Click)
-  21:hw.cpp        ****     encoder2.Init(seed.GetPin(7), seed.GetPin(8), seed.GetPin(9), seed.AudioCallbackRate());
-  96              		.loc 1 21 5 is_stmt 1 view .LVU22
-  97              		.loc 1 21 18 is_stmt 0 view .LVU23
-  98 0056 0720     		movs	r0, #7
+  96              		.loc 1 18 5 is_stmt 1 view .LVU22
+  97              		.loc 1 18 18 is_stmt 0 view .LVU23
+  98 0056 0820     		movs	r0, #8
   99 0058 FFF7FEFF 		bl	_ZN5daisy9DaisySeed6GetPinEh
  100              	.LVL9:
  101 005c 0346     		mov	r3, r0	@ movhi
- 102              		.loc 1 21 18 discriminator 1 view .LVU24
- 103 005e 0820     		movs	r0, #8
- 104              		.loc 1 21 18 view .LVU25
+ 102              		.loc 1 18 18 discriminator 1 view .LVU24
+ 103 005e 0720     		movs	r0, #7
+ 104              		.loc 1 18 18 view .LVU25
  105 0060 ADF81030 		strh	r3, [sp, #16]	@ movhi
- 106              		.loc 1 21 18 discriminator 1 view .LVU26
+ 106              		.loc 1 18 18 discriminator 1 view .LVU26
  107 0064 FFF7FEFF 		bl	_ZN5daisy9DaisySeed6GetPinEh
  108              	.LVL10:
  109 0068 0346     		mov	r3, r0	@ movhi
- 110              		.loc 1 21 18 discriminator 2 view .LVU27
+ 110              		.loc 1 18 18 discriminator 2 view .LVU27
  111 006a 0920     		movs	r0, #9
- 112              		.loc 1 21 18 discriminator 1 view .LVU28
+ 112              		.loc 1 18 18 discriminator 1 view .LVU28
  113 006c ADF81430 		strh	r3, [sp, #20]	@ movhi
- 114              		.loc 1 21 18 discriminator 2 view .LVU29
+ 114              		.loc 1 18 18 discriminator 2 view .LVU29
  115 0070 FFF7FEFF 		bl	_ZN5daisy9DaisySeed6GetPinEh
  116              	.LVL11:
  117 0074 0346     		mov	r3, r0	@ movhi
- 118              		.loc 1 21 18 discriminator 3 view .LVU30
+ 118              		.loc 1 18 18 discriminator 3 view .LVU30
  119 0076 2046     		mov	r0, r4
- 120              		.loc 1 21 18 discriminator 2 view .LVU31
+ 120              		.loc 1 18 18 discriminator 2 view .LVU31
  121 0078 ADF81830 		strh	r3, [sp, #24]	@ movhi
- 122              		.loc 1 21 18 discriminator 3 view .LVU32
+ 122              		.loc 1 18 18 discriminator 3 view .LVU32
  123 007c FFF7FEFF 		bl	_ZNK5daisy9DaisySeed17AudioCallbackRateEv
  124              	.LVL12:
- 125              		.loc 1 21 18 discriminator 4 view .LVU33
+ 125              		.loc 1 18 18 discriminator 4 view .LVU33
  126 0080 0499     		ldr	r1, [sp, #16]
  127 0082 04F1D000 		add	r0, r4, #208
  128 0086 DDE90523 		ldrd	r2, r3, [sp, #20]
  129 008a FFF7FEFF 		bl	_ZN5daisy7Encoder4InitENS_3PinES1_S1_f
  130              	.LVL13:
-  22:hw.cpp        **** 
-  23:hw.cpp        ****     // --- Buttons ---
-  24:hw.cpp        ****     // Pins 1, 2, 3
-  25:hw.cpp        ****     button1.Init(seed.GetPin(1), seed.AudioCallbackRate());
- 131              		.loc 1 25 5 is_stmt 1 view .LVU34
- 132              		.loc 1 25 17 is_stmt 0 view .LVU35
+  19:hw.cpp        **** 
+  20:hw.cpp        ****     // --- Buttons ---
+  21:hw.cpp        ****     // Pins 1, 2, 3
+  22:hw.cpp        ****     button1.Init(seed.GetPin(1), seed.AudioCallbackRate());
+ 131              		.loc 1 22 5 is_stmt 1 view .LVU34
+ 132              		.loc 1 22 17 is_stmt 0 view .LVU35
  133 008e 0120     		movs	r0, #1
  134 0090 FFF7FEFF 		bl	_ZN5daisy9DaisySeed6GetPinEh
  135              	.LVL14:
  136 0094 0346     		mov	r3, r0	@ movhi
- 137              		.loc 1 25 17 discriminator 1 view .LVU36
+ 137              		.loc 1 22 17 discriminator 1 view .LVU36
  138 0096 2046     		mov	r0, r4
- 139              		.loc 1 25 17 view .LVU37
+ 139              		.loc 1 22 17 view .LVU37
  140 0098 ADF81C30 		strh	r3, [sp, #28]	@ movhi
- 141              		.loc 1 25 17 discriminator 1 view .LVU38
+ 141              		.loc 1 22 17 discriminator 1 view .LVU38
  142 009c FFF7FEFF 		bl	_ZNK5daisy9DaisySeed17AudioCallbackRateEv
  143              	.LVL15:
- 144              		.loc 1 25 17 discriminator 2 view .LVU39
+ 144              		.loc 1 22 17 discriminator 2 view .LVU39
  145 00a0 0799     		ldr	r1, [sp, #28]
-ARM GAS  /tmp/ccPbbhbW.s 			page 4
-
-
  146 00a2 04F59670 		add	r0, r4, #300
  147 00a6 FFF7FEFF 		bl	_ZN5daisy6Switch4InitENS_3PinEf
  148              	.LVL16:
-  26:hw.cpp        ****     button2.Init(seed.GetPin(2), seed.AudioCallbackRate());
- 149              		.loc 1 26 5 is_stmt 1 view .LVU40
- 150              		.loc 1 26 17 is_stmt 0 view .LVU41
+ARM GAS  /tmp/ccyh1ZDZ.s 			page 4
+
+
+  23:hw.cpp        ****     button2.Init(seed.GetPin(2), seed.AudioCallbackRate());
+ 149              		.loc 1 23 5 is_stmt 1 view .LVU40
+ 150              		.loc 1 23 17 is_stmt 0 view .LVU41
  151 00aa 0220     		movs	r0, #2
  152 00ac FFF7FEFF 		bl	_ZN5daisy9DaisySeed6GetPinEh
  153              	.LVL17:
  154 00b0 0346     		mov	r3, r0	@ movhi
- 155              		.loc 1 26 17 discriminator 1 view .LVU42
+ 155              		.loc 1 23 17 discriminator 1 view .LVU42
  156 00b2 2046     		mov	r0, r4
- 157              		.loc 1 26 17 view .LVU43
+ 157              		.loc 1 23 17 view .LVU43
  158 00b4 ADF82030 		strh	r3, [sp, #32]	@ movhi
- 159              		.loc 1 26 17 discriminator 1 view .LVU44
+ 159              		.loc 1 23 17 discriminator 1 view .LVU44
  160 00b8 FFF7FEFF 		bl	_ZNK5daisy9DaisySeed17AudioCallbackRateEv
  161              	.LVL18:
- 162              		.loc 1 26 17 discriminator 2 view .LVU45
+ 162              		.loc 1 23 17 discriminator 2 view .LVU45
  163 00bc 0899     		ldr	r1, [sp, #32]
  164 00be 04F5A870 		add	r0, r4, #336
  165 00c2 FFF7FEFF 		bl	_ZN5daisy6Switch4InitENS_3PinEf
  166              	.LVL19:
-  27:hw.cpp        ****     button3.Init(seed.GetPin(3), seed.AudioCallbackRate());
- 167              		.loc 1 27 5 is_stmt 1 view .LVU46
- 168              		.loc 1 27 17 is_stmt 0 view .LVU47
+  24:hw.cpp        ****     button3.Init(seed.GetPin(3), seed.AudioCallbackRate());
+ 167              		.loc 1 24 5 is_stmt 1 view .LVU46
+ 168              		.loc 1 24 17 is_stmt 0 view .LVU47
  169 00c6 0320     		movs	r0, #3
  170 00c8 FFF7FEFF 		bl	_ZN5daisy9DaisySeed6GetPinEh
  171              	.LVL20:
  172 00cc 0346     		mov	r3, r0	@ movhi
- 173              		.loc 1 27 17 discriminator 1 view .LVU48
+ 173              		.loc 1 24 17 discriminator 1 view .LVU48
  174 00ce 2046     		mov	r0, r4
- 175              		.loc 1 27 17 view .LVU49
+ 175              		.loc 1 24 17 view .LVU49
  176 00d0 ADF82430 		strh	r3, [sp, #36]	@ movhi
- 177              		.loc 1 27 17 discriminator 1 view .LVU50
+ 177              		.loc 1 24 17 discriminator 1 view .LVU50
  178 00d4 FFF7FEFF 		bl	_ZNK5daisy9DaisySeed17AudioCallbackRateEv
  179              	.LVL21:
- 180              		.loc 1 27 17 discriminator 2 view .LVU51
+ 180              		.loc 1 24 17 discriminator 2 view .LVU51
  181 00d8 0999     		ldr	r1, [sp, #36]
  182 00da 04F5BA70 		add	r0, r4, #372
  183 00de FFF7FEFF 		bl	_ZN5daisy6Switch4InitENS_3PinEf
  184              	.LVL22:
-  28:hw.cpp        **** 
-  29:hw.cpp        ****     // --- Looper Init ---
-  30:hw.cpp        ****     Reset();
- 185              		.loc 1 30 5 is_stmt 1 view .LVU52
- 186              	.LBB8:
- 187              	.LBI8:
+  25:hw.cpp        **** 
+  26:hw.cpp        ****     // --- Looper Init ---
+  27:hw.cpp        ****     Reset();
+ 185              		.loc 1 27 5 is_stmt 1 view .LVU52
+ 186              	.LBB4:
+ 187              	.LBI4:
  188              		.file 2 "hw.h"
    1:hw.h          **** #pragma once
    2:hw.h          **** #include "daisy_seed.h"
@@ -238,15 +235,15 @@ ARM GAS  /tmp/ccPbbhbW.s 			page 1
    7:hw.h          **** 
    8:hw.h          **** // 20 seconds @ 48kHz = 960,000 samples
    9:hw.h          **** #define LOOPER_MAX_SAMPLES 960000
-ARM GAS  /tmp/ccPbbhbW.s 			page 5
-
-
   10:hw.h          **** 
   11:hw.h          **** struct Hardware
   12:hw.h          **** {
+ARM GAS  /tmp/ccyh1ZDZ.s 			page 5
+
+
   13:hw.h          ****     DaisySeed seed;
   14:hw.h          ****     
-  15:hw.h          ****     // --- New Hardware Configuration ---
+  15:hw.h          ****     // --- Hardware Configuration ---
   16:hw.h          ****     // Encoder 1: Pins 4, 5, 6
   17:hw.h          ****     Encoder   encoder1;
   18:hw.h          ****     // Encoder 2: Pins 7, 8, 9
@@ -256,347 +253,263 @@ ARM GAS  /tmp/ccPbbhbW.s 			page 1
   22:hw.h          ****     Switch    button2;
   23:hw.h          ****     Switch    button3;
   24:hw.h          **** 
-  25:hw.h          ****     // --- Testing Variables ---
-  26:hw.h          ****     int volatile enc1_count = 0;
-  27:hw.h          ****     int volatile enc2_count = 0;
-  28:hw.h          **** 
-  29:hw.h          ****     float     sample_rate;
-  30:hw.h          **** 
-  31:hw.h          ****     // --- Looper Data ---
-  32:hw.h          ****     // Double Buffering in SDRAM
-  33:hw.h          ****     static float DSY_SDRAM_BSS buffer_a[LOOPER_MAX_SAMPLES];
-  34:hw.h          ****     static float DSY_SDRAM_BSS buffer_b[LOOPER_MAX_SAMPLES];
-  35:hw.h          **** 
-  36:hw.h          ****     // Pointers to the current buffers
-  37:hw.h          ****     float* active_buffer = nullptr; // The buffer being played (Old loop)
-  38:hw.h          ****     float* rec_buffer    = nullptr; // The buffer being written (New loop)
-  39:hw.h          ****     
-  40:hw.h          ****     enum LooperMode { LP_EMPTY, LP_RECORDING, LP_PLAYING, LP_STOPPED };
-  41:hw.h          ****     LooperMode looper_mode = LP_EMPTY;
-  42:hw.h          ****     
-  43:hw.h          ****     uint32_t loop_length = 0; // Length of the active loop
-  44:hw.h          ****     uint32_t play_pos    = 0; // Read head position
-  45:hw.h          ****     uint32_t rec_pos     = 0; // Write head position
-  46:hw.h          **** 
-  47:hw.h          ****     void Init();
-  48:hw.h          ****     
-  49:hw.h          ****     // Process controls for the test mode (counters & debouncing)
-  50:hw.h          ****     void ProcessTestControls(); 
-  51:hw.h          ****     
-  52:hw.h          ****     // Helper to swap buffers after recording
-  53:hw.h          ****     void SwitchToNewLoop()
-  54:hw.h          ****     {
-  55:hw.h          ****         active_buffer = rec_buffer;
-  56:hw.h          ****         loop_length   = rec_pos;
-  57:hw.h          ****         play_pos      = 0;
-  58:hw.h          ****         
-  59:hw.h          ****         // Next recording will use the other buffer
-  60:hw.h          ****         if (active_buffer == buffer_a) rec_buffer = buffer_b;
-  61:hw.h          ****         else                           rec_buffer = buffer_a;
-  62:hw.h          ****     }
-  63:hw.h          ****     
-  64:hw.h          ****     void Reset()
- 189              		.loc 2 64 10 view .LVU53
- 190              	.LBB9:
-ARM GAS  /tmp/ccPbbhbW.s 			page 6
-
-
-  65:hw.h          ****     {
-  66:hw.h          ****         looper_mode = LP_EMPTY;
- 191              		.loc 2 66 9 view .LVU54
- 192              		.loc 2 66 21 is_stmt 0 view .LVU55
+  25:hw.h          ****     float     sample_rate;
+  26:hw.h          **** 
+  27:hw.h          ****     // --- Looper Data ---
+  28:hw.h          ****     // Double Buffering in SDRAM
+  29:hw.h          ****     static float DSY_SDRAM_BSS buffer_a[LOOPER_MAX_SAMPLES];
+  30:hw.h          ****     static float DSY_SDRAM_BSS buffer_b[LOOPER_MAX_SAMPLES];
+  31:hw.h          **** 
+  32:hw.h          ****     // Pointers to the current buffers
+  33:hw.h          ****     float* active_buffer = nullptr; // The buffer being played (Old loop)
+  34:hw.h          ****     float* rec_buffer    = nullptr; // The buffer being written (New loop)
+  35:hw.h          ****     
+  36:hw.h          ****     enum LooperMode { LP_EMPTY, LP_RECORDING, LP_PLAYING, LP_STOPPED };
+  37:hw.h          ****     LooperMode looper_mode = LP_EMPTY;
+  38:hw.h          ****     
+  39:hw.h          ****     uint32_t loop_length = 0; // Length of the active loop
+  40:hw.h          ****     uint32_t play_pos    = 0; // Read head position
+  41:hw.h          ****     uint32_t rec_pos     = 0; // Write head position
+  42:hw.h          **** 
+  43:hw.h          ****     void Init();
+  44:hw.h          ****     
+  45:hw.h          ****     // Process controls (Debouncing & Encoder updates)
+  46:hw.h          ****     void ProcessControls(); 
+  47:hw.h          ****     
+  48:hw.h          ****     // Helper to swap buffers after recording
+  49:hw.h          ****     void SwitchToNewLoop()
+  50:hw.h          ****     {
+  51:hw.h          ****         active_buffer = rec_buffer;
+  52:hw.h          ****         loop_length   = rec_pos;
+  53:hw.h          ****         play_pos      = 0;
+  54:hw.h          ****         
+  55:hw.h          ****         // Next recording will use the other buffer
+  56:hw.h          ****         if (active_buffer == buffer_a) rec_buffer = buffer_b;
+  57:hw.h          ****         else                           rec_buffer = buffer_a;
+  58:hw.h          ****     }
+  59:hw.h          ****     
+  60:hw.h          ****     void Reset()
+ 189              		.loc 2 60 10 view .LVU53
+ 190              	.LBB5:
+  61:hw.h          ****     {
+  62:hw.h          ****         looper_mode = LP_EMPTY;
+ 191              		.loc 2 62 9 view .LVU54
+ 192              		.loc 2 62 21 is_stmt 0 view .LVU55
  193 00e2 0023     		movs	r3, #0
-  67:hw.h          ****         loop_length = 0;
-  68:hw.h          ****         play_pos    = 0;
-  69:hw.h          ****         rec_pos     = 0;
-  70:hw.h          ****         // Reset pointers defaults
-  71:hw.h          ****         active_buffer = buffer_a;
- 194              		.loc 2 71 23 view .LVU56
+  63:hw.h          ****         loop_length = 0;
+  64:hw.h          ****         play_pos    = 0;
+ARM GAS  /tmp/ccyh1ZDZ.s 			page 6
+
+
+  65:hw.h          ****         rec_pos     = 0;
+  66:hw.h          ****         // Reset pointers defaults
+  67:hw.h          ****         active_buffer = buffer_a;
+ 194              		.loc 2 67 23 view .LVU56
  195 00e4 0549     		ldr	r1, .L4
-  72:hw.h          ****         rec_buffer    = buffer_b;
- 196              		.loc 2 72 23 view .LVU57
+  68:hw.h          ****         rec_buffer    = buffer_b;
+ 196              		.loc 2 68 23 view .LVU57
  197 00e6 064A     		ldr	r2, .L4+4
-  66:hw.h          ****         loop_length = 0;
- 198              		.loc 2 66 21 view .LVU58
- 199 00e8 84F8AC31 		strb	r3, [r4, #428]
-  67:hw.h          ****         loop_length = 0;
- 200              		.loc 2 67 9 is_stmt 1 view .LVU59
-  68:hw.h          ****         rec_pos     = 0;
- 201              		.loc 2 68 9 view .LVU60
-  69:hw.h          ****         // Reset pointers defaults
- 202              		.loc 2 69 21 is_stmt 0 view .LVU61
- 203 00ec C4F8B831 		str	r3, [r4, #440]
-  67:hw.h          ****         play_pos    = 0;
- 204              		.loc 2 67 21 view .LVU62
- 205 00f0 C4E96C33 		strd	r3, r3, [r4, #432]
-  69:hw.h          ****         // Reset pointers defaults
- 206              		.loc 2 69 9 is_stmt 1 view .LVU63
-  71:hw.h          ****         rec_buffer    = buffer_b;
- 207              		.loc 2 71 9 view .LVU64
- 208              		.loc 2 72 23 is_stmt 0 view .LVU65
- 209 00f4 C4E96912 		strd	r1, r2, [r4, #420]
+  62:hw.h          ****         loop_length = 0;
+ 198              		.loc 2 62 21 view .LVU58
+ 199 00e8 84F8A431 		strb	r3, [r4, #420]
+  63:hw.h          ****         loop_length = 0;
+ 200              		.loc 2 63 9 is_stmt 1 view .LVU59
+  64:hw.h          ****         rec_pos     = 0;
+ 201              		.loc 2 64 9 view .LVU60
+  65:hw.h          ****         // Reset pointers defaults
+ 202              		.loc 2 65 21 is_stmt 0 view .LVU61
+ 203 00ec C4F8B031 		str	r3, [r4, #432]
+  63:hw.h          ****         play_pos    = 0;
+ 204              		.loc 2 63 21 view .LVU62
+ 205 00f0 C4E96A33 		strd	r3, r3, [r4, #424]
+  65:hw.h          ****         // Reset pointers defaults
+ 206              		.loc 2 65 9 is_stmt 1 view .LVU63
+  67:hw.h          ****         rec_buffer    = buffer_b;
+ 207              		.loc 2 67 9 view .LVU64
+ 208              		.loc 2 68 23 is_stmt 0 view .LVU65
+ 209 00f4 C4E96712 		strd	r1, r2, [r4, #412]
  210              	.LVL23:
- 211              		.loc 2 72 23 view .LVU66
- 212              	.LBE9:
- 213              	.LBE8:
-  31:hw.cpp        **** }
- 214              		.loc 1 31 1 view .LVU67
+ 211              		.loc 2 68 23 view .LVU66
+ 212              	.LBE5:
+ 213              	.LBE4:
+  28:hw.cpp        **** }
+ 214              		.loc 1 28 1 view .LVU67
  215 00f8 0AB0     		add	sp, sp, #40
  216              		.cfi_def_cfa_offset 8
  217              		@ sp needed
  218 00fa 10BD     		pop	{r4, pc}
  219              	.LVL24:
  220              	.L5:
- 221              		.loc 1 31 1 view .LVU68
+ 221              		.loc 1 28 1 view .LVU68
  222              		.align	2
  223              	.L4:
  224 00fc 00000000 		.word	_ZN8Hardware8buffer_aE
  225 0100 00000000 		.word	_ZN8Hardware8buffer_bE
  226              		.cfi_endproc
  227              	.LFE4891:
- 229              		.section	.text._ZN8Hardware19ProcessTestControlsEv,"ax",%progbits
+ 229              		.section	.text._ZN8Hardware15ProcessControlsEv,"ax",%progbits
  230              		.align	1
  231              		.p2align 2,,3
- 232              		.global	_ZN8Hardware19ProcessTestControlsEv
-ARM GAS  /tmp/ccPbbhbW.s 			page 7
-
-
+ 232              		.global	_ZN8Hardware15ProcessControlsEv
  233              		.syntax unified
  234              		.thumb
  235              		.thumb_func
- 237              	_ZN8Hardware19ProcessTestControlsEv:
+ 237              	_ZN8Hardware15ProcessControlsEv:
  238              	.LVL25:
  239              	.LFB4892:
-  32:hw.cpp        **** 
-  33:hw.cpp        **** void Hardware::ProcessTestControls()
-  34:hw.cpp        **** {
- 240              		.loc 1 34 1 is_stmt 1 view -0
+  29:hw.cpp        **** 
+ARM GAS  /tmp/ccyh1ZDZ.s 			page 7
+
+
+  30:hw.cpp        **** void Hardware::ProcessControls()
+  31:hw.cpp        **** {
+ 240              		.loc 1 31 1 is_stmt 1 view -0
  241              		.cfi_startproc
  242              		@ args = 0, pretend = 0, frame = 0
  243              		@ frame_needed = 0, uses_anonymous_args = 0
-  35:hw.cpp        ****     encoder1.Debounce();
- 244              		.loc 1 35 5 view .LVU70
-  34:hw.cpp        ****     encoder1.Debounce();
- 245              		.loc 1 34 1 is_stmt 0 view .LVU71
+  32:hw.cpp        ****     encoder1.Debounce();
+ 244              		.loc 1 32 5 view .LVU70
+  31:hw.cpp        ****     encoder1.Debounce();
+ 245              		.loc 1 31 1 is_stmt 0 view .LVU71
  246 0000 10B5     		push	{r4, lr}
  247              		.cfi_def_cfa_offset 8
  248              		.cfi_offset 4, -8
  249              		.cfi_offset 14, -4
-  34:hw.cpp        ****     encoder1.Debounce();
- 250              		.loc 1 34 1 view .LVU72
+  31:hw.cpp        ****     encoder1.Debounce();
+ 250              		.loc 1 31 1 view .LVU72
  251 0002 0446     		mov	r4, r0
- 252              		.loc 1 35 22 view .LVU73
+ 252              		.loc 1 32 22 view .LVU73
  253 0004 7430     		adds	r0, r0, #116
  254              	.LVL26:
- 255              		.loc 1 35 22 view .LVU74
+ 255              		.loc 1 32 22 view .LVU74
  256 0006 FFF7FEFF 		bl	_ZN5daisy7Encoder8DebounceEv
  257              	.LVL27:
-  36:hw.cpp        ****     encoder2.Debounce();
- 258              		.loc 1 36 5 is_stmt 1 view .LVU75
- 259              		.loc 1 36 22 is_stmt 0 view .LVU76
+  33:hw.cpp        ****     encoder2.Debounce();
+ 258              		.loc 1 33 5 is_stmt 1 view .LVU75
+ 259              		.loc 1 33 22 is_stmt 0 view .LVU76
  260 000a 04F1D000 		add	r0, r4, #208
  261 000e FFF7FEFF 		bl	_ZN5daisy7Encoder8DebounceEv
  262              	.LVL28:
-  37:hw.cpp        ****     button1.Debounce();
- 263              		.loc 1 37 5 is_stmt 1 view .LVU77
- 264              		.loc 1 37 21 is_stmt 0 view .LVU78
+  34:hw.cpp        ****     button1.Debounce();
+ 263              		.loc 1 34 5 is_stmt 1 view .LVU77
+ 264              		.loc 1 34 21 is_stmt 0 view .LVU78
  265 0012 04F59670 		add	r0, r4, #300
  266 0016 FFF7FEFF 		bl	_ZN5daisy6Switch8DebounceEv
  267              	.LVL29:
-  38:hw.cpp        ****     button2.Debounce();
- 268              		.loc 1 38 5 is_stmt 1 view .LVU79
- 269              		.loc 1 38 21 is_stmt 0 view .LVU80
+  35:hw.cpp        ****     button2.Debounce();
+ 268              		.loc 1 35 5 is_stmt 1 view .LVU79
+ 269              		.loc 1 35 21 is_stmt 0 view .LVU80
  270 001a 04F5A870 		add	r0, r4, #336
  271 001e FFF7FEFF 		bl	_ZN5daisy6Switch8DebounceEv
  272              	.LVL30:
-  39:hw.cpp        ****     button3.Debounce();
- 273              		.loc 1 39 5 is_stmt 1 view .LVU81
- 274              		.loc 1 39 21 is_stmt 0 view .LVU82
+  36:hw.cpp        ****     button3.Debounce();
+ 273              		.loc 1 36 5 is_stmt 1 view .LVU81
+ 274              		.loc 1 36 21 is_stmt 0 view .LVU82
  275 0022 04F5BA70 		add	r0, r4, #372
- 276 0026 FFF7FEFF 		bl	_ZN5daisy6Switch8DebounceEv
- 277              	.LVL31:
-  40:hw.cpp        **** 
-  41:hw.cpp        ****     enc1_count += encoder1.Increment();
- 278              		.loc 1 41 5 is_stmt 1 view .LVU83
-ARM GAS  /tmp/ccPbbhbW.s 			page 8
+  37:hw.cpp        **** }...
+ 276              		.loc 1 37 1 view .LVU83
+ 277 0026 BDE81040 		pop	{r4, lr}
+ 278              		.cfi_restore 14
+ 279              		.cfi_restore 4
+ 280              		.cfi_def_cfa_offset 0
+ 281              	.LVL31:
+  36:hw.cpp        ****     button3.Debounce();
+ 282              		.loc 1 36 21 view .LVU84
+ 283 002a FFF7FEBF 		b	_ZN5daisy6Switch8DebounceEv
+ 284              	.LVL32:
+  36:hw.cpp        ****     button3.Debounce();
+ARM GAS  /tmp/ccyh1ZDZ.s 			page 8
 
 
- 279              	.LBB10:
- 280              	.LBI10:
- 281              		.file 3 "libDaisy/src/hid/encoder.h"
-   1:libDaisy/src/hid/encoder.h **** #pragma once
-   2:libDaisy/src/hid/encoder.h **** #ifndef DSY_ENCODER_H
-   3:libDaisy/src/hid/encoder.h **** #define DSY_ENCODER_H
-   4:libDaisy/src/hid/encoder.h **** #include "daisy_core.h"
-   5:libDaisy/src/hid/encoder.h **** #include "per/gpio.h"
-   6:libDaisy/src/hid/encoder.h **** #include "hid/switch.h"
-   7:libDaisy/src/hid/encoder.h **** 
-   8:libDaisy/src/hid/encoder.h **** namespace daisy
-   9:libDaisy/src/hid/encoder.h **** {
-  10:libDaisy/src/hid/encoder.h **** /** 
-  11:libDaisy/src/hid/encoder.h ****     @brief Generic Class for handling Quadrature Encoders \n 
-  12:libDaisy/src/hid/encoder.h ****     Inspired/influenced by Mutable Instruments (pichenettes) Encoder classes
-  13:libDaisy/src/hid/encoder.h ****     @author Stephen Hensley
-  14:libDaisy/src/hid/encoder.h ****     @date December 2019
-  15:libDaisy/src/hid/encoder.h ****     @ingroup controls
-  16:libDaisy/src/hid/encoder.h **** */
-  17:libDaisy/src/hid/encoder.h **** class Encoder
-  18:libDaisy/src/hid/encoder.h **** {
-  19:libDaisy/src/hid/encoder.h ****   public:
-  20:libDaisy/src/hid/encoder.h ****     Encoder() {}
-  21:libDaisy/src/hid/encoder.h ****     ~Encoder() {}
-  22:libDaisy/src/hid/encoder.h **** 
-  23:libDaisy/src/hid/encoder.h ****     /** Initializes the encoder with the specified hardware pins.
-  24:libDaisy/src/hid/encoder.h ****      * Update rate is to be deprecated in a future release
-  25:libDaisy/src/hid/encoder.h ****      */
-  26:libDaisy/src/hid/encoder.h ****     void Init(Pin a, Pin b, Pin click, float update_rate = 0.f);
-  27:libDaisy/src/hid/encoder.h ****     /** Called at update_rate to debounce and handle timing for the switch.
-  28:libDaisy/src/hid/encoder.h ****      * In order for events not to be missed, its important that the Edge/Pressed checks be made at 
-  29:libDaisy/src/hid/encoder.h ****      */
-  30:libDaisy/src/hid/encoder.h ****     void Debounce();
-  31:libDaisy/src/hid/encoder.h **** 
-  32:libDaisy/src/hid/encoder.h ****     /** Returns +1 if the encoder was turned clockwise, -1 if it was turned counter-clockwise, or 0
-  33:libDaisy/src/hid/encoder.h ****     inline int32_t Increment() const { return updated_ ? inc_ : 0; }
- 282              		.loc 3 33 20 view .LVU84
- 283              	.LBB11:
- 284              		.loc 3 33 40 view .LVU85
- 285              		.loc 3 33 56 is_stmt 0 view .LVU86
- 286 002a 94F87820 		ldrb	r2, [r4, #120]	@ zero_extendqisi2
- 287 002e 0AB1     		cbz	r2, .L7
- 288              		.loc 3 33 56 discriminator 1 view .LVU87
- 289 0030 D4F8CC20 		ldr	r2, [r4, #204]
- 290              	.L7:
- 291              	.LVL32:
- 292              		.loc 3 33 56 discriminator 1 view .LVU88
- 293              	.LBE11:
- 294              	.LBE10:
- 295              		.loc 1 41 5 discriminator 1 view .LVU89
- 296 0034 D4F89811 		ldr	r1, [r4, #408]
- 297              	.LBB12:
- 298              	.LBB13:
- 299              		.loc 3 33 56 view .LVU90
- 300 0038 94F8D430 		ldrb	r3, [r4, #212]	@ zero_extendqisi2
- 301              	.LBE13:
- 302              	.LBE12:
-ARM GAS  /tmp/ccPbbhbW.s 			page 9
+ 285              		.loc 1 36 21 view .LVU85
+ 286              		.cfi_endproc
+ 287              	.LFE4892:
+ 289              		.global	_ZN8Hardware8buffer_bE
+ 290 002e 00BF     		.section	.sdram_bss,"aw"
+ 291              		.align	2
+ 294              	_ZN8Hardware8buffer_bE:
+ 295 0000 00000000 		.space	3840000
+ 295      00000000 
+ 295      00000000 
+ 295      00000000 
+ 295      00000000 
+ 296              		.global	_ZN8Hardware8buffer_aE
+ 297              		.align	2
+ 300              	_ZN8Hardware8buffer_aE:
+ 301 3a9800 00000000 		.space	3840000
+ 301      00000000 
+ 301      00000000 
+ 301      00000000 
+ 301      00000000 
+ 302              		.text
+ 303              	.Letext0:
+ 304              		.file 3 "/usr/arm-none-eabi/include/machine/_default_types.h"
+ 305              		.file 4 "/usr/arm-none-eabi/include/sys/_stdint.h"
+ 306              		.file 5 "/usr/arm-none-eabi/include/stdint.h"
+ 307              		.file 6 "/usr/lib/gcc/arm-none-eabi/14.2.0/include/stddef.h"
+ 308              		.file 7 "/usr/arm-none-eabi/include/c++/14.2.0/cmath"
+ 309              		.file 8 "/usr/arm-none-eabi/include/c++/14.2.0/bits/std_abs.h"
+ 310              		.file 9 "/usr/arm-none-eabi/include/c++/14.2.0/cstdlib"
+ 311              		.file 10 "/usr/arm-none-eabi/include/c++/14.2.0/cstdint"
+ 312              		.file 11 "/usr/arm-none-eabi/include/c++/14.2.0/type_traits"
+ 313              		.file 12 "/usr/arm-none-eabi/include/c++/14.2.0/debug/debug.h"
+ 314              		.file 13 "/usr/arm-none-eabi/include/c++/14.2.0/cstdarg"
+ 315              		.file 14 "/usr/arm-none-eabi/include/c++/14.2.0/cstdio"
+ 316              		.file 15 "/usr/arm-none-eabi/include/c++/14.2.0/cstring"
+ 317              		.file 16 "/usr/arm-none-eabi/include/c++/14.2.0/cwchar"
+ 318              		.file 17 "/usr/arm-none-eabi/include/c++/14.2.0/clocale"
+ 319              		.file 18 "/usr/arm-none-eabi/include/c++/14.2.0/bits/stl_pair.h"
+ 320              		.file 19 "/usr/arm-none-eabi/include/c++/14.2.0/bits/charconv.h"
+ 321              		.file 20 "/usr/arm-none-eabi/include/c++/14.2.0/bits/predefined_ops.h"
+ 322              		.file 21 "/usr/arm-none-eabi/include/sys/_types.h"
+ 323              		.file 22 "/usr/arm-none-eabi/include/sys/reent.h"
+ 324              		.file 23 "/usr/arm-none-eabi/include/sys/lock.h"
+ 325              		.file 24 "/usr/arm-none-eabi/include/math.h"
+ 326              		.file 25 "/usr/arm-none-eabi/include/stdlib.h"
+ 327              		.file 26 "/usr/arm-none-eabi/include/c++/14.2.0/math.h"
+ 328              		.file 27 "/usr/arm-none-eabi/include/c++/14.2.0/stdlib.h"
+ 329              		.file 28 "/usr/arm-none-eabi/include/c++/14.2.0/arm-none-eabi/thumb/v7e-m+dp/hard/bits/c++config.h
+ 330              		.file 29 "libDaisy/src/daisy_core.h"
+ 331              		.file 30 "libDaisy/src/sys/system.h"
+ 332              		.file 31 "libDaisy/src/per/qspi.h"
+ 333              		.file 32 "libDaisy/src/per/dac.h"
+ 334              		.file 33 "libDaisy/src/per/gpio.h"
+ 335              		.file 34 "libDaisy/src/per/sai.h"
+ 336              		.file 35 "libDaisy/src/hid/audio.h"
+ 337              		.file 36 "libDaisy/src/per/adc.h"
+ 338              		.file 37 "libDaisy/src/hid/usb.h"
+ARM GAS  /tmp/ccyh1ZDZ.s 			page 9
 
 
- 303              		.loc 1 41 16 discriminator 1 view .LVU91
- 304 003c 0A44     		add	r2, r2, r1
- 305 003e C4F89821 		str	r2, [r4, #408]
-  42:hw.cpp        ****     enc2_count += encoder2.Increment();
- 306              		.loc 1 42 5 is_stmt 1 view .LVU92
- 307              	.LVL33:
- 308              	.LBB15:
- 309              	.LBI12:
- 310              		.loc 3 33 20 view .LVU93
- 311              	.LBB14:
- 312              		.loc 3 33 40 view .LVU94
- 313              		.loc 3 33 56 is_stmt 0 view .LVU95
- 314 0042 0BB1     		cbz	r3, .L8
- 315              		.loc 3 33 56 discriminator 1 view .LVU96
- 316 0044 D4F82831 		ldr	r3, [r4, #296]
- 317              	.L8:
- 318              	.LVL34:
- 319              		.loc 3 33 56 discriminator 1 view .LVU97
- 320              	.LBE14:
- 321              	.LBE15:
- 322              		.loc 1 42 5 discriminator 1 view .LVU98
- 323 0048 D4F89C21 		ldr	r2, [r4, #412]
- 324              		.loc 1 42 16 discriminator 1 view .LVU99
- 325 004c 1344     		add	r3, r3, r2
- 326 004e C4F89C31 		str	r3, [r4, #412]
-  43:hw.cpp        **** }...
- 327              		.loc 1 43 1 view .LVU100
- 328 0052 10BD     		pop	{r4, pc}
- 329              		.loc 1 43 1 view .LVU101
- 330              		.cfi_endproc
- 331              	.LFE4892:
- 333              		.global	_ZN8Hardware8buffer_bE
- 334              		.section	.sdram_bss,"aw"
- 335              		.align	2
- 338              	_ZN8Hardware8buffer_bE:
- 339 0000 00000000 		.space	3840000
- 339      00000000 
- 339      00000000 
- 339      00000000 
- 339      00000000 
- 340              		.global	_ZN8Hardware8buffer_aE
- 341              		.align	2
- 344              	_ZN8Hardware8buffer_aE:
- 345 3a9800 00000000 		.space	3840000
- 345      00000000 
- 345      00000000 
- 345      00000000 
- 345      00000000 
- 346              		.text
- 347              	.Letext0:
- 348              		.file 4 "/usr/arm-none-eabi/include/machine/_default_types.h"
- 349              		.file 5 "/usr/arm-none-eabi/include/sys/_stdint.h"
- 350              		.file 6 "/usr/arm-none-eabi/include/stdint.h"
- 351              		.file 7 "/usr/lib/gcc/arm-none-eabi/14.2.0/include/stddef.h"
- 352              		.file 8 "/usr/arm-none-eabi/include/c++/14.2.0/cmath"
- 353              		.file 9 "/usr/arm-none-eabi/include/c++/14.2.0/bits/std_abs.h"
- 354              		.file 10 "/usr/arm-none-eabi/include/c++/14.2.0/cstdlib"
-ARM GAS  /tmp/ccPbbhbW.s 			page 10
-
-
- 355              		.file 11 "/usr/arm-none-eabi/include/c++/14.2.0/cstdint"
- 356              		.file 12 "/usr/arm-none-eabi/include/c++/14.2.0/type_traits"
- 357              		.file 13 "/usr/arm-none-eabi/include/c++/14.2.0/debug/debug.h"
- 358              		.file 14 "/usr/arm-none-eabi/include/c++/14.2.0/cstdarg"
- 359              		.file 15 "/usr/arm-none-eabi/include/c++/14.2.0/cstdio"
- 360              		.file 16 "/usr/arm-none-eabi/include/c++/14.2.0/cstring"
- 361              		.file 17 "/usr/arm-none-eabi/include/c++/14.2.0/cwchar"
- 362              		.file 18 "/usr/arm-none-eabi/include/c++/14.2.0/clocale"
- 363              		.file 19 "/usr/arm-none-eabi/include/c++/14.2.0/bits/stl_pair.h"
- 364              		.file 20 "/usr/arm-none-eabi/include/c++/14.2.0/bits/charconv.h"
- 365              		.file 21 "/usr/arm-none-eabi/include/c++/14.2.0/bits/predefined_ops.h"
- 366              		.file 22 "/usr/arm-none-eabi/include/sys/_types.h"
- 367              		.file 23 "/usr/arm-none-eabi/include/sys/reent.h"
- 368              		.file 24 "/usr/arm-none-eabi/include/sys/lock.h"
- 369              		.file 25 "/usr/arm-none-eabi/include/math.h"
- 370              		.file 26 "/usr/arm-none-eabi/include/stdlib.h"
- 371              		.file 27 "/usr/arm-none-eabi/include/c++/14.2.0/math.h"
- 372              		.file 28 "/usr/arm-none-eabi/include/c++/14.2.0/stdlib.h"
- 373              		.file 29 "/usr/arm-none-eabi/include/c++/14.2.0/arm-none-eabi/thumb/v7e-m+dp/hard/bits/c++config.h
- 374              		.file 30 "libDaisy/src/daisy_core.h"
- 375              		.file 31 "libDaisy/src/sys/system.h"
- 376              		.file 32 "libDaisy/src/per/qspi.h"
- 377              		.file 33 "libDaisy/src/per/dac.h"
- 378              		.file 34 "libDaisy/src/per/gpio.h"
- 379              		.file 35 "libDaisy/src/per/sai.h"
- 380              		.file 36 "libDaisy/src/hid/audio.h"
- 381              		.file 37 "libDaisy/src/per/adc.h"
- 382              		.file 38 "libDaisy/src/hid/usb.h"
- 383              		.file 39 "libDaisy/src/hid/switch.h"
- 384              		.file 40 "libDaisy/src/util/wav_format.h"
- 385              		.file 41 "libDaisy/src/dev/sr_595.h"
- 386              		.file 42 "libDaisy/src/dev/codec_ak4556.h"
- 387              		.file 43 "libDaisy/src/dev/max11300.h"
- 388              		.file 44 "libDaisy/src/daisy_seed.h"
- 389              		.file 45 "libDaisy/src/dev/sdram.h"
- 390              		.file 46 "/usr/lib/gcc/arm-none-eabi/14.2.0/include/stdarg.h"
- 391              		.file 47 "/usr/arm-none-eabi/include/stdio.h"
- 392              		.file 48 "/usr/arm-none-eabi/include/string.h"
- 393              		.file 49 "DaisySP/Source/Control/adenv.h"
- 394              		.file 50 "DaisySP/Source/Utility/dsp.h"
- 395              		.file 51 "/usr/arm-none-eabi/include/wchar.h"
- 396              		.file 52 "/usr/arm-none-eabi/include/locale.h"
- 397              		.file 53 "<built-in>"
-ARM GAS  /tmp/ccPbbhbW.s 			page 11
+ 339              		.file 38 "libDaisy/src/hid/switch.h"
+ 340              		.file 39 "libDaisy/src/hid/encoder.h"
+ 341              		.file 40 "libDaisy/src/util/wav_format.h"
+ 342              		.file 41 "libDaisy/src/dev/sr_595.h"
+ 343              		.file 42 "libDaisy/src/dev/codec_ak4556.h"
+ 344              		.file 43 "libDaisy/src/dev/max11300.h"
+ 345              		.file 44 "libDaisy/src/daisy_seed.h"
+ 346              		.file 45 "libDaisy/src/dev/sdram.h"
+ 347              		.file 46 "/usr/lib/gcc/arm-none-eabi/14.2.0/include/stdarg.h"
+ 348              		.file 47 "/usr/arm-none-eabi/include/stdio.h"
+ 349              		.file 48 "/usr/arm-none-eabi/include/string.h"
+ 350              		.file 49 "DaisySP/Source/Control/adenv.h"
+ 351              		.file 50 "DaisySP/Source/Utility/dsp.h"
+ 352              		.file 51 "/usr/arm-none-eabi/include/wchar.h"
+ 353              		.file 52 "/usr/arm-none-eabi/include/locale.h"
+ 354              		.file 53 "<built-in>"
+ARM GAS  /tmp/ccyh1ZDZ.s 			page 10
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 hw.cpp
-     /tmp/ccPbbhbW.s:20     .text._ZN8Hardware4InitEv:00000000 $t
-     /tmp/ccPbbhbW.s:27     .text._ZN8Hardware4InitEv:00000000 _ZN8Hardware4InitEv
-     /tmp/ccPbbhbW.s:224    .text._ZN8Hardware4InitEv:000000fc $d
-     /tmp/ccPbbhbW.s:344    .sdram_bss:003a9800 _ZN8Hardware8buffer_aE
-     /tmp/ccPbbhbW.s:338    .sdram_bss:00000000 _ZN8Hardware8buffer_bE
-     /tmp/ccPbbhbW.s:230    .text._ZN8Hardware19ProcessTestControlsEv:00000000 $t
-     /tmp/ccPbbhbW.s:237    .text._ZN8Hardware19ProcessTestControlsEv:00000000 _ZN8Hardware19ProcessTestControlsEv
-     /tmp/ccPbbhbW.s:335    .sdram_bss:00000000 $d
+     /tmp/ccyh1ZDZ.s:20     .text._ZN8Hardware4InitEv:00000000 $t
+     /tmp/ccyh1ZDZ.s:27     .text._ZN8Hardware4InitEv:00000000 _ZN8Hardware4InitEv
+     /tmp/ccyh1ZDZ.s:224    .text._ZN8Hardware4InitEv:000000fc $d
+     /tmp/ccyh1ZDZ.s:300    .sdram_bss:003a9800 _ZN8Hardware8buffer_aE
+     /tmp/ccyh1ZDZ.s:294    .sdram_bss:00000000 _ZN8Hardware8buffer_bE
+     /tmp/ccyh1ZDZ.s:230    .text._ZN8Hardware15ProcessControlsEv:00000000 $t
+     /tmp/ccyh1ZDZ.s:237    .text._ZN8Hardware15ProcessControlsEv:00000000 _ZN8Hardware15ProcessControlsEv
+     /tmp/ccyh1ZDZ.s:291    .sdram_bss:00000000 $d
 
 UNDEFINED SYMBOLS
 _ZN5daisy9DaisySeed4InitEb

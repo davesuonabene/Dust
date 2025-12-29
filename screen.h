@@ -16,9 +16,6 @@ struct Screen
 
     void Blink(uint32_t now);
 
-    // Passed Hardware to access Looper state
+    // Main UI rendering
     void DrawStatus(Processing &proc, Hardware &hw);
-    
-    // New function to test hardware connections
-    void DrawHardwareTest(Hardware &hw);
 };

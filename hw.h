@@ -12,7 +12,7 @@ struct Hardware
 {
     DaisySeed seed;
     
-    // --- New Hardware Configuration ---
+    // --- Hardware Configuration ---
     // Encoder 1: Pins 4, 5, 6
     Encoder   encoder1;
     // Encoder 2: Pins 7, 8, 9
@@ -21,10 +21,6 @@ struct Hardware
     Switch    button1;
     Switch    button2;
     Switch    button3;
-
-    // --- Testing Variables ---
-    int volatile enc1_count = 0;
-    int volatile enc2_count = 0;
 
     float     sample_rate;
 
@@ -46,8 +42,8 @@ struct Hardware
 
     void Init();
     
-    // Process controls for the test mode (counters & debouncing)
-    void ProcessTestControls(); 
+    // Process controls (Debouncing & Encoder updates)
+    void ProcessControls(); 
     
     // Helper to swap buffers after recording
     void SwitchToNewLoop()

@@ -2,7 +2,7 @@
 TARGET = BlackBox
 
 # Sources
-CPP_SOURCES = BlackBox.cpp \
+CPP_SOURCES = dust.cpp \
               hw.cpp \
               screen.cpp \
               processing.cpp

@@ -27,8 +27,7 @@ enum Param
 enum MenuItemType
 {
     TYPE_PARAM,           
-    TYPE_SUBMENU,         
-    TYPE_PARAM_SUBMENU,   
+    TYPE_INFO,
     TYPE_BACK             
 };
 
@@ -37,20 +36,14 @@ struct MenuItem
     const char* name;
     MenuItemType type;
     int param_id;             
-    const MenuItem* submenu;  
-    int num_children; 
 };
 
-extern const MenuItem kMenuMain[];
-extern const int kMenuMainSize;
-extern const MenuItem kMenuBpmEdit[];
-extern const int kMenuBpmEditSize;
-extern const MenuItem kMenuPostEdit[];
-extern const int kMenuPostEditSize;
-extern const MenuItem kMenuGrainsEdit[];
-extern const int kMenuGrainsEditSize;
-extern const MenuItem kMenuGenericEdit[];
-extern const int kMenuGenericEditSize;
+// Externs for menu definitions
+struct MenuPage {
+    const char* name;
+    const MenuItem* items;
+    int num_items;
+};
 
 struct Processing
 {
@@ -130,23 +123,25 @@ struct Processing
     float           sample_rate_ = 48000.0f;
     Rand            rand_;
     
+    // --- UI Variables ---
     UiState         ui_state = STATE_MENU_NAV;
-    const MenuItem* current_menu = kMenuMain; 
-    int             current_menu_size = kMenuMainSize;
-    int             selected_item_idx = 0;
-    int             view_top_item_idx = 0; 
-
-    int             edit_param_target = 0; 
-    char            parent_menu_name[16]; 
     
-    const uint32_t  kHoldTimeMs = 500; 
-    bool            enc_is_holding = false;
-    uint32_t        enc_hold_start = 0;
+    // Page Management
+    int             current_page_idx = 0;
+    bool            advanced_mode = false;
 
-    // --- Button Logic Variables ---
-    uint32_t        last_looper_toggle = 0; 
-    bool            long_press_active = false; 
-    bool            trigger_blink = false;
+    // Current View Pointers
+    const char* current_page_name;
+    const MenuItem* current_menu_items; 
+    int             current_menu_size;
+    int             selected_item_idx = 0;
+
+    // Control Logic
+    int             edit_param_target = 0; 
+    
+    // Hold Detection
+    bool            enc1_holding = false;
+    float           enc1_hold_time = 0.0f;
 
     void Init(Hardware &hw);
     void Controls(Hardware &hw);
@@ -154,5 +149,7 @@ struct Processing
     void UpdateBufferLen();
     void UpdateGrainParams();
     
-    const MenuItem& GetSelectedItem() { return current_menu[selected_item_idx]; }
+    // Helpers
+    void SetPage(int page_idx);
+    void SetAdvancedMode(bool enabled);
 };
