@@ -1,4 +1,4 @@
-ARM GAS  /tmp/cc2xrcrc.s 			page 1
+ARM GAS  /tmp/ccL02NoM.s 			page 1
 
 
    1              		.cpu cortex-m7
@@ -58,7 +58,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
   26:libDaisy/src/hid/disp/oled_display.h **** 
   27:libDaisy/src/hid/disp/oled_display.h ****     uint16_t Height() const override { return driver_.Height(); }
   28:libDaisy/src/hid/disp/oled_display.h ****     uint16_t Width() const override { return driver_.Width(); }
-ARM GAS  /tmp/cc2xrcrc.s 			page 2
+ARM GAS  /tmp/ccL02NoM.s 			page 2
 
 
   31              		.loc 2 28 14 view -0
@@ -118,7 +118,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
   80              		.cfi_startproc
   81              		@ args = 0, pretend = 0, frame = 0
   82              		@ frame_needed = 0, uses_anonymous_args = 0
-ARM GAS  /tmp/cc2xrcrc.s 			page 3
+ARM GAS  /tmp/ccL02NoM.s 			page 3
 
 
   83              		@ link register save eliminated.
@@ -178,7 +178,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
   51:libDaisy/src/dev/oled_ssd130x.h ****         for(size_t i = 0; i < size; i++)
   52:libDaisy/src/dev/oled_ssd130x.h ****         {
   53:libDaisy/src/dev/oled_ssd130x.h ****             uint8_t buf[2] = {0X40, buff[i]};
-ARM GAS  /tmp/cc2xrcrc.s 			page 4
+ARM GAS  /tmp/ccL02NoM.s 			page 4
 
 
   54:libDaisy/src/dev/oled_ssd130x.h ****             i2c_.TransmitBlocking(i2c_address_, buf, 2, 1000);
@@ -238,7 +238,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  108:libDaisy/src/dev/oled_ssd130x.h ****     {
  109:libDaisy/src/dev/oled_ssd130x.h ****         // Initialize both GPIO
  110:libDaisy/src/dev/oled_ssd130x.h ****         pin_dc_.Init(config.pin_config.dc, GPIO::Mode::OUTPUT);
-ARM GAS  /tmp/cc2xrcrc.s 			page 5
+ARM GAS  /tmp/ccL02NoM.s 			page 5
 
 
  111:libDaisy/src/dev/oled_ssd130x.h ****         pin_reset_.Init(config.pin_config.reset, GPIO::Mode::OUTPUT);
@@ -298,7 +298,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  165:libDaisy/src/dev/oled_ssd130x.h ****         Config()
  166:libDaisy/src/dev/oled_ssd130x.h ****         {
  167:libDaisy/src/dev/oled_ssd130x.h ****             // Initialize using defaults
-ARM GAS  /tmp/cc2xrcrc.s 			page 6
+ARM GAS  /tmp/ccL02NoM.s 			page 6
 
 
  168:libDaisy/src/dev/oled_ssd130x.h ****             Defaults();
@@ -358,7 +358,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  222:libDaisy/src/dev/oled_ssd130x.h ****     {
  223:libDaisy/src/dev/oled_ssd130x.h ****         // bit flip
  224:libDaisy/src/dev/oled_ssd130x.h ****         val = ((val & 0x01) << 7) | ((val & 0x02) << 5) | ((val & 0x04) << 3)
-ARM GAS  /tmp/cc2xrcrc.s 			page 7
+ARM GAS  /tmp/ccL02NoM.s 			page 7
 
 
  225:libDaisy/src/dev/oled_ssd130x.h ****               | ((val & 0x08) << 1) | ((val & 0x10) >> 1) | ((val & 0x20) >> 3)
@@ -418,7 +418,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  279:libDaisy/src/dev/oled_ssd130x.h ****                 transport_.SendCommand(0x0F);
  280:libDaisy/src/dev/oled_ssd130x.h ****                 // COM Pins
  281:libDaisy/src/dev/oled_ssd130x.h ****                 transport_.SendCommand(0xDA);
-ARM GAS  /tmp/cc2xrcrc.s 			page 8
+ARM GAS  /tmp/ccL02NoM.s 			page 8
 
 
  282:libDaisy/src/dev/oled_ssd130x.h ****                 transport_.SendCommand(0x02);
@@ -478,7 +478,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  336:libDaisy/src/dev/oled_ssd130x.h ****         // Charge Pump
  337:libDaisy/src/dev/oled_ssd130x.h ****         transport_.SendCommand(0x8D);
  338:libDaisy/src/dev/oled_ssd130x.h ****         transport_.SendCommand(0x14);
-ARM GAS  /tmp/cc2xrcrc.s 			page 9
+ARM GAS  /tmp/ccL02NoM.s 			page 9
 
 
  339:libDaisy/src/dev/oled_ssd130x.h ****         // Set Segment Remap
@@ -538,7 +538,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  104              	.LBE356:
  105              	.LBE355:
  106              		.cfi_endproc
-ARM GAS  /tmp/cc2xrcrc.s 			page 10
+ARM GAS  /tmp/ccL02NoM.s 			page 10
 
 
  107              	.LFE5293:
@@ -598,7 +598,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
   34:libDaisy/src/hid/disp/display.h ****     size_t CurrentX() { return currentX_; };
   35:libDaisy/src/hid/disp/display.h ****     size_t CurrentY() { return currentY_; };
   36:libDaisy/src/hid/disp/display.h **** 
-ARM GAS  /tmp/cc2xrcrc.s 			page 11
+ARM GAS  /tmp/ccL02NoM.s 			page 11
 
 
   37:libDaisy/src/hid/disp/display.h ****     /** 
@@ -658,7 +658,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
   91:libDaisy/src/hid/disp/display.h ****         DrawRect(rect.GetX(),
   92:libDaisy/src/hid/disp/display.h ****                  rect.GetY(),
   93:libDaisy/src/hid/disp/display.h ****                  rect.GetRight(),
-ARM GAS  /tmp/cc2xrcrc.s 			page 12
+ARM GAS  /tmp/ccL02NoM.s 			page 12
 
 
   94:libDaisy/src/hid/disp/display.h ****                  rect.GetBottom(),
@@ -718,7 +718,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  148:libDaisy/src/hid/disp/display.h ****     virtual char WriteString(const char* str, FontDef font, bool on) = 0;
  149:libDaisy/src/hid/disp/display.h **** 
  150:libDaisy/src/hid/disp/display.h ****     /** 
-ARM GAS  /tmp/cc2xrcrc.s 			page 13
+ARM GAS  /tmp/ccL02NoM.s 			page 13
 
 
  151:libDaisy/src/hid/disp/display.h ****     Similar to WriteString but justified within a bounding box.
@@ -778,7 +778,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  205:libDaisy/src/hid/disp/display.h ****  *  To create a custom OneBitGraphicsDisplay implementation, you can 
  206:libDaisy/src/hid/disp/display.h ****  *  A) inherit from OneBitGraphicsDisplay directly and provide all the drawing functions yourself
  207:libDaisy/src/hid/disp/display.h ****  *  B) Inherit from OneBitGraphicsDisplayImpl and only provide DrawPixel(), Fill() and Update()
-ARM GAS  /tmp/cc2xrcrc.s 			page 14
+ARM GAS  /tmp/ccL02NoM.s 			page 14
 
 
  208:libDaisy/src/hid/disp/display.h ****  *     like this:
@@ -838,7 +838,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
   45:libDaisy/src/hid/disp/oled_display.h ****     }
   46:libDaisy/src/hid/disp/oled_display.h **** 
   47:libDaisy/src/hid/disp/oled_display.h ****     /** 
-ARM GAS  /tmp/cc2xrcrc.s 			page 15
+ARM GAS  /tmp/ccL02NoM.s 			page 15
 
 
   48:libDaisy/src/hid/disp/oled_display.h ****     Writes the current display buffer to the OLED device using SPI or I2C depending on 
@@ -898,7 +898,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  200              		.loc 4 23 13 view .LVU27
   23:libDaisy/src/hid/disp/display.h **** 
  201              		.loc 4 23 13 is_stmt 0 view .LVU28
-ARM GAS  /tmp/cc2xrcrc.s 			page 16
+ARM GAS  /tmp/ccL02NoM.s 			page 16
 
 
  202              	.LBE363:
@@ -958,7 +958,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
   29:screen.cpp    ****                 disp.DrawPixel((uint_fast8_t)rx, (uint_fast8_t)ry, bit_on ? on : !on);
   30:screen.cpp    ****             }
   31:screen.cpp    ****         }
-ARM GAS  /tmp/cc2xrcrc.s 			page 17
+ARM GAS  /tmp/ccL02NoM.s 			page 17
 
 
   32:screen.cpp    ****     }
@@ -1018,7 +1018,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
   22:screen.cpp    ****         uint32_t rowBits = font.data[(ch - 32) * font.FontHeight + i];
  271              		.loc 1 22 34 discriminator 1 view .LVU40
  272 0016 6178     		ldrb	r1, [r4, #1]	@ zero_extendqisi2
-ARM GAS  /tmp/cc2xrcrc.s 			page 18
+ARM GAS  /tmp/ccL02NoM.s 			page 18
 
 
  273              	.LVL16:
@@ -1078,7 +1078,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
   22:screen.cpp    ****         uint32_t rowBits = font.data[(ch - 32) * font.FontHeight + i];
  317              		.loc 1 22 22 is_stmt 0 discriminator 1 view .LVU51
  318 003c 07EB4E07 		add	r7, r7, lr, lsl #1
-ARM GAS  /tmp/cc2xrcrc.s 			page 19
+ARM GAS  /tmp/ccL02NoM.s 			page 19
 
 
  319              	.LBB421:
@@ -1138,7 +1138,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  361              	.LBB414:
   25:screen.cpp    ****             int  rx     = (int)disp.Width() - 1 - (x + j);
  362              		.loc 1 25 13 is_stmt 1 view .LVU64
-ARM GAS  /tmp/cc2xrcrc.s 			page 20
+ARM GAS  /tmp/ccL02NoM.s 			page 20
 
 
   26:screen.cpp    ****             int  ry     = (int)disp.Height() - 1 - (y + i);
@@ -1198,7 +1198,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  403              		.loc 3 361 10 is_stmt 0 view .LVU78
  404              	.LBE406:
   42:libDaisy/src/hid/disp/oled_display.h ****     {
-ARM GAS  /tmp/cc2xrcrc.s 			page 21
+ARM GAS  /tmp/ccL02NoM.s 			page 21
 
 
  405              		.loc 2 42 10 is_stmt 1 view .LVU79
@@ -1258,7 +1258,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  448              	.LBE411:
  449              	.LBE414:
   24:screen.cpp    ****             bool bit_on = (rowBits << j) & 0x8000;
-ARM GAS  /tmp/cc2xrcrc.s 			page 22
+ARM GAS  /tmp/ccL02NoM.s 			page 22
 
 
  450              		.loc 1 24 9 is_stmt 1 discriminator 2 view .LVU91
@@ -1318,7 +1318,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  490              		.loc 1 23 9 view .LVU105
  491              	.LBE423:
   22:screen.cpp    ****         uint32_t rowBits = font.data[(ch - 32) * font.FontHeight + i];
-ARM GAS  /tmp/cc2xrcrc.s 			page 23
+ARM GAS  /tmp/ccL02NoM.s 			page 23
 
 
  492              		.loc 1 22 22 is_stmt 0 discriminator 1 view .LVU106
@@ -1378,7 +1378,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  534              		.loc 1 39 9 is_stmt 1 view .LVU118
   40:screen.cpp    ****     }
  535              		.loc 1 40 9 view .LVU119
-ARM GAS  /tmp/cc2xrcrc.s 			page 24
+ARM GAS  /tmp/ccL02NoM.s 			page 24
 
 
   37:screen.cpp    ****         DrawCharRot180(disp, cx, y, *str, font, on); 
@@ -1438,7 +1438,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  586 0000 2DE9F047 		push	{r4, r5, r6, r7, r8, r9, r10, lr}
  587              		.cfi_def_cfa_offset 32
  588              		.cfi_offset 4, -32
-ARM GAS  /tmp/cc2xrcrc.s 			page 25
+ARM GAS  /tmp/ccL02NoM.s 			page 25
 
 
  589              		.cfi_offset 5, -28
@@ -1498,7 +1498,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  621              		.loc 3 45 17 view .LVU133
  622 001c 4FF0000A 		mov	r10, #0
   46:libDaisy/src/dev/oled_ssd130x.h ****     };
-ARM GAS  /tmp/cc2xrcrc.s 			page 26
+ARM GAS  /tmp/ccL02NoM.s 			page 26
 
 
  623              		.loc 3 46 30 view .LVU134
@@ -1558,7 +1558,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
   45:libDaisy/src/dev/oled_ssd130x.h ****         i2c_.TransmitBlocking(i2c_address_, buf, 2, 1000);
  664              		.loc 3 45 9 view .LVU148
   45:libDaisy/src/dev/oled_ssd130x.h ****         i2c_.TransmitBlocking(i2c_address_, buf, 2, 1000);
-ARM GAS  /tmp/cc2xrcrc.s 			page 27
+ARM GAS  /tmp/ccL02NoM.s 			page 27
 
 
  665              		.loc 3 45 17 is_stmt 0 view .LVU149
@@ -1618,7 +1618,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  705              		.loc 3 53 21 view .LVU163
  706 0078 8DF80CE0 		strb	lr, [sp, #12]
   53:libDaisy/src/dev/oled_ssd130x.h ****             i2c_.TransmitBlocking(i2c_address_, buf, 2, 1000);
-ARM GAS  /tmp/cc2xrcrc.s 			page 28
+ARM GAS  /tmp/ccL02NoM.s 			page 28
 
 
  707              		.loc 3 53 44 view .LVU164
@@ -1678,7 +1678,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  226:libDaisy/src/hid/disp/display.h ****     void DrawLine(uint_fast8_t x1,
  227:libDaisy/src/hid/disp/display.h ****                   uint_fast8_t y1,
  228:libDaisy/src/hid/disp/display.h ****                   uint_fast8_t x2,
-ARM GAS  /tmp/cc2xrcrc.s 			page 29
+ARM GAS  /tmp/ccL02NoM.s 			page 29
 
 
  229:libDaisy/src/hid/disp/display.h ****                   uint_fast8_t y2,
@@ -1738,7 +1738,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  283:libDaisy/src/hid/disp/display.h ****             ((ChildType*)(this))->ChildType::DrawLine(x2, y2, x1, y2, on);
  284:libDaisy/src/hid/disp/display.h ****             ((ChildType*)(this))->ChildType::DrawLine(x1, y2, x1, y1, on);
  285:libDaisy/src/hid/disp/display.h ****         }
-ARM GAS  /tmp/cc2xrcrc.s 			page 30
+ARM GAS  /tmp/ccL02NoM.s 			page 30
 
 
  286:libDaisy/src/hid/disp/display.h ****     }
@@ -1798,7 +1798,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  340:libDaisy/src/hid/disp/display.h **** 
  341:libDaisy/src/hid/disp/display.h ****         do
  342:libDaisy/src/hid/disp/display.h ****         {
-ARM GAS  /tmp/cc2xrcrc.s 			page 31
+ARM GAS  /tmp/ccL02NoM.s 			page 31
 
 
  343:libDaisy/src/hid/disp/display.h ****             if(!circle)
@@ -1858,7 +1858,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  397:libDaisy/src/hid/disp/display.h ****             }
  398:libDaisy/src/hid/disp/display.h ****         } while(t_x <= 0);
  399:libDaisy/src/hid/disp/display.h ****     }
-ARM GAS  /tmp/cc2xrcrc.s 			page 32
+ARM GAS  /tmp/ccL02NoM.s 			page 32
 
 
  400:libDaisy/src/hid/disp/display.h **** 
@@ -1918,7 +1918,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  763              		.cfi_offset 5, -32
  764              		.cfi_offset 6, -28
  765              		.cfi_offset 7, -24
-ARM GAS  /tmp/cc2xrcrc.s 			page 33
+ARM GAS  /tmp/ccL02NoM.s 			page 33
 
 
  766              		.cfi_offset 8, -20
@@ -1978,7 +1978,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  811 0048 B388     		ldrh	r3, [r6, #4]
  410:libDaisy/src/hid/disp/display.h ****            || Height() < (currentY_ + font.FontHeight))
  812              		.loc 4 410 33 discriminator 1 view .LVU186
-ARM GAS  /tmp/cc2xrcrc.s 			page 34
+ARM GAS  /tmp/ccL02NoM.s 			page 34
 
 
  813 004a 2B44     		add	r3, r3, r5
@@ -2038,7 +2038,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  855 0094 4FD0     		beq	.L61
  856 0096 4346     		mov	r3, r8
  857 0098 8846     		mov	r8, r1
-ARM GAS  /tmp/cc2xrcrc.s 			page 35
+ARM GAS  /tmp/ccL02NoM.s 			page 35
 
 
  858 009a CDE901B4 		strd	fp, r4, [sp, #4]
@@ -2098,7 +2098,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  904              		.loc 3 361 10 is_stmt 1 view .LVU206
  361:libDaisy/src/dev/oled_ssd130x.h ****     {
  905              		.loc 3 361 10 is_stmt 0 view .LVU207
-ARM GAS  /tmp/cc2xrcrc.s 			page 36
+ARM GAS  /tmp/ccL02NoM.s 			page 36
 
 
  906              	.LBE509:
@@ -2158,7 +2158,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  361:libDaisy/src/dev/oled_ssd130x.h ****     {
  949              		.loc 3 361 10 is_stmt 0 view .LVU219
  950              	.LBE513:
-ARM GAS  /tmp/cc2xrcrc.s 			page 37
+ARM GAS  /tmp/ccL02NoM.s 			page 37
 
 
  951              	.LBE518:
@@ -2218,7 +2218,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  995              	.LVL66:
  996              	.LBB487:
  997              	.LBI487:
-ARM GAS  /tmp/cc2xrcrc.s 			page 38
+ARM GAS  /tmp/ccL02NoM.s 			page 38
 
 
  361:libDaisy/src/dev/oled_ssd130x.h ****     {
@@ -2278,7 +2278,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  1043              	.LBE525:
  421:libDaisy/src/hid/disp/display.h ****             {
  1044              		.loc 4 421 26 discriminator 1 view .LVU239
-ARM GAS  /tmp/cc2xrcrc.s 			page 39
+ARM GAS  /tmp/ccL02NoM.s 			page 39
 
 
  1045 0118 0132     		adds	r2, r2, #1
@@ -2338,7 +2338,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  1087              		.loc 4 418 22 discriminator 1 view .LVU251
  418:libDaisy/src/hid/disp/display.h ****         {
  1088              		.loc 4 418 22 is_stmt 0 discriminator 1 view .LVU252
-ARM GAS  /tmp/cc2xrcrc.s 			page 40
+ARM GAS  /tmp/ccL02NoM.s 			page 40
 
 
  1089 0136 CB45     		cmp	fp, r9
@@ -2398,7 +2398,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  1131 0164 24D1     		bne	.L98
  174:libDaisy/src/hid/disp/display.h ****     }
  1132              		.loc 4 174 19 is_stmt 0 discriminator 1 view .LVU265
-ARM GAS  /tmp/cc2xrcrc.s 			page 41
+ARM GAS  /tmp/ccL02NoM.s 			page 41
 
 
  1133 0166 3F2F     		cmp	r7, #63
@@ -2458,7 +2458,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  1166              		.loc 4 463 5 view .LVU274
  1167 0182 09B0     		add	sp, sp, #36
  1168              		.cfi_remember_state
-ARM GAS  /tmp/cc2xrcrc.s 			page 42
+ARM GAS  /tmp/ccL02NoM.s 			page 42
 
 
  1169              		.cfi_def_cfa_offset 36
@@ -2518,7 +2518,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  411:libDaisy/src/hid/disp/display.h ****         {
  1215              		.loc 4 411 21 discriminator 2 view .LVU283
  1216 01b0 0092     		str	r2, [sp]
-ARM GAS  /tmp/cc2xrcrc.s 			page 43
+ARM GAS  /tmp/ccL02NoM.s 			page 43
 
 
  1217              	.LBB532:
@@ -2578,7 +2578,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  1260 01e2 CB68     		ldr	r3, [r1, #12]
  1261 01e4 0748     		ldr	r0, .L99
  1262 01e6 8342     		cmp	r3, r0
-ARM GAS  /tmp/cc2xrcrc.s 			page 44
+ARM GAS  /tmp/ccL02NoM.s 			page 44
 
 
  1263 01e8 08D0     		beq	.L80
@@ -2638,7 +2638,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  1312              		.cfi_def_cfa_offset 36
  1313              		.cfi_offset 4, -36
  1314              		.cfi_offset 5, -32
-ARM GAS  /tmp/cc2xrcrc.s 			page 45
+ARM GAS  /tmp/ccL02NoM.s 			page 45
 
 
  1315              		.cfi_offset 6, -28
@@ -2698,7 +2698,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  1361 0046 40F08B80 		bne	.L141
  1362 004a 4020     		movs	r0, #64
  1363              	.L106:
-ARM GAS  /tmp/cc2xrcrc.s 			page 46
+ARM GAS  /tmp/ccL02NoM.s 			page 46
 
 
  411:libDaisy/src/hid/disp/display.h ****         {
@@ -2758,7 +2758,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  421:libDaisy/src/hid/disp/display.h ****             {
  1407              		.loc 4 421 19 view .LVU321
  1408 008a CDF80490 		str	r9, [sp, #4]
-ARM GAS  /tmp/cc2xrcrc.s 			page 47
+ARM GAS  /tmp/ccL02NoM.s 			page 47
 
 
  1409 008e 5246     		mov	r2, r10
@@ -2818,7 +2818,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  1453              	.LBB580:
  1454              	.LBB574:
  366:libDaisy/src/dev/oled_ssd130x.h ****         else
-ARM GAS  /tmp/cc2xrcrc.s 			page 48
+ARM GAS  /tmp/ccL02NoM.s 			page 48
 
 
  1455              		.loc 3 366 42 view .LVU332
@@ -2878,7 +2878,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  1499 00ca 48F00104 		orrhi	r4, r8, #1
  366:libDaisy/src/dev/oled_ssd130x.h ****         else
  1500              		.loc 3 366 54 view .LVU343
-ARM GAS  /tmp/cc2xrcrc.s 			page 49
+ARM GAS  /tmp/ccL02NoM.s 			page 49
 
 
  1501 00ce 0CF0070E 		and	lr, ip, #7
@@ -2938,7 +2938,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  1545              	.LBE597:
  1546              	.LBE604:
  1547              	.LBB605:
-ARM GAS  /tmp/cc2xrcrc.s 			page 50
+ARM GAS  /tmp/ccL02NoM.s 			page 50
 
 
  1548              	.LBB583:
@@ -2998,7 +2998,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  1593 0100 DED1     		bne	.L117
  1594              	.L142:
  418:libDaisy/src/hid/disp/display.h ****         {
-ARM GAS  /tmp/cc2xrcrc.s 			page 51
+ARM GAS  /tmp/ccL02NoM.s 			page 51
 
 
  1595              		.loc 4 418 22 is_stmt 0 discriminator 1 view .LVU363
@@ -3058,7 +3058,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  1636              	.L111:
  1637              	.LBB608:
  1638              	.LBB609:
-ARM GAS  /tmp/cc2xrcrc.s 			page 52
+ARM GAS  /tmp/ccL02NoM.s 			page 52
 
 
  173:libDaisy/src/hid/disp/display.h ****         currentY_ = (y >= Height()) ? Height() - 1 : y;
@@ -3118,7 +3118,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  1681 014a 3F22     		movs	r2, #63
  1682              	.L122:
  1683              	.LBE611:
-ARM GAS  /tmp/cc2xrcrc.s 			page 53
+ARM GAS  /tmp/ccL02NoM.s 			page 53
 
 
  1684              	.LBE615:
@@ -3178,7 +3178,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  1728 0168 3046     		mov	r0, r6
  1729 016a 9847     		blx	r3
  1730              	.LVL134:
-ARM GAS  /tmp/cc2xrcrc.s 			page 54
+ARM GAS  /tmp/ccL02NoM.s 			page 54
 
 
  174:libDaisy/src/hid/disp/display.h ****     }
@@ -3238,7 +3238,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  1774              		.loc 4 174 33 view .LVU409
  1775 01a2 3368     		ldr	r3, [r6]
  173:libDaisy/src/hid/disp/display.h ****         currentY_ = (y >= Height()) ? Height() - 1 : y;
-ARM GAS  /tmp/cc2xrcrc.s 			page 55
+ARM GAS  /tmp/ccL02NoM.s 			page 55
 
 
  1776              		.loc 4 173 19 discriminator 1 view .LVU410
@@ -3298,7 +3298,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  1828              	.LBB880:
  466:libDaisy/src/hid/disp/display.h ****                                  const FontDef& font,
  467:libDaisy/src/hid/disp/display.h ****                                  Rectangle      boundingBox,
-ARM GAS  /tmp/cc2xrcrc.s 			page 56
+ARM GAS  /tmp/ccL02NoM.s 			page 56
 
 
  468:libDaisy/src/hid/disp/display.h ****                                  Alignment      alignment,
@@ -3358,7 +3358,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  1860              		.loc 4 487 15 is_stmt 1 view .LVU422
  1861              	.LBB897:
  1862              	.LBB885:
-ARM GAS  /tmp/cc2xrcrc.s 			page 57
+ARM GAS  /tmp/ccL02NoM.s 			page 57
 
 
  1863              	.LBI879:
@@ -3418,7 +3418,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
    5:libDaisy/src/hid/disp/graphics_common.h **** namespace daisy
    6:libDaisy/src/hid/disp/graphics_common.h **** {
    7:libDaisy/src/hid/disp/graphics_common.h **** /** Justifications */
-ARM GAS  /tmp/cc2xrcrc.s 			page 58
+ARM GAS  /tmp/ccL02NoM.s 			page 58
 
 
    8:libDaisy/src/hid/disp/graphics_common.h **** enum class Alignment
@@ -3478,7 +3478,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
   59:libDaisy/src/hid/disp/graphics_common.h ****     int16_t GetHeight() const { return height_; }
   60:libDaisy/src/hid/disp/graphics_common.h ****     int16_t GetRight() const { return x_ + width_; }
   61:libDaisy/src/hid/disp/graphics_common.h ****     int16_t GetBottom() const { return y_ + height_; }
-ARM GAS  /tmp/cc2xrcrc.s 			page 59
+ARM GAS  /tmp/ccL02NoM.s 			page 59
 
 
   62:libDaisy/src/hid/disp/graphics_common.h ****     int16_t GetCenterX() const { return x_ + width_ / 2; }
@@ -3538,7 +3538,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  116:libDaisy/src/hid/disp/graphics_common.h ****     {
  117:libDaisy/src/hid/disp/graphics_common.h ****         const auto newWidth = int16_t((x_ - left) + width_);
  118:libDaisy/src/hid/disp/graphics_common.h ****         return {left, y_, newWidth, height_};
-ARM GAS  /tmp/cc2xrcrc.s 			page 60
+ARM GAS  /tmp/ccL02NoM.s 			page 60
 
 
  119:libDaisy/src/hid/disp/graphics_common.h ****     }
@@ -3598,7 +3598,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  173:libDaisy/src/hid/disp/graphics_common.h ****         return {int16_t(x_ + centerX - GetCenterX()),
  174:libDaisy/src/hid/disp/graphics_common.h ****                 int16_t(y_ + centerY - GetCenterY()),
  175:libDaisy/src/hid/disp/graphics_common.h ****                 width_,
-ARM GAS  /tmp/cc2xrcrc.s 			page 61
+ARM GAS  /tmp/ccL02NoM.s 			page 61
 
 
  176:libDaisy/src/hid/disp/graphics_common.h ****                 height_};
@@ -3658,7 +3658,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  230:libDaisy/src/hid/disp/graphics_common.h ****             case Alignment::bottomRight:
  231:libDaisy/src/hid/disp/graphics_common.h ****                 return {int16_t(other.GetRight() - width_),
  232:libDaisy/src/hid/disp/graphics_common.h ****                         int16_t(other.GetBottom() - height_),
-ARM GAS  /tmp/cc2xrcrc.s 			page 62
+ARM GAS  /tmp/ccL02NoM.s 			page 62
 
 
  233:libDaisy/src/hid/disp/graphics_common.h ****                         width_,
@@ -3718,7 +3718,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  1932              	.LBB903:
  1933              	.LBI903:
  209:libDaisy/src/hid/disp/graphics_common.h ****     {
-ARM GAS  /tmp/cc2xrcrc.s 			page 63
+ARM GAS  /tmp/ccL02NoM.s 			page 63
 
 
  1934              		.loc 5 209 15 is_stmt 1 view .LVU442
@@ -3778,7 +3778,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  1981              	.LBB908:
  1982              	.LBB909:
   63:libDaisy/src/hid/disp/graphics_common.h **** 
-ARM GAS  /tmp/cc2xrcrc.s 			page 64
+ARM GAS  /tmp/ccL02NoM.s 			page 64
 
 
  1983              		.loc 5 63 54 view .LVU451
@@ -3838,7 +3838,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  2029              		.loc 5 63 13 is_stmt 1 view .LVU459
  2030              	.LBB912:
   63:libDaisy/src/hid/disp/graphics_common.h **** 
-ARM GAS  /tmp/cc2xrcrc.s 			page 65
+ARM GAS  /tmp/ccL02NoM.s 			page 65
 
 
  2031              		.loc 5 63 34 view .LVU460
@@ -3898,7 +3898,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  2076              	.LBE918:
  2077              	.LBE921:
  2078              	.LBE924:
-ARM GAS  /tmp/cc2xrcrc.s 			page 66
+ARM GAS  /tmp/ccL02NoM.s 			page 66
 
 
  2079              	.LBE932:
@@ -3958,7 +3958,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  2122              	.LBE1097:
  2123              	.LBB1106:
  2124              	.LBB1107:
-ARM GAS  /tmp/cc2xrcrc.s 			page 67
+ARM GAS  /tmp/ccL02NoM.s 			page 67
 
 
  448:libDaisy/src/hid/disp/display.h ****         {
@@ -4018,7 +4018,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  2168 00f2 BBF80430 		ldrh	r3, [fp, #4]
  410:libDaisy/src/hid/disp/display.h ****            || Height() < (currentY_ + font.FontHeight))
  2169              		.loc 4 410 33 discriminator 1 view .LVU498
-ARM GAS  /tmp/cc2xrcrc.s 			page 68
+ARM GAS  /tmp/ccL02NoM.s 			page 68
 
 
  2170 00f6 3344     		add	r3, r3, r6
@@ -4078,7 +4078,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  2212 0146 4DD0     		beq	.L189
  2213 0148 CDF80890 		str	r9, [sp, #8]
  2214 014c 0797     		str	r7, [sp, #28]
-ARM GAS  /tmp/cc2xrcrc.s 			page 69
+ARM GAS  /tmp/ccL02NoM.s 			page 69
 
 
  2215 014e CDE90542 		strd	r4, r2, [sp, #20]
@@ -4138,7 +4138,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  2260 0174 0AFA0EFE 		lsl	lr, r10, lr
  366:libDaisy/src/dev/oled_ssd130x.h ****         else
  2261              		.loc 3 366 20 view .LVU520
-ARM GAS  /tmp/cc2xrcrc.s 			page 70
+ARM GAS  /tmp/ccL02NoM.s 			page 70
 
 
  2262 0178 5F44     		add	r7, r7, fp
@@ -4198,7 +4198,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  2306              	.LBI1111:
  361:libDaisy/src/dev/oled_ssd130x.h ****     {
  2307              		.loc 3 361 10 view .LVU531
-ARM GAS  /tmp/cc2xrcrc.s 			page 71
+ARM GAS  /tmp/ccL02NoM.s 			page 71
 
 
  2308              	.LBE1126:
@@ -4258,7 +4258,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  2351              		.loc 3 366 20 view .LVU542
  2352 01b0 02EBC717 		add	r7, r2, r7, lsl #7
  366:libDaisy/src/dev/oled_ssd130x.h ****         else
-ARM GAS  /tmp/cc2xrcrc.s 			page 72
+ARM GAS  /tmp/ccL02NoM.s 			page 72
 
 
  2353              		.loc 3 366 48 view .LVU543
@@ -4318,7 +4318,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  2401              	.LBB1115:
  368:libDaisy/src/dev/oled_ssd130x.h ****     }
  2402              		.loc 3 368 42 view .LVU550
-ARM GAS  /tmp/cc2xrcrc.s 			page 73
+ARM GAS  /tmp/ccL02NoM.s 			page 73
 
 
  2403 01ca 3974     		strb	r1, [r7, #16]
@@ -4378,7 +4378,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  418:libDaisy/src/hid/disp/display.h ****         {
  2443              		.loc 4 418 22 is_stmt 0 discriminator 1 view .LVU565
  2444 01ea FBD1     		bne	.L189
-ARM GAS  /tmp/cc2xrcrc.s 			page 74
+ARM GAS  /tmp/ccL02NoM.s 			page 74
 
 
  2445              	.LVL179:
@@ -4438,7 +4438,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  2488              	.L199:
  174:libDaisy/src/hid/disp/display.h ****     }
  2489              		.loc 4 174 19 discriminator 4 view .LVU577
-ARM GAS  /tmp/cc2xrcrc.s 			page 75
+ARM GAS  /tmp/ccL02NoM.s 			page 75
 
 
  2490 0220 ABF80670 		strh	r7, [fp, #6]	@ movhi
@@ -4498,7 +4498,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  2534              	.LBB934:
   62:libDaisy/src/hid/disp/graphics_common.h ****     int16_t GetCenterY() const { return y_ + height_ / 2; }
  2535              		.loc 5 62 34 view .LVU588
-ARM GAS  /tmp/cc2xrcrc.s 			page 76
+ARM GAS  /tmp/ccL02NoM.s 			page 76
 
 
   62:libDaisy/src/hid/disp/graphics_common.h ****     int16_t GetCenterY() const { return y_ + height_ / 2; }
@@ -4558,7 +4558,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  2580              		.loc 5 62 44 view .LVU598
  2581 0250 0CEB6205 		add	r5, ip, r2, asr #1
  2582              	.LBE937:
-ARM GAS  /tmp/cc2xrcrc.s 			page 77
+ARM GAS  /tmp/ccL02NoM.s 			page 77
 
 
  2583              	.LBE953:
@@ -4618,7 +4618,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  2627              	.LBE955:
  2628              	.LBB956:
  2629              	.LBI956:
-ARM GAS  /tmp/cc2xrcrc.s 			page 78
+ARM GAS  /tmp/ccL02NoM.s 			page 78
 
 
   63:libDaisy/src/hid/disp/graphics_common.h **** 
@@ -4678,7 +4678,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  2674              		.loc 4 173 9 is_stmt 0 view .LVU624
  2675 0276 0191     		str	r1, [sp, #4]
  173:libDaisy/src/hid/disp/display.h ****         currentY_ = (y >= Height()) ? Height() - 1 : y;
-ARM GAS  /tmp/cc2xrcrc.s 			page 79
+ARM GAS  /tmp/ccL02NoM.s 			page 79
 
 
  2676              		.loc 4 173 32 view .LVU625
@@ -4738,7 +4738,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  2719              	.LBE966:
  2720              	.LBB971:
  2721              	.LBB960:
-ARM GAS  /tmp/cc2xrcrc.s 			page 80
+ARM GAS  /tmp/ccL02NoM.s 			page 80
 
 
  2722              	.LBB961:
@@ -4798,7 +4798,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  221:libDaisy/src/hid/disp/graphics_common.h ****                         other.y_,
  2767              		.loc 5 221 17 view .LVU652
  2768              	.LBB978:
-ARM GAS  /tmp/cc2xrcrc.s 			page 81
+ARM GAS  /tmp/ccL02NoM.s 			page 81
 
 
  2769              	.LBI978:
@@ -4858,7 +4858,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  2812              	.LBE996:
  2813              	.LBB997:
  2814              	.LBB994:
-ARM GAS  /tmp/cc2xrcrc.s 			page 82
+ARM GAS  /tmp/ccL02NoM.s 			page 82
 
 
  2815              	.LBB992:
@@ -4918,7 +4918,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  2860              		.loc 5 215 13 is_stmt 1 view .LVU678
  216:libDaisy/src/hid/disp/graphics_common.h ****                         other.y_,
  2861              		.loc 5 216 17 view .LVU679
-ARM GAS  /tmp/cc2xrcrc.s 			page 83
+ARM GAS  /tmp/ccL02NoM.s 			page 83
 
 
  2862              	.LBB1000:
@@ -4978,7 +4978,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  2905              	.LBB1010:
  2906              	.LBB1008:
  2907              	.LBB1005:
-ARM GAS  /tmp/cc2xrcrc.s 			page 84
+ARM GAS  /tmp/ccL02NoM.s 			page 84
 
 
  2908              	.LBI1005:
@@ -5038,7 +5038,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  2951              		.loc 5 32 21 discriminator 1 view .LVU707
  2952 02e6 B980     		strh	r1, [r7, #4]	@ movhi
  2953              	.LBE1017:
-ARM GAS  /tmp/cc2xrcrc.s 			page 85
+ARM GAS  /tmp/ccL02NoM.s 			page 85
 
 
  2954              	.LBE1016:
@@ -5098,7 +5098,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  2999              		.loc 5 235 13 is_stmt 1 view .LVU722
  236:libDaisy/src/hid/disp/graphics_common.h ****                         int16_t(other.GetBottom() - height_),
  3000              		.loc 5 236 17 view .LVU723
-ARM GAS  /tmp/cc2xrcrc.s 			page 86
+ARM GAS  /tmp/ccL02NoM.s 			page 86
 
 
  3001              	.LBB1026:
@@ -5158,7 +5158,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  3044              	.LBE1029:
  3045              	.LBE1046:
  237:libDaisy/src/hid/disp/graphics_common.h ****                         width_,
-ARM GAS  /tmp/cc2xrcrc.s 			page 87
+ARM GAS  /tmp/ccL02NoM.s 			page 87
 
 
  3046              		.loc 5 237 51 discriminator 1 view .LVU735
@@ -5218,7 +5218,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  3089              	.LBB1040:
  3090              	.LBI1040:
  3091              		.loc 5 261 13 is_stmt 1 view .LVU747
-ARM GAS  /tmp/cc2xrcrc.s 			page 88
+ARM GAS  /tmp/ccL02NoM.s 			page 88
 
 
  3092              		.loc 5 261 41 view .LVU748
@@ -5278,7 +5278,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
   32:libDaisy/src/hid/disp/graphics_common.h ****     {
  3136              		.loc 5 32 44 discriminator 2 view .LVU763
  3137 0320 FE80     		strh	r6, [r7, #6]	@ movhi
-ARM GAS  /tmp/cc2xrcrc.s 			page 89
+ARM GAS  /tmp/ccL02NoM.s 			page 89
 
 
  3138              	.LBE1059:
@@ -5338,7 +5338,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  3180              	.LBB1071:
   32:libDaisy/src/hid/disp/graphics_common.h ****     {
  3181              		.loc 5 32 21 discriminator 1 view .LVU776
-ARM GAS  /tmp/cc2xrcrc.s 			page 90
+ARM GAS  /tmp/ccL02NoM.s 			page 90
 
 
  3182 0330 B980     		strh	r1, [r7, #4]	@ movhi
@@ -5398,7 +5398,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  3229              		.loc 5 261 13 is_stmt 1 view .LVU787
  3230              		.loc 5 261 41 view .LVU788
  3231              		.loc 5 261 41 is_stmt 0 view .LVU789
-ARM GAS  /tmp/cc2xrcrc.s 			page 91
+ARM GAS  /tmp/ccL02NoM.s 			page 91
 
 
  3232              	.LBE1073:
@@ -5458,7 +5458,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  3277              		.loc 4 410 17 view .LVU798
  3278 036c 0192     		str	r2, [sp, #4]
  411:libDaisy/src/hid/disp/display.h ****         {
-ARM GAS  /tmp/cc2xrcrc.s 			page 92
+ARM GAS  /tmp/ccL02NoM.s 			page 92
 
 
  3279              		.loc 4 411 21 discriminator 2 view .LVU799
@@ -5518,7 +5518,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  3324              		.loc 4 173 19 discriminator 1 view .LVU808
  3325 03a6 8045     		cmp	r8, r0
  173:libDaisy/src/hid/disp/display.h ****         currentY_ = (y >= Height()) ? Height() - 1 : y;
-ARM GAS  /tmp/cc2xrcrc.s 			page 93
+ARM GAS  /tmp/ccL02NoM.s 			page 93
 
 
  3326              		.loc 4 173 43 discriminator 1 view .LVU809
@@ -5578,7 +5578,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  3370 03ce DBF80000 		ldr	r0, [fp]
  3371              	.LBE1102:
  3372              	.LBE1177:
-ARM GAS  /tmp/cc2xrcrc.s 			page 94
+ARM GAS  /tmp/ccL02NoM.s 			page 94
 
 
  3373              	.LBB1178:
@@ -5638,7 +5638,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  3418 03ee 3FF45FAE 		beq	.L175
  3419              	.LVL235:
  3420              	.L207:
-ARM GAS  /tmp/cc2xrcrc.s 			page 95
+ARM GAS  /tmp/ccL02NoM.s 			page 95
 
 
  174:libDaisy/src/hid/disp/display.h ****     }
@@ -5698,7 +5698,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  3466              	.LBE1160:
  3467              	.LBE1162:
  3468              	.LBE1164:
-ARM GAS  /tmp/cc2xrcrc.s 			page 96
+ARM GAS  /tmp/ccL02NoM.s 			page 96
 
 
  3469              	.LBE1167:
@@ -5758,7 +5758,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  3519 000c 02F00702 		and	r2, r2, #7
  3520              	.LVL243:
  366:libDaisy/src/dev/oled_ssd130x.h ****         else
-ARM GAS  /tmp/cc2xrcrc.s 			page 97
+ARM GAS  /tmp/ccL02NoM.s 			page 97
 
 
  3521              		.loc 3 366 20 view .LVU844
@@ -5818,7 +5818,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  3566              		.thumb_func
  3568              	_ZN5daisy25OneBitGraphicsDisplayImplINS_11OledDisplayINS_13SSD130xDriverILj128ELj64ENS_19SSD130xI2C
  3569              	.LVL248:
-ARM GAS  /tmp/cc2xrcrc.s 			page 98
+ARM GAS  /tmp/ccL02NoM.s 			page 98
 
 
  3570              	.LFB5290:
@@ -5878,7 +5878,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  235:libDaisy/src/hid/disp/display.h ****         int_fast16_t error  = deltaX - deltaY;
  3614              		.loc 4 235 42 view .LVU865
  3615 002e 9642     		cmp	r6, r2
-ARM GAS  /tmp/cc2xrcrc.s 			page 99
+ARM GAS  /tmp/ccL02NoM.s 			page 99
 
 
  236:libDaisy/src/hid/disp/display.h ****         int_fast16_t error2;
@@ -5938,7 +5938,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  3657              	.LVL254:
  366:libDaisy/src/dev/oled_ssd130x.h ****         else
  3658              		.loc 3 366 42 view .LVU879
-ARM GAS  /tmp/cc2xrcrc.s 			page 100
+ARM GAS  /tmp/ccL02NoM.s 			page 100
 
 
  3659              	.LBE1210:
@@ -5998,7 +5998,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  365:libDaisy/src/dev/oled_ssd130x.h ****             buffer_[x + (y / 8) * width] |= (1 << (y % 8));
  3700              		.loc 3 365 9 view .LVU893
  3701 0092 B9F1000F 		cmp	r9, #0
-ARM GAS  /tmp/cc2xrcrc.s 			page 101
+ARM GAS  /tmp/ccL02NoM.s 			page 101
 
 
  3702 0096 17D0     		beq	.L250
@@ -6058,7 +6058,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  3743 00be 9642     		cmp	r6, r2
  3744 00c0 D7D1     		bne	.L259
  3745              	.LVL263:
-ARM GAS  /tmp/cc2xrcrc.s 			page 102
+ARM GAS  /tmp/ccL02NoM.s 			page 102
 
 
  3746              	.L242:
@@ -6118,7 +6118,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  3791              	.LBE1219:
  3792              	.LBE1231:
  235:libDaisy/src/hid/disp/display.h ****         int_fast16_t error  = deltaX - deltaY;
-ARM GAS  /tmp/cc2xrcrc.s 			page 103
+ARM GAS  /tmp/ccL02NoM.s 			page 103
 
 
  3793              		.loc 4 235 42 discriminator 1 view .LVU916
@@ -6178,7 +6178,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  3841              		.weak	_ZN5daisy25OneBitGraphicsDisplayImplINS_11OledDisplayINS_13SSD130xDriverILj128ELj64ENS_19SSD
  3842              		.syntax unified
  3843              		.thumb
-ARM GAS  /tmp/cc2xrcrc.s 			page 104
+ARM GAS  /tmp/ccL02NoM.s 			page 104
 
 
  3844              		.thumb_func
@@ -6238,7 +6238,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  3892 0022 5242     		rsbs	r2, r2, #0
  3893 0024 1392     		str	r2, [sp, #76]
  3894              	.LVL272:
-ARM GAS  /tmp/cc2xrcrc.s 			page 105
+ARM GAS  /tmp/ccL02NoM.s 			page 105
 
 
  314:libDaisy/src/hid/disp/display.h ****         }
@@ -6298,7 +6298,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
   18:/usr/arm-none-eabi/include/c++/14.2.0/cmath **** // 3.1, as published by the Free Software Foundation.
   19:/usr/arm-none-eabi/include/c++/14.2.0/cmath **** 
   20:/usr/arm-none-eabi/include/c++/14.2.0/cmath **** // You should have received a copy of the GNU General Public License and
-ARM GAS  /tmp/cc2xrcrc.s 			page 106
+ARM GAS  /tmp/ccL02NoM.s 			page 106
 
 
   21:/usr/arm-none-eabi/include/c++/14.2.0/cmath **** // a copy of the GCC Runtime Library Exception along with this program;
@@ -6358,7 +6358,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
   75:/usr/arm-none-eabi/include/c++/14.2.0/cmath **** #undef modf
   76:/usr/arm-none-eabi/include/c++/14.2.0/cmath **** #undef pow
   77:/usr/arm-none-eabi/include/c++/14.2.0/cmath **** #undef sin
-ARM GAS  /tmp/cc2xrcrc.s 			page 107
+ARM GAS  /tmp/ccL02NoM.s 			page 107
 
 
   78:/usr/arm-none-eabi/include/c++/14.2.0/cmath **** #undef sinh
@@ -6418,7 +6418,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  132:/usr/arm-none-eabi/include/c++/14.2.0/cmath ****   { return __builtin_atanf(__x); }
  133:/usr/arm-none-eabi/include/c++/14.2.0/cmath **** 
  134:/usr/arm-none-eabi/include/c++/14.2.0/cmath ****   inline _GLIBCXX_CONSTEXPR long double
-ARM GAS  /tmp/cc2xrcrc.s 			page 108
+ARM GAS  /tmp/ccL02NoM.s 			page 108
 
 
  135:/usr/arm-none-eabi/include/c++/14.2.0/cmath ****   atan(long double __x)
@@ -6478,7 +6478,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  3929 005c B7EEC5AB 		vcvt.f32.f64	s20, d5
  3930              	.LVL276:
  3931              	.LBB1270:
-ARM GAS  /tmp/cc2xrcrc.s 			page 109
+ARM GAS  /tmp/ccL02NoM.s 			page 109
 
 
  3932              	.LBI1266:
@@ -6538,7 +6538,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  215:/usr/arm-none-eabi/include/c++/14.2.0/cmath ****   using ::exp;
  216:/usr/arm-none-eabi/include/c++/14.2.0/cmath **** 
  217:/usr/arm-none-eabi/include/c++/14.2.0/cmath **** #ifndef __CORRECT_ISO_CPP_MATH_H_PROTO
-ARM GAS  /tmp/cc2xrcrc.s 			page 110
+ARM GAS  /tmp/ccL02NoM.s 			page 110
 
 
  218:/usr/arm-none-eabi/include/c++/14.2.0/cmath ****   inline _GLIBCXX_CONSTEXPR float
@@ -6598,7 +6598,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  272:/usr/arm-none-eabi/include/c++/14.2.0/cmath ****   using ::fmod;
  273:/usr/arm-none-eabi/include/c++/14.2.0/cmath **** 
  274:/usr/arm-none-eabi/include/c++/14.2.0/cmath **** #ifndef __CORRECT_ISO_CPP_MATH_H_PROTO
-ARM GAS  /tmp/cc2xrcrc.s 			page 111
+ARM GAS  /tmp/ccL02NoM.s 			page 111
 
 
  275:/usr/arm-none-eabi/include/c++/14.2.0/cmath ****   inline _GLIBCXX_CONSTEXPR float
@@ -6658,7 +6658,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  329:/usr/arm-none-eabi/include/c++/14.2.0/cmath ****   inline _GLIBCXX_CONSTEXPR long double
  330:/usr/arm-none-eabi/include/c++/14.2.0/cmath ****   log(long double __x)
  331:/usr/arm-none-eabi/include/c++/14.2.0/cmath ****   { return __builtin_logl(__x); }
-ARM GAS  /tmp/cc2xrcrc.s 			page 112
+ARM GAS  /tmp/ccL02NoM.s 			page 112
 
 
  332:/usr/arm-none-eabi/include/c++/14.2.0/cmath **** #endif
@@ -6718,7 +6718,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  386:/usr/arm-none-eabi/include/c++/14.2.0/cmath ****   inline double
  387:/usr/arm-none-eabi/include/c++/14.2.0/cmath ****   pow(double __x, int __i)
  388:/usr/arm-none-eabi/include/c++/14.2.0/cmath ****   { return __builtin_powi(__x, __i); }
-ARM GAS  /tmp/cc2xrcrc.s 			page 113
+ARM GAS  /tmp/ccL02NoM.s 			page 113
 
 
  389:/usr/arm-none-eabi/include/c++/14.2.0/cmath **** 
@@ -6778,7 +6778,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  3986 0090 68EEE98A 		vnmul.f32	s17, s17, s19
  323:libDaisy/src/hid/disp/display.h **** 
  3987              		.loc 4 323 17 discriminator 1 view .LVU954
-ARM GAS  /tmp/cc2xrcrc.s 			page 114
+ARM GAS  /tmp/ccL02NoM.s 			page 114
 
 
  3988 0094 20EE690A 		vnmul.f32	s0, s0, s19
@@ -6838,7 +6838,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  4029              		.loc 4 326 9 view .LVU971
  4030 00b4 F4EEE67A 		vcmpe.f32	s15, s13
  4031 00b8 F1EE10FA 		vmrs	APSR_nzcv, FPSCR
-ARM GAS  /tmp/cc2xrcrc.s 			page 115
+ARM GAS  /tmp/ccL02NoM.s 			page 115
 
 
  4032 00bc 06D5     		bpl	.L320
@@ -6898,7 +6898,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  4071              		.loc 4 338 13 view .LVU986
  4072 00ee F046     		mov	r8, lr
  4073              	.LVL289:
-ARM GAS  /tmp/cc2xrcrc.s 			page 116
+ARM GAS  /tmp/ccL02NoM.s 			page 116
 
 
  4074              	.L291:
@@ -6958,7 +6958,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  356:libDaisy/src/hid/disp/display.h ****                     d2 = (t_sxy - t_syx < 0 || t_exy - t_eyx > 0);
  4112              		.loc 4 356 33 view .LVU1003
  4113 012a 74EEC43A 		vsub.f32	s7, s9, s8
-ARM GAS  /tmp/cc2xrcrc.s 			page 117
+ARM GAS  /tmp/ccL02NoM.s 			page 117
 
 
  346:libDaisy/src/hid/disp/display.h ****                 t_sxny = start_x * -t_y;
@@ -7018,7 +7018,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  4154              	.L336:
  357:libDaisy/src/hid/disp/display.h ****                     d3 = (t_sxny - t_syx < 0 || t_exny - t_eyx > 0);
  4155              		.loc 4 357 54 discriminator 2 view .LVU1018
-ARM GAS  /tmp/cc2xrcrc.s 			page 118
+ARM GAS  /tmp/ccL02NoM.s 			page 118
 
 
  4156 0174 36EE666A 		vsub.f32	s12, s12, s13
@@ -7078,7 +7078,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  366:libDaisy/src/hid/disp/display.h ****                 }
  4199              		.loc 4 366 47 discriminator 1 view .LVU1030
  4200 01bc F5EEC07A 		vcmpe.f32	s15, #0
-ARM GAS  /tmp/cc2xrcrc.s 			page 119
+ARM GAS  /tmp/ccL02NoM.s 			page 119
 
 
  4201 01c0 F1EE10FA 		vmrs	APSR_nzcv, FPSCR
@@ -7138,7 +7138,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  4243 01ee 58DB     		blt	.L287
  4244              	.LVL313:
  4245              	.L288:
-ARM GAS  /tmp/cc2xrcrc.s 			page 120
+ARM GAS  /tmp/ccL02NoM.s 			page 120
 
 
  398:libDaisy/src/hid/disp/display.h ****     }
@@ -7198,7 +7198,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  4290 0212 6DE7     		b	.L291
  4291              	.LVL321:
  4292              	.L329:
-ARM GAS  /tmp/cc2xrcrc.s 			page 121
+ARM GAS  /tmp/ccL02NoM.s 			page 121
 
 
  378:libDaisy/src/hid/disp/display.h ****             if(d4)
@@ -7258,7 +7258,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  4333              	.LVL325:
  366:libDaisy/src/dev/oled_ssd130x.h ****         else
  4334              		.loc 3 366 42 view .LVU1067
-ARM GAS  /tmp/cc2xrcrc.s 			page 122
+ARM GAS  /tmp/ccL02NoM.s 			page 122
 
 
  4335              	.LBE1288:
@@ -7318,7 +7318,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  365:libDaisy/src/dev/oled_ssd130x.h ****             buffer_[x + (y / 8) * width] |= (1 << (y % 8));
  4376              		.loc 3 365 9 view .LVU1081
  4377 0288 B9F1000F 		cmp	r9, #0
-ARM GAS  /tmp/cc2xrcrc.s 			page 123
+ARM GAS  /tmp/ccL02NoM.s 			page 123
 
 
  4378 028c 00F09180 		beq	.L285
@@ -7378,7 +7378,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  4421              	.LBB1303:
  4422              	.LBI1303:
   42:libDaisy/src/hid/disp/oled_display.h ****     {
-ARM GAS  /tmp/cc2xrcrc.s 			page 124
+ARM GAS  /tmp/ccL02NoM.s 			page 124
 
 
  4423              		.loc 2 42 10 is_stmt 1 view .LVU1093
@@ -7438,7 +7438,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  4463 02ec 002C     		cmp	r4, #0
  4464 02ee 3FF472AF 		beq	.L282
  4465 02f2 8FE7     		b	.L329
-ARM GAS  /tmp/cc2xrcrc.s 			page 125
+ARM GAS  /tmp/ccL02NoM.s 			page 125
 
 
  4466              	.L327:
@@ -7498,7 +7498,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  4506 0332 8EF810A0 		strb	r10, [lr, #16]
  4507              	.LVL341:
  366:libDaisy/src/dev/oled_ssd130x.h ****         else
-ARM GAS  /tmp/cc2xrcrc.s 			page 126
+ARM GAS  /tmp/ccL02NoM.s 			page 126
 
 
  4508              		.loc 3 366 42 view .LVU1122
@@ -7558,7 +7558,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  4553              	.L275:
  366:libDaisy/src/hid/disp/display.h ****                 }
  4554              		.loc 4 366 34 view .LVU1132
-ARM GAS  /tmp/cc2xrcrc.s 			page 127
+ARM GAS  /tmp/ccL02NoM.s 			page 127
 
 
  4555 0378 75EEC45A 		vsub.f32	s11, s11, s8
@@ -7618,7 +7618,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  4600              		.loc 3 368 42 is_stmt 0 view .LVU1141
  4601 03a2 2AEA0B0A 		bic	r10, r10, fp
  4602 03a6 8EF810A0 		strb	r10, [lr, #16]
-ARM GAS  /tmp/cc2xrcrc.s 			page 128
+ARM GAS  /tmp/ccL02NoM.s 			page 128
 
 
  4603              	.LVL353:
@@ -7678,7 +7678,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  4648              		.loc 3 368 42 view .LVU1150
  4649 03c4 07E7     		b	.L282
  4650              	.LVL358:
-ARM GAS  /tmp/cc2xrcrc.s 			page 129
+ARM GAS  /tmp/ccL02NoM.s 			page 129
 
 
  4651              	.L335:
@@ -7738,7 +7738,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  4696 0402 0125     		movs	r5, #1
  4697              	.LVL365:
  370:libDaisy/src/hid/disp/display.h ****                 ((ChildType*)(this))
-ARM GAS  /tmp/cc2xrcrc.s 			page 130
+ARM GAS  /tmp/ccL02NoM.s 			page 130
 
 
  4698              		.loc 4 370 13 view .LVU1160
@@ -7798,7 +7798,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  4745              	.LVL373:
  4746              	.LFB5291:
  262:libDaisy/src/hid/disp/display.h ****                   uint_fast8_t y1,
-ARM GAS  /tmp/cc2xrcrc.s 			page 131
+ARM GAS  /tmp/ccL02NoM.s 			page 131
 
 
  4747              		.loc 4 262 10 is_stmt 1 view -0
@@ -7858,7 +7858,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  363:libDaisy/src/dev/oled_ssd130x.h ****             return;
  4794              		.loc 3 363 14 is_stmt 0 view .LVU1178
  4795 001e 7F29     		cmp	r1, #127
-ARM GAS  /tmp/cc2xrcrc.s 			page 132
+ARM GAS  /tmp/ccL02NoM.s 			page 132
 
 
  4796              	.LBE1548:
@@ -7918,7 +7918,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  4839              		.loc 3 366 54 view .LVU1189
  4840 003c 05F00708 		and	r8, r5, #7
  366:libDaisy/src/dev/oled_ssd130x.h ****         else
-ARM GAS  /tmp/cc2xrcrc.s 			page 133
+ARM GAS  /tmp/ccL02NoM.s 			page 133
 
 
  4841              		.loc 3 366 48 view .LVU1190
@@ -7978,7 +7978,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  4883              		.loc 4 273 44 discriminator 1 view .LVU1202
  4884 0062 AB42     		cmp	r3, r5
  4885              	.LBB1565:
-ARM GAS  /tmp/cc2xrcrc.s 			page 134
+ARM GAS  /tmp/ccL02NoM.s 			page 134
 
 
  4886              	.LBB1561:
@@ -8038,7 +8038,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  4930              	.LBB1392:
  232:libDaisy/src/hid/disp/display.h ****         int_fast16_t deltaY = abs((int_fast16_t)y2 - (int_fast16_t)y1);
  4931              		.loc 4 232 52 is_stmt 0 view .LVU1213
-ARM GAS  /tmp/cc2xrcrc.s 			page 135
+ARM GAS  /tmp/ccL02NoM.s 			page 135
 
 
  4932 0076 ACEB0109 		sub	r9, ip, r1
@@ -8098,7 +8098,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  4976              		.loc 3 366 48 view .LVU1223
  4977 00b6 0126     		movs	r6, #1
  366:libDaisy/src/dev/oled_ssd130x.h ****         else
-ARM GAS  /tmp/cc2xrcrc.s 			page 136
+ARM GAS  /tmp/ccL02NoM.s 			page 136
 
 
  4978              		.loc 3 366 20 view .LVU1224
@@ -8158,7 +8158,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  5022 00e2 10D8     		bhi	.L356
  5023 00e4 3F2D     		cmp	r5, #63
  5024 00e6 0ED8     		bhi	.L356
-ARM GAS  /tmp/cc2xrcrc.s 			page 137
+ARM GAS  /tmp/ccL02NoM.s 			page 137
 
 
  366:libDaisy/src/dev/oled_ssd130x.h ****         else
@@ -8218,7 +8218,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  257:libDaisy/src/hid/disp/display.h ****             }
  5065              		.loc 4 257 20 view .LVU1249
  5066 0116 013D     		subs	r5, r5, #1
-ARM GAS  /tmp/cc2xrcrc.s 			page 138
+ARM GAS  /tmp/ccL02NoM.s 			page 138
 
 
  5067              	.LVL399:
@@ -8278,7 +8278,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  5111              	.LBB1438:
  5112              	.LBI1427:
  361:libDaisy/src/dev/oled_ssd130x.h ****     {
-ARM GAS  /tmp/cc2xrcrc.s 			page 139
+ARM GAS  /tmp/ccL02NoM.s 			page 139
 
 
  5113              		.loc 3 361 10 view .LVU1260
@@ -8338,7 +8338,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  5156              	.L362:
  5157              	.LVL405:
  366:libDaisy/src/dev/oled_ssd130x.h ****         else
-ARM GAS  /tmp/cc2xrcrc.s 			page 140
+ARM GAS  /tmp/ccL02NoM.s 			page 140
 
 
  5158              		.loc 3 366 42 view .LVU1272
@@ -8398,7 +8398,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  365:libDaisy/src/dev/oled_ssd130x.h ****             buffer_[x + (y / 8) * width] |= (1 << (y % 8));
  5200              		.loc 3 365 9 view .LVU1285
  5201 01a0 002A     		cmp	r2, #0
-ARM GAS  /tmp/cc2xrcrc.s 			page 141
+ARM GAS  /tmp/ccL02NoM.s 			page 141
 
 
  5202 01a2 00F0C580 		beq	.L369
@@ -8458,7 +8458,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  5244              		.loc 4 244 26 is_stmt 0 view .LVU1297
  5245              	.LBE1425:
  5246              	.LBE1424:
-ARM GAS  /tmp/cc2xrcrc.s 			page 142
+ARM GAS  /tmp/ccL02NoM.s 			page 142
 
 
  5247              	.LBB1465:
@@ -8518,7 +8518,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  5290              	.LBE1476:
  5291              	.LBE1480:
  5292              	.LBE1466:
-ARM GAS  /tmp/cc2xrcrc.s 			page 143
+ARM GAS  /tmp/ccL02NoM.s 			page 143
 
 
  5293              	.LBE1465:
@@ -8578,7 +8578,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  5337 0214 6145     		cmp	r1, ip
  5338 0216 26D0     		beq	.L385
  5339              	.L377:
-ARM GAS  /tmp/cc2xrcrc.s 			page 144
+ARM GAS  /tmp/ccL02NoM.s 			page 144
 
 
  5340              	.LVL419:
@@ -8638,7 +8638,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  5381              	.LBE1484:
  5382              	.LBE1483:
  5383              	.LBE1482:
-ARM GAS  /tmp/cc2xrcrc.s 			page 145
+ARM GAS  /tmp/ccL02NoM.s 			page 145
 
 
  247:libDaisy/src/hid/disp/display.h ****             if(error2 > -deltaY)
@@ -8698,7 +8698,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  235:libDaisy/src/hid/disp/display.h ****         int_fast16_t error  = deltaX - deltaY;
  5426              		.loc 4 235 42 view .LVU1344
  5427 0274 9E45     		cmp	lr, r3
-ARM GAS  /tmp/cc2xrcrc.s 			page 146
+ARM GAS  /tmp/ccL02NoM.s 			page 146
 
 
  5428 0276 6CD9     		bls	.L422
@@ -8758,7 +8758,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  366:libDaisy/src/dev/oled_ssd130x.h ****         else
  5474              		.loc 3 366 48 view .LVU1353
  5475 0296 0126     		movs	r6, #1
-ARM GAS  /tmp/cc2xrcrc.s 			page 147
+ARM GAS  /tmp/ccL02NoM.s 			page 147
 
 
  366:libDaisy/src/dev/oled_ssd130x.h ****         else
@@ -8818,7 +8818,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  366:libDaisy/src/dev/oled_ssd130x.h ****         else
  5518              		.loc 3 366 28 view .LVU1366
  5519 02bc DC08     		lsrs	r4, r3, #3
-ARM GAS  /tmp/cc2xrcrc.s 			page 148
+ARM GAS  /tmp/ccL02NoM.s 			page 148
 
 
  366:libDaisy/src/dev/oled_ssd130x.h ****         else
@@ -8878,7 +8878,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  5559 02ee B8BF     		it	lt
  5560 02f0 4B44     		addlt	r3, r3, r9
  5561              	.LVL438:
-ARM GAS  /tmp/cc2xrcrc.s 			page 149
+ARM GAS  /tmp/ccL02NoM.s 			page 149
 
 
  244:libDaisy/src/hid/disp/display.h ****         {
@@ -8938,7 +8938,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  5608              	.LBB1530:
  5609              	.LBB1523:
  5610              	.LBB1519:
-ARM GAS  /tmp/cc2xrcrc.s 			page 150
+ARM GAS  /tmp/ccL02NoM.s 			page 150
 
 
  5611              	.LBB1518:
@@ -8998,7 +8998,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  5657              	.LBE1531:
  5658              	.LBB1532:
  5659              	.LBB1422:
-ARM GAS  /tmp/cc2xrcrc.s 			page 151
+ARM GAS  /tmp/ccL02NoM.s 			page 151
 
 
  5660              	.LBB1418:
@@ -9058,7 +9058,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  5706              	.LBB1456:
  5707              	.LBB1441:
  5708              	.LBB1434:
-ARM GAS  /tmp/cc2xrcrc.s 			page 152
+ARM GAS  /tmp/ccL02NoM.s 			page 152
 
 
  363:libDaisy/src/dev/oled_ssd130x.h ****             return;
@@ -9118,7 +9118,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  5752 035a BBF1000F 		cmp	fp, #0
  5753 035e A4D1     		bne	.L386
  5754 0360 002E     		cmp	r6, #0
-ARM GAS  /tmp/cc2xrcrc.s 			page 153
+ARM GAS  /tmp/ccL02NoM.s 			page 153
 
 
  5755 0362 94D0     		beq	.L395
@@ -9178,7 +9178,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  5801              		.loc 3 368 42 is_stmt 0 view .LVU1424
  5802 0380 25EA0605 		bic	r5, r5, r6
  5803 0384 2574     		strb	r5, [r4, #16]
-ARM GAS  /tmp/cc2xrcrc.s 			page 154
+ARM GAS  /tmp/ccL02NoM.s 			page 154
 
 
  5804              	.LVL454:
@@ -9238,7 +9238,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  368:libDaisy/src/dev/oled_ssd130x.h ****     }
  5851              		.loc 3 368 42 is_stmt 0 view .LVU1432
  5852 0390 25EA0605 		bic	r5, r5, r6
-ARM GAS  /tmp/cc2xrcrc.s 			page 155
+ARM GAS  /tmp/ccL02NoM.s 			page 155
 
 
  5853 0394 2574     		strb	r5, [r4, #16]
@@ -9298,7 +9298,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  5901              	.L404:
  368:libDaisy/src/dev/oled_ssd130x.h ****     }
  5902              		.loc 3 368 42 view .LVU1439
-ARM GAS  /tmp/cc2xrcrc.s 			page 156
+ARM GAS  /tmp/ccL02NoM.s 			page 156
 
 
  5903              	.LBE1437:
@@ -9358,7 +9358,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
   52:screen.cpp    **** static void DrawHighlightBox(OledDisplay<OledDriver> &disp, int x, int y, int_fast16_t w, int_fast1
   53:screen.cpp    ****     int rx = disp.Width() - 1 - (x + w - 1);
   54:screen.cpp    ****     int ry = disp.Height() - 1 - (y + h - 1);
-ARM GAS  /tmp/cc2xrcrc.s 			page 157
+ARM GAS  /tmp/ccL02NoM.s 			page 157
 
 
   55:screen.cpp    ****     disp.DrawRect(rx, ry, rx + w - 1, ry + h - 1, on, true);
@@ -9418,7 +9418,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  5948              		@ frame_needed = 0, uses_anonymous_args = 0
  106:screen.cpp    ****     OledDisplay<OledDriver>::Config disp_cfg;
  5949              		.loc 1 106 5 view .LVU1446
-ARM GAS  /tmp/cc2xrcrc.s 			page 158
+ARM GAS  /tmp/ccL02NoM.s 			page 158
 
 
  105:screen.cpp    ****     OledDisplay<OledDriver>::Config disp_cfg;
@@ -9478,7 +9478,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
   21:libDaisy/src/per/i2c.h ****  *      i2c.Init(i2c_conf);
   22:libDaisy/src/per/i2c.h ****  *      // now i2c points to the corresponding peripheral and can be used.
   23:libDaisy/src/per/i2c.h ****  *      i2c.TransmitBlocking( ... );
-ARM GAS  /tmp/cc2xrcrc.s 			page 159
+ARM GAS  /tmp/ccL02NoM.s 			page 159
 
 
   24:libDaisy/src/per/i2c.h ****  */
@@ -9538,7 +9538,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
   12:libDaisy/src/daisy_core.h **** #elif defined(__GNUC__)
   13:libDaisy/src/daisy_core.h **** #define FORCE_INLINE inline __attribute__((always_inline)) /**< & */
   14:libDaisy/src/daisy_core.h **** #else
-ARM GAS  /tmp/cc2xrcrc.s 			page 160
+ARM GAS  /tmp/ccL02NoM.s 			page 160
 
 
   15:libDaisy/src/daisy_core.h **** #error unknown compiler
@@ -9598,7 +9598,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
   69:libDaisy/src/daisy_core.h **** FORCE_INLINE float cube(float x)
   70:libDaisy/src/daisy_core.h **** {
   71:libDaisy/src/daisy_core.h ****     return (x * x) * x;
-ARM GAS  /tmp/cc2xrcrc.s 			page 161
+ARM GAS  /tmp/ccL02NoM.s 			page 161
 
 
   72:libDaisy/src/daisy_core.h **** }
@@ -9658,7 +9658,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  126:libDaisy/src/daisy_core.h ****     Converts float to Signed 16-bit
  127:libDaisy/src/daisy_core.h **** */
  128:libDaisy/src/daisy_core.h **** FORCE_INLINE int16_t f2s16(float x)
-ARM GAS  /tmp/cc2xrcrc.s 			page 162
+ARM GAS  /tmp/ccL02NoM.s 			page 162
 
 
  129:libDaisy/src/daisy_core.h **** {
@@ -9718,7 +9718,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  183:libDaisy/src/daisy_core.h ****     PORTG, /**< Port G */
  184:libDaisy/src/daisy_core.h ****     PORTH, /**< Port H */
  185:libDaisy/src/daisy_core.h ****     PORTI, /**< Port I */
-ARM GAS  /tmp/cc2xrcrc.s 			page 163
+ARM GAS  /tmp/ccL02NoM.s 			page 163
 
 
  186:libDaisy/src/daisy_core.h ****     PORTJ, /**< Port J */
@@ -9778,7 +9778,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  201:libDaisy/src/daisy_core.h **** 
  6010              		.loc 8 201 15 is_stmt 0 view .LVU1468
  6011              	.LBE1639:
-ARM GAS  /tmp/cc2xrcrc.s 			page 164
+ARM GAS  /tmp/ccL02NoM.s 			page 164
 
 
   35:libDaisy/src/dev/oled_ssd130x.h ****         }
@@ -9838,7 +9838,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
   41:libDaisy/src/dev/oled_ssd130x.h ****     };
  6059              		.loc 3 41 18 view .LVU1482
  6060 0024 0AA9     		add	r1, sp, #40
-ARM GAS  /tmp/cc2xrcrc.s 			page 165
+ARM GAS  /tmp/ccL02NoM.s 			page 165
 
 
  6061 0026 62F30703 		bfi	r3, r2, #0, #8
@@ -9898,7 +9898,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  6105              	.LBE1651:
  6106              	.LBE1650:
  6107              	.LBB1653:
-ARM GAS  /tmp/cc2xrcrc.s 			page 166
+ARM GAS  /tmp/ccL02NoM.s 			page 166
 
 
  6108              	.LBB1647:
@@ -9958,7 +9958,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  6147              		.loc 3 45 17 view .LVU1507
  6148 007a ADF80C30 		strh	r3, [sp, #12]	@ movhi
   46:libDaisy/src/dev/oled_ssd130x.h ****     };
-ARM GAS  /tmp/cc2xrcrc.s 			page 167
+ARM GAS  /tmp/ccL02NoM.s 			page 167
 
 
  6149              		.loc 3 46 9 is_stmt 1 view .LVU1508
@@ -10018,7 +10018,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  6189 00a6 03AA     		add	r2, sp, #12
  6190 00a8 0096     		str	r6, [sp]
   45:libDaisy/src/dev/oled_ssd130x.h ****         i2c_.TransmitBlocking(i2c_address_, buf, 2, 1000);
-ARM GAS  /tmp/cc2xrcrc.s 			page 168
+ARM GAS  /tmp/ccL02NoM.s 			page 168
 
 
  6191              		.loc 3 45 17 view .LVU1523
@@ -10078,7 +10078,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  6231 00d2 4FF45A43 		mov	r3, #55808
   46:libDaisy/src/dev/oled_ssd130x.h ****     };
  6232              		.loc 3 46 30 view .LVU1538
-ARM GAS  /tmp/cc2xrcrc.s 			page 169
+ARM GAS  /tmp/ccL02NoM.s 			page 169
 
 
  6233 00d6 03AA     		add	r2, sp, #12
@@ -10138,7 +10138,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  6273              		.loc 3 45 9 view .LVU1552
   45:libDaisy/src/dev/oled_ssd130x.h ****         i2c_.TransmitBlocking(i2c_address_, buf, 2, 1000);
  6274              		.loc 3 45 17 is_stmt 0 view .LVU1553
-ARM GAS  /tmp/cc2xrcrc.s 			page 170
+ARM GAS  /tmp/ccL02NoM.s 			page 170
 
 
  6275 0102 4FF45343 		mov	r3, #54016
@@ -10198,7 +10198,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  6315              		.loc 3 45 9 view .LVU1567
   45:libDaisy/src/dev/oled_ssd130x.h ****         i2c_.TransmitBlocking(i2c_address_, buf, 2, 1000);
  6316              		.loc 3 45 17 is_stmt 0 view .LVU1568
-ARM GAS  /tmp/cc2xrcrc.s 			page 171
+ARM GAS  /tmp/ccL02NoM.s 			page 171
 
 
  6317 012e 4FF48043 		mov	r3, #16384
@@ -10258,7 +10258,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  6357              		.loc 3 43 10 is_stmt 1 view .LVU1582
  6358              	.LBB1676:
   45:libDaisy/src/dev/oled_ssd130x.h ****         i2c_.TransmitBlocking(i2c_address_, buf, 2, 1000);
-ARM GAS  /tmp/cc2xrcrc.s 			page 172
+ARM GAS  /tmp/ccL02NoM.s 			page 172
 
 
  6359              		.loc 3 45 9 view .LVU1583
@@ -10318,7 +10318,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  6399              	.LBB1679:
  6400              	.LBI1679:
   43:libDaisy/src/dev/oled_ssd130x.h ****     {
-ARM GAS  /tmp/cc2xrcrc.s 			page 173
+ARM GAS  /tmp/ccL02NoM.s 			page 173
 
 
  6401              		.loc 3 43 10 is_stmt 1 view .LVU1598
@@ -10378,7 +10378,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  6440              		.loc 3 46 30 view .LVU1613
  6441              	.LBE1682:
  6442              	.LBE1681:
-ARM GAS  /tmp/cc2xrcrc.s 			page 174
+ARM GAS  /tmp/ccL02NoM.s 			page 174
 
 
  6443              	.LBB1683:
@@ -10438,7 +10438,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  6482 01ea FFF7FEFF 		bl	_ZN5daisy9I2CHandle16TransmitBlockingEtPhtm
  6483              	.LVL490:
   46:libDaisy/src/dev/oled_ssd130x.h ****     };
-ARM GAS  /tmp/cc2xrcrc.s 			page 175
+ARM GAS  /tmp/ccL02NoM.s 			page 175
 
 
  6484              		.loc 3 46 30 view .LVU1629
@@ -10498,7 +10498,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  6523 0212 04F10800 		add	r0, r4, #8
  6524 0216 2B46     		mov	r3, r5
  6525 0218 217B     		ldrb	r1, [r4, #12]	@ zero_extendqisi2
-ARM GAS  /tmp/cc2xrcrc.s 			page 176
+ARM GAS  /tmp/ccL02NoM.s 			page 176
 
 
  6526 021a FFF7FEFF 		bl	_ZN5daisy9I2CHandle16TransmitBlockingEtPhtm
@@ -10558,7 +10558,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  6565              		.loc 3 46 9 is_stmt 1 view .LVU1659
   46:libDaisy/src/dev/oled_ssd130x.h ****     };
  6566              		.loc 3 46 30 is_stmt 0 view .LVU1660
-ARM GAS  /tmp/cc2xrcrc.s 			page 177
+ARM GAS  /tmp/ccL02NoM.s 			page 177
 
 
  6567 0242 04F10800 		add	r0, r4, #8
@@ -10618,7 +10618,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  6608              		.loc 3 45 17 view .LVU1673
  6609 0272 4FF42F44 		mov	r4, #44800
  6610 0276 ADF80C40 		strh	r4, [sp, #12]	@ movhi
-ARM GAS  /tmp/cc2xrcrc.s 			page 178
+ARM GAS  /tmp/ccL02NoM.s 			page 178
 
 
   46:libDaisy/src/dev/oled_ssd130x.h ****     };
@@ -10678,7 +10678,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  6662              		.section	.text._ZN6Screen10DrawStatusER10ProcessingR8Hardware,"ax",%progbits
  6663              		.align	1
  6664              		.p2align 2,,3
-ARM GAS  /tmp/cc2xrcrc.s 			page 179
+ARM GAS  /tmp/ccL02NoM.s 			page 179
 
 
  6665              		.global	_ZN6Screen10DrawStatusER10ProcessingR8Hardware
@@ -10738,7 +10738,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  6710              	.LBE1726:
  6711              	.LBE1725:
  6712              	.LBE1724:
-ARM GAS  /tmp/cc2xrcrc.s 			page 180
+ARM GAS  /tmp/ccL02NoM.s 			page 180
 
 
  6713              	.LBB1727:
@@ -10798,7 +10798,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  6754              	.LVL503:
   45:libDaisy/src/dev/oled_ssd130x.h ****         i2c_.TransmitBlocking(i2c_address_, buf, 2, 1000);
  6755              		.loc 3 45 17 view .LVU1705
-ARM GAS  /tmp/cc2xrcrc.s 			page 181
+ARM GAS  /tmp/ccL02NoM.s 			page 181
 
 
  6756 004a ADF80C50 		strh	r5, [sp, #12]	@ movhi
@@ -10858,7 +10858,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
   53:libDaisy/src/dev/oled_ssd130x.h ****             i2c_.TransmitBlocking(i2c_address_, buf, 2, 1000);
  6796              		.loc 3 53 13 view .LVU1720
   54:libDaisy/src/dev/oled_ssd130x.h ****         }
-ARM GAS  /tmp/cc2xrcrc.s 			page 182
+ARM GAS  /tmp/ccL02NoM.s 			page 182
 
 
  6797              		.loc 3 54 34 is_stmt 0 view .LVU1721
@@ -10918,7 +10918,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  6839 009c B8F1B80F 		cmp	r8, #184
  6840 00a0 C0D1     		bne	.L431
  6841              	.LBE1729:
-ARM GAS  /tmp/cc2xrcrc.s 			page 183
+ARM GAS  /tmp/ccL02NoM.s 			page 183
 
 
  6842              	.LBE1728:
@@ -10978,7 +10978,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  6881              		.loc 1 119 56 is_stmt 1 discriminator 2 view .LVU1749
  119:screen.cpp    ****     display.Fill(false);
  6882              		.loc 1 119 75 is_stmt 0 discriminator 2 view .LVU1750
-ARM GAS  /tmp/cc2xrcrc.s 			page 184
+ARM GAS  /tmp/ccL02NoM.s 			page 184
 
 
  6883 00b8 84F8FD30 		strb	r3, [r4, #253]
@@ -11038,7 +11038,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  6925              		.section	.text._ZN6Screen16DrawHardwareTestER8Hardware,"ax",%progbits
  6926              		.align	1
  6927              		.p2align 2,,3
-ARM GAS  /tmp/cc2xrcrc.s 			page 185
+ARM GAS  /tmp/ccL02NoM.s 			page 185
 
 
  6928              		.global	_ZN6Screen16DrawHardwareTestER8Hardware
@@ -11098,7 +11098,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  6973 000a 0C46     		mov	r4, r1
  6974              	.LBB1780:
  6975              	.LBB1778:
-ARM GAS  /tmp/cc2xrcrc.s 			page 186
+ARM GAS  /tmp/ccL02NoM.s 			page 186
 
 
  6976              	.LBB1776:
@@ -11158,12 +11158,12 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  7001              		.loc 1 134 5 is_stmt 1 view .LVU1769
  134:screen.cpp    ****     DrawStringRot180(display, 5, 12, buf, Font_7x10, true);
  7002              		.loc 1 134 13 is_stmt 0 discriminator 1 view .LVU1770
-ARM GAS  /tmp/cc2xrcrc.s 			page 187
+ARM GAS  /tmp/ccL02NoM.s 			page 187
 
 
  7003 0022 94F89820 		ldrb	r2, [r4, #152]	@ zero_extendqisi2
  134:screen.cpp    ****     DrawStringRot180(display, 5, 12, buf, Font_7x10, true);
- 7004              		.loc 1 134 13 view .LVU1771
+ 7004              		.loc 1 134 41 view .LVU1771
  7005 0026 D4F89831 		ldr	r3, [r4, #408]
  7006              	.LVL521:
  7007              	.LBB1781:
@@ -11218,7 +11218,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  7014              		.file 10 "libDaisy/src/hid/switch.h"
    1:libDaisy/src/hid/switch.h **** #pragma once
    2:libDaisy/src/hid/switch.h **** #ifndef DSY_SWITCH_H
-ARM GAS  /tmp/cc2xrcrc.s 			page 188
+ARM GAS  /tmp/ccL02NoM.s 			page 188
 
 
    3:libDaisy/src/hid/switch.h **** #define DSY_SWITCH_H
@@ -11278,7 +11278,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
   57:libDaisy/src/hid/switch.h ****     /** 
   58:libDaisy/src/hid/switch.h ****     Called at update_rate to debounce and handle timing for the switch.
   59:libDaisy/src/hid/switch.h ****     In order for events not to be missed, its important that the Edge/Pressed checks
-ARM GAS  /tmp/cc2xrcrc.s 			page 189
+ARM GAS  /tmp/ccL02NoM.s 			page 189
 
 
   60:libDaisy/src/hid/switch.h ****     be made at the same rate as the debounce function is being called.
@@ -11338,12 +11338,12 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  7045              		.loc 1 138 5 is_stmt 1 view .LVU1785
  138:screen.cpp    ****     DrawStringRot180(display, 5, 24, buf, Font_7x10, true);
  7046              		.loc 1 138 13 is_stmt 0 discriminator 1 view .LVU1786
-ARM GAS  /tmp/cc2xrcrc.s 			page 190
+ARM GAS  /tmp/ccL02NoM.s 			page 190
 
 
  7047 004a 94F8F420 		ldrb	r2, [r4, #244]	@ zero_extendqisi2
  138:screen.cpp    ****     DrawStringRot180(display, 5, 24, buf, Font_7x10, true);
- 7048              		.loc 1 138 13 view .LVU1787
+ 7048              		.loc 1 138 41 view .LVU1787
  7049 004e D4F89C31 		ldr	r3, [r4, #412]
  7050              	.LVL524:
  7051              	.LBB1784:
@@ -11398,7 +11398,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  7091              		.loc 10 74 35 view .LVU1803
  7092              		.loc 10 74 35 is_stmt 0 view .LVU1804
  7093              	.LBE1788:
-ARM GAS  /tmp/cc2xrcrc.s 			page 191
+ARM GAS  /tmp/ccL02NoM.s 			page 191
 
 
  7094              	.LBE1787:
@@ -11458,7 +11458,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  7134              		.loc 1 145 13 discriminator 4 view .LVU1821
  7135 0096 04A8     		add	r0, sp, #16
  145:screen.cpp    ****     DrawStringRot180(display, 5, 48, buf, Font_7x10, true);
-ARM GAS  /tmp/cc2xrcrc.s 			page 192
+ARM GAS  /tmp/ccL02NoM.s 			page 192
 
 
  7136              		.loc 1 145 13 discriminator 1 view .LVU1822
@@ -11518,7 +11518,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  7178 00c0 04A9     		add	r1, sp, #16
  7179 00c2 3C20     		movs	r0, #60
  7180 00c4 FFF7FEFF 		bl	_ZL16DrawStringRot180RN5daisy11OledDisplayINS_13SSD130xDriverILj128ELj64ENS_19SSD130xI2CTranspo
-ARM GAS  /tmp/cc2xrcrc.s 			page 193
+ARM GAS  /tmp/ccL02NoM.s 			page 193
 
 
  7181              	.LVL532:
@@ -11578,7 +11578,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
   43:libDaisy/src/dev/oled_ssd130x.h ****     {
  7221              		.loc 3 43 10 is_stmt 1 view .LVU1854
  7222              	.LBB1799:
-ARM GAS  /tmp/cc2xrcrc.s 			page 194
+ARM GAS  /tmp/ccL02NoM.s 			page 194
 
 
   45:libDaisy/src/dev/oled_ssd130x.h ****         i2c_.TransmitBlocking(i2c_address_, buf, 2, 1000);
@@ -11638,7 +11638,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  7263              	.LBE1800:
  7264              	.LBB1802:
  7265              	.LBI1802:
-ARM GAS  /tmp/cc2xrcrc.s 			page 195
+ARM GAS  /tmp/ccL02NoM.s 			page 195
 
 
   49:libDaisy/src/dev/oled_ssd130x.h ****     {
@@ -11698,7 +11698,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  7303              		.loc 3 51 29 is_stmt 0 discriminator 1 view .LVU1885
  7304              	.LBE1803:
  7305              	.LBE1802:
-ARM GAS  /tmp/cc2xrcrc.s 			page 196
+ARM GAS  /tmp/ccL02NoM.s 			page 196
 
 
  7306              		.loc 3 392 9 is_stmt 1 discriminator 3 view .LVU1886
@@ -11758,7 +11758,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  7361              	.LVL545:
  7362              	.LBB1819:
  7363              	.LBB1820:
-ARM GAS  /tmp/cc2xrcrc.s 			page 197
+ARM GAS  /tmp/ccL02NoM.s 			page 197
 
 
  7364              	.LBI1820:
@@ -11818,7 +11818,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
   75:libDaisy/src/per/i2c.h ****     };
   76:libDaisy/src/per/i2c.h **** 
   77:libDaisy/src/per/i2c.h ****     enum class Direction
-ARM GAS  /tmp/cc2xrcrc.s 			page 198
+ARM GAS  /tmp/ccL02NoM.s 			page 198
 
 
   78:libDaisy/src/per/i2c.h ****     {
@@ -11878,7 +11878,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  7440              	.LBB1833:
  7441              	.LBB1831:
  7442              	.LBB1830:
-ARM GAS  /tmp/cc2xrcrc.s 			page 199
+ARM GAS  /tmp/ccL02NoM.s 			page 199
 
 
  7443              		.loc 7 83 19 view .LVU1907
@@ -11938,7 +11938,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  7498 0024 00000000 		.word	_ZN5daisy25OneBitGraphicsDisplayImplINS_11OledDisplayINS_13SSD130xDriverILj128ELj64ENS_19SSD
  7499 0028 00000000 		.word	_ZN5daisy25OneBitGraphicsDisplayImplINS_11OledDisplayINS_13SSD130xDriverILj128ELj64ENS_19SSD
  7500 002c 00000000 		.word	_ZN5daisy25OneBitGraphicsDisplayImplINS_11OledDisplayINS_13SSD130xDriverILj128ELj64ENS_19SSD
-ARM GAS  /tmp/cc2xrcrc.s 			page 200
+ARM GAS  /tmp/ccL02NoM.s 			page 200
 
 
  7501 0030 00000000 		.word	_ZN5daisy25OneBitGraphicsDisplayImplINS_11OledDisplayINS_13SSD130xDriverILj128ELj64ENS_19SSD
@@ -11998,7 +11998,7 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  7553              		.file 51 "/usr/lib/gcc/arm-none-eabi/14.2.0/include/stdarg.h"
  7554              		.file 52 "/usr/arm-none-eabi/include/stdio.h"
  7555              		.file 53 "/usr/arm-none-eabi/include/string.h"
-ARM GAS  /tmp/cc2xrcrc.s 			page 201
+ARM GAS  /tmp/ccL02NoM.s 			page 201
 
 
  7556              		.file 54 "DaisySP/Source/Control/adenv.h"
@@ -12010,75 +12010,75 @@ ARM GAS  /tmp/cc2xrcrc.s 			page 1
  7562              		.file 60 "screen.h"
  7563              		.file 61 "/usr/arm-none-eabi/include/c++/14.2.0/new"
  7564              		.file 62 "<built-in>"
-ARM GAS  /tmp/cc2xrcrc.s 			page 202
+ARM GAS  /tmp/ccL02NoM.s 			page 202
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 screen.cpp
-     /tmp/cc2xrcrc.s:20     .text._ZNK5daisy11OledDisplayINS_13SSD130xDriverILj128ELj64ENS_19SSD130xI2CTransportEEEE5WidthEv:00000000 $t
-     /tmp/cc2xrcrc.s:27     .text._ZNK5daisy11OledDisplayINS_13SSD130xDriverILj128ELj64ENS_19SSD130xI2CTransportEEEE5WidthEv:00000000 _ZNK5daisy11OledDisplayINS_13SSD130xDriverILj128ELj64ENS_19SSD130xI2CTransportEEEE5WidthEv
-     /tmp/cc2xrcrc.s:45     .text._ZNK5daisy11OledDisplayINS_13SSD130xDriverILj128ELj64ENS_19SSD130xI2CTransportEEEE6HeightEv:00000000 $t
-     /tmp/cc2xrcrc.s:52     .text._ZNK5daisy11OledDisplayINS_13SSD130xDriverILj128ELj64ENS_19SSD130xI2CTransportEEEE6HeightEv:00000000 _ZNK5daisy11OledDisplayINS_13SSD130xDriverILj128ELj64ENS_19SSD130xI2CTransportEEEE6HeightEv
-     /tmp/cc2xrcrc.s:69     .text._ZN5daisy11OledDisplayINS_13SSD130xDriverILj128ELj64ENS_19SSD130xI2CTransportEEEE4FillEb:00000000 $t
-     /tmp/cc2xrcrc.s:76     .text._ZN5daisy11OledDisplayINS_13SSD130xDriverILj128ELj64ENS_19SSD130xI2CTransportEEEE4FillEb:00000000 _ZN5daisy11OledDisplayINS_13SSD130xDriverILj128ELj64ENS_19SSD130xI2CTransportEEEE4FillEb
-     /tmp/cc2xrcrc.s:110    .text._ZN5daisy11OledDisplayINS_13SSD130xDriverILj128ELj64ENS_19SSD130xI2CTransportEEEED2Ev:00000000 $t
-     /tmp/cc2xrcrc.s:117    .text._ZN5daisy11OledDisplayINS_13SSD130xDriverILj128ELj64ENS_19SSD130xI2CTransportEEEED2Ev:00000000 _ZN5daisy11OledDisplayINS_13SSD130xDriverILj128ELj64ENS_19SSD130xI2CTransportEEEED2Ev
-     /tmp/cc2xrcrc.s:117    .text._ZN5daisy11OledDisplayINS_13SSD130xDriverILj128ELj64ENS_19SSD130xI2CTransportEEEED2Ev:00000000 _ZN5daisy11OledDisplayINS_13SSD130xDriverILj128ELj64ENS_19SSD130xI2CTransportEEEED1Ev
-     /tmp/cc2xrcrc.s:145    .text._ZN5daisy11OledDisplayINS_13SSD130xDriverILj128ELj64ENS_19SSD130xI2CTransportEEEE14UpdateFinishedEv:00000000 $t
-     /tmp/cc2xrcrc.s:152    .text._ZN5daisy11OledDisplayINS_13SSD130xDriverILj128ELj64ENS_19SSD130xI2CTransportEEEE14UpdateFinishedEv:00000000 _ZN5daisy11OledDisplayINS_13SSD130xDriverILj128ELj64ENS_19SSD130xI2CTransportEEEE14UpdateFinishedEv
-     /tmp/cc2xrcrc.s:169    .text._ZN5daisy11OledDisplayINS_13SSD130xDriverILj128ELj64ENS_19SSD130xI2CTransportEEEED0Ev:00000000 $t
-     /tmp/cc2xrcrc.s:176    .text._ZN5daisy11OledDisplayINS_13SSD130xDriverILj128ELj64ENS_19SSD130xI2CTransportEEEED0Ev:00000000 _ZN5daisy11OledDisplayINS_13SSD130xDriverILj128ELj64ENS_19SSD130xI2CTransportEEEED0Ev
-     /tmp/cc2xrcrc.s:218    .text._ZL16DrawStringRot180RN5daisy11OledDisplayINS_13SSD130xDriverILj128ELj64ENS_19SSD130xI2CTransportEEEEEiiPKcRK7FontDefb.constprop.0:00000000 $t
-     /tmp/cc2xrcrc.s:224    .text._ZL16DrawStringRot180RN5daisy11OledDisplayINS_13SSD130xDriverILj128ELj64ENS_19SSD130xI2CTransportEEEEEiiPKcRK7FontDefb.constprop.0:00000000 _ZL16DrawStringRot180RN5daisy11OledDisplayINS_13SSD130xDriverILj128ELj64ENS_19SSD130xI2CTransportEEEEEiiPKcRK7FontDefb.constprop.0
-     /tmp/cc2xrcrc.s:565    .text._ZL16DrawStringRot180RN5daisy11OledDisplayINS_13SSD130xDriverILj128ELj64ENS_19SSD130xI2CTransportEEEEEiiPKcRK7FontDefb.constprop.0:000000f0 $d
-     /tmp/cc2xrcrc.s:7509   .bss._ZL7display:00000000 _ZL7display
-     /tmp/cc2xrcrc.s:571    .text._ZN5daisy11OledDisplayINS_13SSD130xDriverILj128ELj64ENS_19SSD130xI2CTransportEEEE6UpdateEv:00000000 $t
-     /tmp/cc2xrcrc.s:578    .text._ZN5daisy11OledDisplayINS_13SSD130xDriverILj128ELj64ENS_19SSD130xI2CTransportEEEE6UpdateEv:00000000 _ZN5daisy11OledDisplayINS_13SSD130xDriverILj128ELj64ENS_19SSD130xI2CTransportEEEE6UpdateEv
-     /tmp/cc2xrcrc.s:745    .text._ZN5daisy25OneBitGraphicsDisplayImplINS_11OledDisplayINS_13SSD130xDriverILj128ELj64ENS_19SSD130xI2CTransportEEEEEE11WriteStringEPKc7FontDefb:00000000 $t
-     /tmp/cc2xrcrc.s:752    .text._ZN5daisy25OneBitGraphicsDisplayImplINS_11OledDisplayINS_13SSD130xDriverILj128ELj64ENS_19SSD130xI2CTransportEEEEEE11WriteStringEPKc7FontDefb:00000000 _ZN5daisy25OneBitGraphicsDisplayImplINS_11OledDisplayINS_13SSD130xDriverILj128ELj64ENS_19SSD130xI2CTransportEEEEEE11WriteStringEPKc7FontDefb
-     /tmp/cc2xrcrc.s:1286   .text._ZN5daisy25OneBitGraphicsDisplayImplINS_11OledDisplayINS_13SSD130xDriverILj128ELj64ENS_19SSD130xI2CTransportEEEEEE11WriteStringEPKc7FontDefb:00000204 $d
-     /tmp/cc2xrcrc.s:1296   .text._ZN5daisy25OneBitGraphicsDisplayImplINS_11OledDisplayINS_13SSD130xDriverILj128ELj64ENS_19SSD130xI2CTransportEEEEEE9WriteCharEc7FontDefb:00000000 $t
-     /tmp/cc2xrcrc.s:1303   .text._ZN5daisy25OneBitGraphicsDisplayImplINS_11OledDisplayINS_13SSD130xDriverILj128ELj64ENS_19SSD130xI2CTransportEEEEEE9WriteCharEc7FontDefb:00000000 _ZN5daisy25OneBitGraphicsDisplayImplINS_11OledDisplayINS_13SSD130xDriverILj128ELj64ENS_19SSD130xI2CTransportEEEEEE9WriteCharEc7FontDefb
-     /tmp/cc2xrcrc.s:1790   .text._ZN5daisy25OneBitGraphicsDisplayImplINS_11OledDisplayINS_13SSD130xDriverILj128ELj64ENS_19SSD130xI2CTransportEEEEEE9WriteCharEc7FontDefb:000001b0 $d
-     /tmp/cc2xrcrc.s:1798   .text._ZN5daisy25OneBitGraphicsDisplayImplINS_11OledDisplayINS_13SSD130xDriverILj128ELj64ENS_19SSD130xI2CTransportEEEEEE18WriteStringAlignedEPKcRK7FontDefNS_9RectangleENS_9AlignmentEb:00000000 $t
-     /tmp/cc2xrcrc.s:1805   .text._ZN5daisy25OneBitGraphicsDisplayImplINS_11OledDisplayINS_13SSD130xDriverILj128ELj64ENS_19SSD130xI2CTransportEEEEEE18WriteStringAlignedEPKcRK7FontDefNS_9RectangleENS_9AlignmentEb:00000000 _ZN5daisy25OneBitGraphicsDisplayImplINS_11OledDisplayINS_13SSD130xDriverILj128ELj64ENS_19SSD130xI2CTransportEEEEEE18WriteStringAlignedEPKcRK7FontDefNS_9RectangleENS_9AlignmentEb
-     /tmp/cc2xrcrc.s:1960   .text._ZN5daisy25OneBitGraphicsDisplayImplINS_11OledDisplayINS_13SSD130xDriverILj128ELj64ENS_19SSD130xI2CTransportEEEEEE18WriteStringAlignedEPKcRK7FontDefNS_9RectangleENS_9AlignmentEb:00000056 $d
-     /tmp/cc2xrcrc.s:1969   .text._ZN5daisy25OneBitGraphicsDisplayImplINS_11OledDisplayINS_13SSD130xDriverILj128ELj64ENS_19SSD130xI2CTransportEEEEEE18WriteStringAlignedEPKcRK7FontDefNS_9RectangleENS_9AlignmentEb:00000068 $t
-     /tmp/cc2xrcrc.s:3274   .text._ZN5daisy25OneBitGraphicsDisplayImplINS_11OledDisplayINS_13SSD130xDriverILj128ELj64ENS_19SSD130xI2CTransportEEEEEE18WriteStringAlignedEPKcRK7FontDefNS_9RectangleENS_9AlignmentEb:00000364 $d
-     /tmp/cc2xrcrc.s:3278   .text._ZN5daisy25OneBitGraphicsDisplayImplINS_11OledDisplayINS_13SSD130xDriverILj128ELj64ENS_19SSD130xI2CTransportEEEEEE18WriteStringAlignedEPKcRK7FontDefNS_9RectangleENS_9AlignmentEb:0000036c $t
-     /tmp/cc2xrcrc.s:3484   .text._ZN5daisy25OneBitGraphicsDisplayImplINS_11OledDisplayINS_13SSD130xDriverILj128ELj64ENS_19SSD130xI2CTransportEEEEEE18WriteStringAlignedEPKcRK7FontDefNS_9RectangleENS_9AlignmentEb:0000042c $d
-     /tmp/cc2xrcrc.s:3492   .text._ZN5daisy11OledDisplayINS_13SSD130xDriverILj128ELj64ENS_19SSD130xI2CTransportEEEE9DrawPixelEjjb:00000000 $t
-     /tmp/cc2xrcrc.s:3499   .text._ZN5daisy11OledDisplayINS_13SSD130xDriverILj128ELj64ENS_19SSD130xI2CTransportEEEE9DrawPixelEjjb:00000000 _ZN5daisy11OledDisplayINS_13SSD130xDriverILj128ELj64ENS_19SSD130xI2CTransportEEEE9DrawPixelEjjb
-     /tmp/cc2xrcrc.s:3561   .text._ZN5daisy25OneBitGraphicsDisplayImplINS_11OledDisplayINS_13SSD130xDriverILj128ELj64ENS_19SSD130xI2CTransportEEEEEE8DrawLineEjjjjb:00000000 $t
-     /tmp/cc2xrcrc.s:3568   .text._ZN5daisy25OneBitGraphicsDisplayImplINS_11OledDisplayINS_13SSD130xDriverILj128ELj64ENS_19SSD130xI2CTransportEEEEEE8DrawLineEjjjjb:00000000 _ZN5daisy25OneBitGraphicsDisplayImplINS_11OledDisplayINS_13SSD130xDriverILj128ELj64ENS_19SSD130xI2CTransportEEEEEE8DrawLineEjjjjb
-     /tmp/cc2xrcrc.s:3839   .text._ZN5daisy25OneBitGraphicsDisplayImplINS_11OledDisplayINS_13SSD130xDriverILj128ELj64ENS_19SSD130xI2CTransportEEEEEE7DrawArcEjjjiib:00000000 $t
-     /tmp/cc2xrcrc.s:3846   .text._ZN5daisy25OneBitGraphicsDisplayImplINS_11OledDisplayINS_13SSD130xDriverILj128ELj64ENS_19SSD130xI2CTransportEEEEEE7DrawArcEjjjiib:00000000 _ZN5daisy25OneBitGraphicsDisplayImplINS_11OledDisplayINS_13SSD130xDriverILj128ELj64ENS_19SSD130xI2CTransportEEEEEE7DrawArcEjjjiib
-     /tmp/cc2xrcrc.s:4519   .text._ZN5daisy25OneBitGraphicsDisplayImplINS_11OledDisplayINS_13SSD130xDriverILj128ELj64ENS_19SSD130xI2CTransportEEEEEE7DrawArcEjjjiib:00000340 $d
-     /tmp/cc2xrcrc.s:4526   .text._ZN5daisy25OneBitGraphicsDisplayImplINS_11OledDisplayINS_13SSD130xDriverILj128ELj64ENS_19SSD130xI2CTransportEEEEEE7DrawArcEjjjiib:00000350 $t
-     /tmp/cc2xrcrc.s:4737   .text._ZN5daisy25OneBitGraphicsDisplayImplINS_11OledDisplayINS_13SSD130xDriverILj128ELj64ENS_19SSD130xI2CTransportEEEEEE8DrawRectEjjjjbb:00000000 $t
-     /tmp/cc2xrcrc.s:4744   .text._ZN5daisy25OneBitGraphicsDisplayImplINS_11OledDisplayINS_13SSD130xDriverILj128ELj64ENS_19SSD130xI2CTransportEEEEEE8DrawRectEjjjjbb:00000000 _ZN5daisy25OneBitGraphicsDisplayImplINS_11OledDisplayINS_13SSD130xDriverILj128ELj64ENS_19SSD130xI2CTransportEEEEEE8DrawRectEjjjjbb
-     /tmp/cc2xrcrc.s:5935   .text._ZN6Screen4InitERN5daisy9DaisySeedE:00000000 $t
-     /tmp/cc2xrcrc.s:5942   .text._ZN6Screen4InitERN5daisy9DaisySeedE:00000000 _ZN6Screen4InitERN5daisy9DaisySeedE
-     /tmp/cc2xrcrc.s:6629   .text._ZN6Screen4InitERN5daisy9DaisySeedE:00000284 $d
-     /tmp/cc2xrcrc.s:6634   .text._ZN6Screen5BlinkEm:00000000 $t
-     /tmp/cc2xrcrc.s:6641   .text._ZN6Screen5BlinkEm:00000000 _ZN6Screen5BlinkEm
-     /tmp/cc2xrcrc.s:6663   .text._ZN6Screen10DrawStatusER10ProcessingR8Hardware:00000000 $t
-     /tmp/cc2xrcrc.s:6670   .text._ZN6Screen10DrawStatusER10ProcessingR8Hardware:00000000 _ZN6Screen10DrawStatusER10ProcessingR8Hardware
-     /tmp/cc2xrcrc.s:6888   .text._ZN6Screen10DrawStatusER10ProcessingR8Hardware:000000c0 $d
-     /tmp/cc2xrcrc.s:6895   .rodata._ZN6Screen16DrawHardwareTestER8Hardware.str1.4:00000000 $d
-     /tmp/cc2xrcrc.s:6926   .text._ZN6Screen16DrawHardwareTestER8Hardware:00000000 $t
-     /tmp/cc2xrcrc.s:6933   .text._ZN6Screen16DrawHardwareTestER8Hardware:00000000 _ZN6Screen16DrawHardwareTestER8Hardware
-     /tmp/cc2xrcrc.s:7328   .text._ZN6Screen16DrawHardwareTestER8Hardware:00000150 $d
-     /tmp/cc2xrcrc.s:7345   .text.startup._GLOBAL__sub_I__ZN6Screen4InitERN5daisy9DaisySeedE:00000000 $t
-ARM GAS  /tmp/cc2xrcrc.s 			page 203
+     /tmp/ccL02NoM.s:20     .text._ZNK5daisy11OledDisplayINS_13SSD130xDriverILj128ELj64ENS_19SSD130xI2CTransportEEEE5WidthEv:00000000 $t
+     /tmp/ccL02NoM.s:27     .text._ZNK5daisy11OledDisplayINS_13SSD130xDriverILj128ELj64ENS_19SSD130xI2CTransportEEEE5WidthEv:00000000 _ZNK5daisy11OledDisplayINS_13SSD130xDriverILj128ELj64ENS_19SSD130xI2CTransportEEEE5WidthEv
+     /tmp/ccL02NoM.s:45     .text._ZNK5daisy11OledDisplayINS_13SSD130xDriverILj128ELj64ENS_19SSD130xI2CTransportEEEE6HeightEv:00000000 $t
+     /tmp/ccL02NoM.s:52     .text._ZNK5daisy11OledDisplayINS_13SSD130xDriverILj128ELj64ENS_19SSD130xI2CTransportEEEE6HeightEv:00000000 _ZNK5daisy11OledDisplayINS_13SSD130xDriverILj128ELj64ENS_19SSD130xI2CTransportEEEE6HeightEv
+     /tmp/ccL02NoM.s:69     .text._ZN5daisy11OledDisplayINS_13SSD130xDriverILj128ELj64ENS_19SSD130xI2CTransportEEEE4FillEb:00000000 $t
+     /tmp/ccL02NoM.s:76     .text._ZN5daisy11OledDisplayINS_13SSD130xDriverILj128ELj64ENS_19SSD130xI2CTransportEEEE4FillEb:00000000 _ZN5daisy11OledDisplayINS_13SSD130xDriverILj128ELj64ENS_19SSD130xI2CTransportEEEE4FillEb
+     /tmp/ccL02NoM.s:110    .text._ZN5daisy11OledDisplayINS_13SSD130xDriverILj128ELj64ENS_19SSD130xI2CTransportEEEED2Ev:00000000 $t
+     /tmp/ccL02NoM.s:117    .text._ZN5daisy11OledDisplayINS_13SSD130xDriverILj128ELj64ENS_19SSD130xI2CTransportEEEED2Ev:00000000 _ZN5daisy11OledDisplayINS_13SSD130xDriverILj128ELj64ENS_19SSD130xI2CTransportEEEED2Ev
+     /tmp/ccL02NoM.s:117    .text._ZN5daisy11OledDisplayINS_13SSD130xDriverILj128ELj64ENS_19SSD130xI2CTransportEEEED2Ev:00000000 _ZN5daisy11OledDisplayINS_13SSD130xDriverILj128ELj64ENS_19SSD130xI2CTransportEEEED1Ev
+     /tmp/ccL02NoM.s:145    .text._ZN5daisy11OledDisplayINS_13SSD130xDriverILj128ELj64ENS_19SSD130xI2CTransportEEEE14UpdateFinishedEv:00000000 $t
+     /tmp/ccL02NoM.s:152    .text._ZN5daisy11OledDisplayINS_13SSD130xDriverILj128ELj64ENS_19SSD130xI2CTransportEEEE14UpdateFinishedEv:00000000 _ZN5daisy11OledDisplayINS_13SSD130xDriverILj128ELj64ENS_19SSD130xI2CTransportEEEE14UpdateFinishedEv
+     /tmp/ccL02NoM.s:169    .text._ZN5daisy11OledDisplayINS_13SSD130xDriverILj128ELj64ENS_19SSD130xI2CTransportEEEED0Ev:00000000 $t
+     /tmp/ccL02NoM.s:176    .text._ZN5daisy11OledDisplayINS_13SSD130xDriverILj128ELj64ENS_19SSD130xI2CTransportEEEED0Ev:00000000 _ZN5daisy11OledDisplayINS_13SSD130xDriverILj128ELj64ENS_19SSD130xI2CTransportEEEED0Ev
+     /tmp/ccL02NoM.s:218    .text._ZL16DrawStringRot180RN5daisy11OledDisplayINS_13SSD130xDriverILj128ELj64ENS_19SSD130xI2CTransportEEEEEiiPKcRK7FontDefb.constprop.0:00000000 $t
+     /tmp/ccL02NoM.s:224    .text._ZL16DrawStringRot180RN5daisy11OledDisplayINS_13SSD130xDriverILj128ELj64ENS_19SSD130xI2CTransportEEEEEiiPKcRK7FontDefb.constprop.0:00000000 _ZL16DrawStringRot180RN5daisy11OledDisplayINS_13SSD130xDriverILj128ELj64ENS_19SSD130xI2CTransportEEEEEiiPKcRK7FontDefb.constprop.0
+     /tmp/ccL02NoM.s:565    .text._ZL16DrawStringRot180RN5daisy11OledDisplayINS_13SSD130xDriverILj128ELj64ENS_19SSD130xI2CTransportEEEEEiiPKcRK7FontDefb.constprop.0:000000f0 $d
+     /tmp/ccL02NoM.s:7509   .bss._ZL7display:00000000 _ZL7display
+     /tmp/ccL02NoM.s:571    .text._ZN5daisy11OledDisplayINS_13SSD130xDriverILj128ELj64ENS_19SSD130xI2CTransportEEEE6UpdateEv:00000000 $t
+     /tmp/ccL02NoM.s:578    .text._ZN5daisy11OledDisplayINS_13SSD130xDriverILj128ELj64ENS_19SSD130xI2CTransportEEEE6UpdateEv:00000000 _ZN5daisy11OledDisplayINS_13SSD130xDriverILj128ELj64ENS_19SSD130xI2CTransportEEEE6UpdateEv
+     /tmp/ccL02NoM.s:745    .text._ZN5daisy25OneBitGraphicsDisplayImplINS_11OledDisplayINS_13SSD130xDriverILj128ELj64ENS_19SSD130xI2CTransportEEEEEE11WriteStringEPKc7FontDefb:00000000 $t
+     /tmp/ccL02NoM.s:752    .text._ZN5daisy25OneBitGraphicsDisplayImplINS_11OledDisplayINS_13SSD130xDriverILj128ELj64ENS_19SSD130xI2CTransportEEEEEE11WriteStringEPKc7FontDefb:00000000 _ZN5daisy25OneBitGraphicsDisplayImplINS_11OledDisplayINS_13SSD130xDriverILj128ELj64ENS_19SSD130xI2CTransportEEEEEE11WriteStringEPKc7FontDefb
+     /tmp/ccL02NoM.s:1286   .text._ZN5daisy25OneBitGraphicsDisplayImplINS_11OledDisplayINS_13SSD130xDriverILj128ELj64ENS_19SSD130xI2CTransportEEEEEE11WriteStringEPKc7FontDefb:00000204 $d
+     /tmp/ccL02NoM.s:1296   .text._ZN5daisy25OneBitGraphicsDisplayImplINS_11OledDisplayINS_13SSD130xDriverILj128ELj64ENS_19SSD130xI2CTransportEEEEEE9WriteCharEc7FontDefb:00000000 $t
+     /tmp/ccL02NoM.s:1303   .text._ZN5daisy25OneBitGraphicsDisplayImplINS_11OledDisplayINS_13SSD130xDriverILj128ELj64ENS_19SSD130xI2CTransportEEEEEE9WriteCharEc7FontDefb:00000000 _ZN5daisy25OneBitGraphicsDisplayImplINS_11OledDisplayINS_13SSD130xDriverILj128ELj64ENS_19SSD130xI2CTransportEEEEEE9WriteCharEc7FontDefb
+     /tmp/ccL02NoM.s:1790   .text._ZN5daisy25OneBitGraphicsDisplayImplINS_11OledDisplayINS_13SSD130xDriverILj128ELj64ENS_19SSD130xI2CTransportEEEEEE9WriteCharEc7FontDefb:000001b0 $d
+     /tmp/ccL02NoM.s:1798   .text._ZN5daisy25OneBitGraphicsDisplayImplINS_11OledDisplayINS_13SSD130xDriverILj128ELj64ENS_19SSD130xI2CTransportEEEEEE18WriteStringAlignedEPKcRK7FontDefNS_9RectangleENS_9AlignmentEb:00000000 $t
+     /tmp/ccL02NoM.s:1805   .text._ZN5daisy25OneBitGraphicsDisplayImplINS_11OledDisplayINS_13SSD130xDriverILj128ELj64ENS_19SSD130xI2CTransportEEEEEE18WriteStringAlignedEPKcRK7FontDefNS_9RectangleENS_9AlignmentEb:00000000 _ZN5daisy25OneBitGraphicsDisplayImplINS_11OledDisplayINS_13SSD130xDriverILj128ELj64ENS_19SSD130xI2CTransportEEEEEE18WriteStringAlignedEPKcRK7FontDefNS_9RectangleENS_9AlignmentEb
+     /tmp/ccL02NoM.s:1960   .text._ZN5daisy25OneBitGraphicsDisplayImplINS_11OledDisplayINS_13SSD130xDriverILj128ELj64ENS_19SSD130xI2CTransportEEEEEE18WriteStringAlignedEPKcRK7FontDefNS_9RectangleENS_9AlignmentEb:00000056 $d
+     /tmp/ccL02NoM.s:1969   .text._ZN5daisy25OneBitGraphicsDisplayImplINS_11OledDisplayINS_13SSD130xDriverILj128ELj64ENS_19SSD130xI2CTransportEEEEEE18WriteStringAlignedEPKcRK7FontDefNS_9RectangleENS_9AlignmentEb:00000068 $t
+     /tmp/ccL02NoM.s:3274   .text._ZN5daisy25OneBitGraphicsDisplayImplINS_11OledDisplayINS_13SSD130xDriverILj128ELj64ENS_19SSD130xI2CTransportEEEEEE18WriteStringAlignedEPKcRK7FontDefNS_9RectangleENS_9AlignmentEb:00000364 $d
+     /tmp/ccL02NoM.s:3278   .text._ZN5daisy25OneBitGraphicsDisplayImplINS_11OledDisplayINS_13SSD130xDriverILj128ELj64ENS_19SSD130xI2CTransportEEEEEE18WriteStringAlignedEPKcRK7FontDefNS_9RectangleENS_9AlignmentEb:0000036c $t
+     /tmp/ccL02NoM.s:3484   .text._ZN5daisy25OneBitGraphicsDisplayImplINS_11OledDisplayINS_13SSD130xDriverILj128ELj64ENS_19SSD130xI2CTransportEEEEEE18WriteStringAlignedEPKcRK7FontDefNS_9RectangleENS_9AlignmentEb:0000042c $d
+     /tmp/ccL02NoM.s:3492   .text._ZN5daisy11OledDisplayINS_13SSD130xDriverILj128ELj64ENS_19SSD130xI2CTransportEEEE9DrawPixelEjjb:00000000 $t
+     /tmp/ccL02NoM.s:3499   .text._ZN5daisy11OledDisplayINS_13SSD130xDriverILj128ELj64ENS_19SSD130xI2CTransportEEEE9DrawPixelEjjb:00000000 _ZN5daisy11OledDisplayINS_13SSD130xDriverILj128ELj64ENS_19SSD130xI2CTransportEEEE9DrawPixelEjjb
+     /tmp/ccL02NoM.s:3561   .text._ZN5daisy25OneBitGraphicsDisplayImplINS_11OledDisplayINS_13SSD130xDriverILj128ELj64ENS_19SSD130xI2CTransportEEEEEE8DrawLineEjjjjb:00000000 $t
+     /tmp/ccL02NoM.s:3568   .text._ZN5daisy25OneBitGraphicsDisplayImplINS_11OledDisplayINS_13SSD130xDriverILj128ELj64ENS_19SSD130xI2CTransportEEEEEE8DrawLineEjjjjb:00000000 _ZN5daisy25OneBitGraphicsDisplayImplINS_11OledDisplayINS_13SSD130xDriverILj128ELj64ENS_19SSD130xI2CTransportEEEEEE8DrawLineEjjjjb
+     /tmp/ccL02NoM.s:3839   .text._ZN5daisy25OneBitGraphicsDisplayImplINS_11OledDisplayINS_13SSD130xDriverILj128ELj64ENS_19SSD130xI2CTransportEEEEEE7DrawArcEjjjiib:00000000 $t
+     /tmp/ccL02NoM.s:3846   .text._ZN5daisy25OneBitGraphicsDisplayImplINS_11OledDisplayINS_13SSD130xDriverILj128ELj64ENS_19SSD130xI2CTransportEEEEEE7DrawArcEjjjiib:00000000 _ZN5daisy25OneBitGraphicsDisplayImplINS_11OledDisplayINS_13SSD130xDriverILj128ELj64ENS_19SSD130xI2CTransportEEEEEE7DrawArcEjjjiib
+     /tmp/ccL02NoM.s:4519   .text._ZN5daisy25OneBitGraphicsDisplayImplINS_11OledDisplayINS_13SSD130xDriverILj128ELj64ENS_19SSD130xI2CTransportEEEEEE7DrawArcEjjjiib:00000340 $d
+     /tmp/ccL02NoM.s:4526   .text._ZN5daisy25OneBitGraphicsDisplayImplINS_11OledDisplayINS_13SSD130xDriverILj128ELj64ENS_19SSD130xI2CTransportEEEEEE7DrawArcEjjjiib:00000350 $t
+     /tmp/ccL02NoM.s:4737   .text._ZN5daisy25OneBitGraphicsDisplayImplINS_11OledDisplayINS_13SSD130xDriverILj128ELj64ENS_19SSD130xI2CTransportEEEEEE8DrawRectEjjjjbb:00000000 $t
+     /tmp/ccL02NoM.s:4744   .text._ZN5daisy25OneBitGraphicsDisplayImplINS_11OledDisplayINS_13SSD130xDriverILj128ELj64ENS_19SSD130xI2CTransportEEEEEE8DrawRectEjjjjbb:00000000 _ZN5daisy25OneBitGraphicsDisplayImplINS_11OledDisplayINS_13SSD130xDriverILj128ELj64ENS_19SSD130xI2CTransportEEEEEE8DrawRectEjjjjbb
+     /tmp/ccL02NoM.s:5935   .text._ZN6Screen4InitERN5daisy9DaisySeedE:00000000 $t
+     /tmp/ccL02NoM.s:5942   .text._ZN6Screen4InitERN5daisy9DaisySeedE:00000000 _ZN6Screen4InitERN5daisy9DaisySeedE
+     /tmp/ccL02NoM.s:6629   .text._ZN6Screen4InitERN5daisy9DaisySeedE:00000284 $d
+     /tmp/ccL02NoM.s:6634   .text._ZN6Screen5BlinkEm:00000000 $t
+     /tmp/ccL02NoM.s:6641   .text._ZN6Screen5BlinkEm:00000000 _ZN6Screen5BlinkEm
+     /tmp/ccL02NoM.s:6663   .text._ZN6Screen10DrawStatusER10ProcessingR8Hardware:00000000 $t
+     /tmp/ccL02NoM.s:6670   .text._ZN6Screen10DrawStatusER10ProcessingR8Hardware:00000000 _ZN6Screen10DrawStatusER10ProcessingR8Hardware
+     /tmp/ccL02NoM.s:6888   .text._ZN6Screen10DrawStatusER10ProcessingR8Hardware:000000c0 $d
+     /tmp/ccL02NoM.s:6895   .rodata._ZN6Screen16DrawHardwareTestER8Hardware.str1.4:00000000 $d
+     /tmp/ccL02NoM.s:6926   .text._ZN6Screen16DrawHardwareTestER8Hardware:00000000 $t
+     /tmp/ccL02NoM.s:6933   .text._ZN6Screen16DrawHardwareTestER8Hardware:00000000 _ZN6Screen16DrawHardwareTestER8Hardware
+     /tmp/ccL02NoM.s:7328   .text._ZN6Screen16DrawHardwareTestER8Hardware:00000150 $d
+     /tmp/ccL02NoM.s:7345   .text.startup._GLOBAL__sub_I__ZN6Screen4InitERN5daisy9DaisySeedE:00000000 $t
+ARM GAS  /tmp/ccL02NoM.s 			page 203
 
 
-     /tmp/cc2xrcrc.s:7351   .text.startup._GLOBAL__sub_I__ZN6Screen4InitERN5daisy9DaisySeedE:00000000 _GLOBAL__sub_I__ZN6Screen4InitERN5daisy9DaisySeedE
-     /tmp/cc2xrcrc.s:7471   .text.startup._GLOBAL__sub_I__ZN6Screen4InitERN5daisy9DaisySeedE:0000001c $d
-     /tmp/cc2xrcrc.s:7488   .rodata._ZTVN5daisy11OledDisplayINS_13SSD130xDriverILj128ELj64ENS_19SSD130xI2CTransportEEEEE:00000000 _ZTVN5daisy11OledDisplayINS_13SSD130xDriverILj128ELj64ENS_19SSD130xI2CTransportEEEEE
-     /tmp/cc2xrcrc.s:7481   .init_array:00000000 $d
-     /tmp/cc2xrcrc.s:7485   .rodata._ZTVN5daisy11OledDisplayINS_13SSD130xDriverILj128ELj64ENS_19SSD130xI2CTransportEEEEE:00000000 $d
-     /tmp/cc2xrcrc.s:7506   .bss._ZL7display:00000000 $d
+     /tmp/ccL02NoM.s:7351   .text.startup._GLOBAL__sub_I__ZN6Screen4InitERN5daisy9DaisySeedE:00000000 _GLOBAL__sub_I__ZN6Screen4InitERN5daisy9DaisySeedE
+     /tmp/ccL02NoM.s:7471   .text.startup._GLOBAL__sub_I__ZN6Screen4InitERN5daisy9DaisySeedE:0000001c $d
+     /tmp/ccL02NoM.s:7488   .rodata._ZTVN5daisy11OledDisplayINS_13SSD130xDriverILj128ELj64ENS_19SSD130xI2CTransportEEEEE:00000000 _ZTVN5daisy11OledDisplayINS_13SSD130xDriverILj128ELj64ENS_19SSD130xI2CTransportEEEEE
+     /tmp/ccL02NoM.s:7481   .init_array:00000000 $d
+     /tmp/ccL02NoM.s:7485   .rodata._ZTVN5daisy11OledDisplayINS_13SSD130xDriverILj128ELj64ENS_19SSD130xI2CTransportEEEEE:00000000 $d
+     /tmp/ccL02NoM.s:7506   .bss._ZL7display:00000000 $d
                            .group:00000000 _ZN5daisy11OledDisplayINS_13SSD130xDriverILj128ELj64ENS_19SSD130xI2CTransportEEEED5Ev
 
 UNDEFINED SYMBOLS

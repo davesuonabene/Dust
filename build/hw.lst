@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccQew8XQ.s 			page 1
+ARM GAS  /tmp/ccPbbhbW.s 			page 1
 
 
    1              		.cpu cortex-m7
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccQew8XQ.s 			page 1
   46              	.LVL1:
   10:hw.cpp        ****     seed.SetAudioBlockSize(4);
   47              		.loc 1 10 5 is_stmt 1 view .LVU4
-ARM GAS  /tmp/ccQew8XQ.s 			page 2
+ARM GAS  /tmp/ccPbbhbW.s 			page 2
 
 
   48              		.loc 1 10 27 is_stmt 0 view .LVU5
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccQew8XQ.s 			page 1
   93 004e DDE90223 		ldrd	r2, r3, [sp, #8]
   94 0052 FFF7FEFF 		bl	_ZN5daisy7Encoder4InitENS_3PinES1_S1_f
   95              	.LVL8:
-ARM GAS  /tmp/ccQew8XQ.s 			page 3
+ARM GAS  /tmp/ccPbbhbW.s 			page 3
 
 
   19:hw.cpp        ****     
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccQew8XQ.s 			page 1
  143              	.LVL15:
  144              		.loc 1 25 17 discriminator 2 view .LVU39
  145 00a0 0799     		ldr	r1, [sp, #28]
-ARM GAS  /tmp/ccQew8XQ.s 			page 4
+ARM GAS  /tmp/ccPbbhbW.s 			page 4
 
 
  146 00a2 04F59670 		add	r0, r4, #300
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccQew8XQ.s 			page 1
    7:hw.h          **** 
    8:hw.h          **** // 20 seconds @ 48kHz = 960,000 samples
    9:hw.h          **** #define LOOPER_MAX_SAMPLES 960000
-ARM GAS  /tmp/ccQew8XQ.s 			page 5
+ARM GAS  /tmp/ccPbbhbW.s 			page 5
 
 
   10:hw.h          **** 
@@ -257,8 +257,8 @@ ARM GAS  /tmp/ccQew8XQ.s 			page 1
   23:hw.h          ****     Switch    button3;
   24:hw.h          **** 
   25:hw.h          ****     // --- Testing Variables ---
-  26:hw.h          ****     int enc1_count = 0;
-  27:hw.h          ****     int enc2_count = 0;
+  26:hw.h          ****     int volatile enc1_count = 0;
+  27:hw.h          ****     int volatile enc2_count = 0;
   28:hw.h          **** 
   29:hw.h          ****     float     sample_rate;
   30:hw.h          **** 
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccQew8XQ.s 			page 1
   64:hw.h          ****     void Reset()
  189              		.loc 2 64 10 view .LVU53
  190              	.LBB9:
-ARM GAS  /tmp/ccQew8XQ.s 			page 6
+ARM GAS  /tmp/ccPbbhbW.s 			page 6
 
 
   65:hw.h          ****     {
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccQew8XQ.s 			page 1
  230              		.align	1
  231              		.p2align 2,,3
  232              		.global	_ZN8Hardware19ProcessTestControlsEv
-ARM GAS  /tmp/ccQew8XQ.s 			page 7
+ARM GAS  /tmp/ccPbbhbW.s 			page 7
 
 
  233              		.syntax unified
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccQew8XQ.s 			page 1
   40:hw.cpp        **** 
   41:hw.cpp        ****     enc1_count += encoder1.Increment();
  278              		.loc 1 41 5 is_stmt 1 view .LVU83
-ARM GAS  /tmp/ccQew8XQ.s 			page 8
+ARM GAS  /tmp/ccPbbhbW.s 			page 8
 
 
  279              	.LBB10:
@@ -470,7 +470,7 @@ ARM GAS  /tmp/ccQew8XQ.s 			page 1
  292              		.loc 3 33 56 discriminator 1 view .LVU88
  293              	.LBE11:
  294              	.LBE10:
- 295              		.loc 1 41 16 discriminator 1 view .LVU89
+ 295              		.loc 1 41 5 discriminator 1 view .LVU89
  296 0034 D4F89811 		ldr	r1, [r4, #408]
  297              	.LBB12:
  298              	.LBB13:
@@ -478,12 +478,12 @@ ARM GAS  /tmp/ccQew8XQ.s 			page 1
  300 0038 94F8D430 		ldrb	r3, [r4, #212]	@ zero_extendqisi2
  301              	.LBE13:
  302              	.LBE12:
-ARM GAS  /tmp/ccQew8XQ.s 			page 9
+ARM GAS  /tmp/ccPbbhbW.s 			page 9
 
 
  303              		.loc 1 41 16 discriminator 1 view .LVU91
- 304 003c 1144     		add	r1, r1, r2
- 305 003e C4F89811 		str	r1, [r4, #408]
+ 304 003c 0A44     		add	r2, r2, r1
+ 305 003e C4F89821 		str	r2, [r4, #408]
   42:hw.cpp        ****     enc2_count += encoder2.Increment();
  306              		.loc 1 42 5 is_stmt 1 view .LVU92
  307              	.LVL33:
@@ -501,101 +501,102 @@ ARM GAS  /tmp/ccQew8XQ.s 			page 1
  319              		.loc 3 33 56 discriminator 1 view .LVU97
  320              	.LBE14:
  321              	.LBE15:
- 322              		.loc 1 42 16 discriminator 1 view .LVU98
+ 322              		.loc 1 42 5 discriminator 1 view .LVU98
  323 0048 D4F89C21 		ldr	r2, [r4, #412]
- 324 004c 1A44     		add	r2, r2, r3
- 325 004e C4F89C21 		str	r2, [r4, #412]
+ 324              		.loc 1 42 16 discriminator 1 view .LVU99
+ 325 004c 1344     		add	r3, r3, r2
+ 326 004e C4F89C31 		str	r3, [r4, #412]
   43:hw.cpp        **** }...
- 326              		.loc 1 43 1 view .LVU99
- 327 0052 10BD     		pop	{r4, pc}
- 328              		.loc 1 43 1 view .LVU100
- 329              		.cfi_endproc
- 330              	.LFE4892:
- 332              		.global	_ZN8Hardware8buffer_bE
- 333              		.section	.sdram_bss,"aw"
- 334              		.align	2
- 337              	_ZN8Hardware8buffer_bE:
- 338 0000 00000000 		.space	3840000
- 338      00000000 
- 338      00000000 
- 338      00000000 
- 338      00000000 
- 339              		.global	_ZN8Hardware8buffer_aE
- 340              		.align	2
- 343              	_ZN8Hardware8buffer_aE:
- 344 3a9800 00000000 		.space	3840000
- 344      00000000 
- 344      00000000 
- 344      00000000 
- 344      00000000 
- 345              		.text
- 346              	.Letext0:
- 347              		.file 4 "/usr/arm-none-eabi/include/machine/_default_types.h"
- 348              		.file 5 "/usr/arm-none-eabi/include/sys/_stdint.h"
- 349              		.file 6 "/usr/arm-none-eabi/include/stdint.h"
- 350              		.file 7 "/usr/lib/gcc/arm-none-eabi/14.2.0/include/stddef.h"
- 351              		.file 8 "/usr/arm-none-eabi/include/c++/14.2.0/cmath"
- 352              		.file 9 "/usr/arm-none-eabi/include/c++/14.2.0/bits/std_abs.h"
- 353              		.file 10 "/usr/arm-none-eabi/include/c++/14.2.0/cstdlib"
- 354              		.file 11 "/usr/arm-none-eabi/include/c++/14.2.0/cstdint"
-ARM GAS  /tmp/ccQew8XQ.s 			page 10
+ 327              		.loc 1 43 1 view .LVU100
+ 328 0052 10BD     		pop	{r4, pc}
+ 329              		.loc 1 43 1 view .LVU101
+ 330              		.cfi_endproc
+ 331              	.LFE4892:
+ 333              		.global	_ZN8Hardware8buffer_bE
+ 334              		.section	.sdram_bss,"aw"
+ 335              		.align	2
+ 338              	_ZN8Hardware8buffer_bE:
+ 339 0000 00000000 		.space	3840000
+ 339      00000000 
+ 339      00000000 
+ 339      00000000 
+ 339      00000000 
+ 340              		.global	_ZN8Hardware8buffer_aE
+ 341              		.align	2
+ 344              	_ZN8Hardware8buffer_aE:
+ 345 3a9800 00000000 		.space	3840000
+ 345      00000000 
+ 345      00000000 
+ 345      00000000 
+ 345      00000000 
+ 346              		.text
+ 347              	.Letext0:
+ 348              		.file 4 "/usr/arm-none-eabi/include/machine/_default_types.h"
+ 349              		.file 5 "/usr/arm-none-eabi/include/sys/_stdint.h"
+ 350              		.file 6 "/usr/arm-none-eabi/include/stdint.h"
+ 351              		.file 7 "/usr/lib/gcc/arm-none-eabi/14.2.0/include/stddef.h"
+ 352              		.file 8 "/usr/arm-none-eabi/include/c++/14.2.0/cmath"
+ 353              		.file 9 "/usr/arm-none-eabi/include/c++/14.2.0/bits/std_abs.h"
+ 354              		.file 10 "/usr/arm-none-eabi/include/c++/14.2.0/cstdlib"
+ARM GAS  /tmp/ccPbbhbW.s 			page 10
 
 
- 355              		.file 12 "/usr/arm-none-eabi/include/c++/14.2.0/type_traits"
- 356              		.file 13 "/usr/arm-none-eabi/include/c++/14.2.0/debug/debug.h"
- 357              		.file 14 "/usr/arm-none-eabi/include/c++/14.2.0/cstdarg"
- 358              		.file 15 "/usr/arm-none-eabi/include/c++/14.2.0/cstdio"
- 359              		.file 16 "/usr/arm-none-eabi/include/c++/14.2.0/cstring"
- 360              		.file 17 "/usr/arm-none-eabi/include/c++/14.2.0/cwchar"
- 361              		.file 18 "/usr/arm-none-eabi/include/c++/14.2.0/clocale"
- 362              		.file 19 "/usr/arm-none-eabi/include/c++/14.2.0/bits/stl_pair.h"
- 363              		.file 20 "/usr/arm-none-eabi/include/c++/14.2.0/bits/charconv.h"
- 364              		.file 21 "/usr/arm-none-eabi/include/c++/14.2.0/bits/predefined_ops.h"
- 365              		.file 22 "/usr/arm-none-eabi/include/sys/_types.h"
- 366              		.file 23 "/usr/arm-none-eabi/include/sys/reent.h"
- 367              		.file 24 "/usr/arm-none-eabi/include/sys/lock.h"
- 368              		.file 25 "/usr/arm-none-eabi/include/math.h"
- 369              		.file 26 "/usr/arm-none-eabi/include/stdlib.h"
- 370              		.file 27 "/usr/arm-none-eabi/include/c++/14.2.0/math.h"
- 371              		.file 28 "/usr/arm-none-eabi/include/c++/14.2.0/stdlib.h"
- 372              		.file 29 "/usr/arm-none-eabi/include/c++/14.2.0/arm-none-eabi/thumb/v7e-m+dp/hard/bits/c++config.h
- 373              		.file 30 "libDaisy/src/daisy_core.h"
- 374              		.file 31 "libDaisy/src/sys/system.h"
- 375              		.file 32 "libDaisy/src/per/qspi.h"
- 376              		.file 33 "libDaisy/src/per/dac.h"
- 377              		.file 34 "libDaisy/src/per/gpio.h"
- 378              		.file 35 "libDaisy/src/per/sai.h"
- 379              		.file 36 "libDaisy/src/hid/audio.h"
- 380              		.file 37 "libDaisy/src/per/adc.h"
- 381              		.file 38 "libDaisy/src/hid/usb.h"
- 382              		.file 39 "libDaisy/src/hid/switch.h"
- 383              		.file 40 "libDaisy/src/util/wav_format.h"
- 384              		.file 41 "libDaisy/src/dev/sr_595.h"
- 385              		.file 42 "libDaisy/src/dev/codec_ak4556.h"
- 386              		.file 43 "libDaisy/src/dev/max11300.h"
- 387              		.file 44 "libDaisy/src/daisy_seed.h"
- 388              		.file 45 "libDaisy/src/dev/sdram.h"
- 389              		.file 46 "/usr/lib/gcc/arm-none-eabi/14.2.0/include/stdarg.h"
- 390              		.file 47 "/usr/arm-none-eabi/include/stdio.h"
- 391              		.file 48 "/usr/arm-none-eabi/include/string.h"
- 392              		.file 49 "DaisySP/Source/Control/adenv.h"
- 393              		.file 50 "DaisySP/Source/Utility/dsp.h"
- 394              		.file 51 "/usr/arm-none-eabi/include/wchar.h"
- 395              		.file 52 "/usr/arm-none-eabi/include/locale.h"
- 396              		.file 53 "<built-in>"
-ARM GAS  /tmp/ccQew8XQ.s 			page 11
+ 355              		.file 11 "/usr/arm-none-eabi/include/c++/14.2.0/cstdint"
+ 356              		.file 12 "/usr/arm-none-eabi/include/c++/14.2.0/type_traits"
+ 357              		.file 13 "/usr/arm-none-eabi/include/c++/14.2.0/debug/debug.h"
+ 358              		.file 14 "/usr/arm-none-eabi/include/c++/14.2.0/cstdarg"
+ 359              		.file 15 "/usr/arm-none-eabi/include/c++/14.2.0/cstdio"
+ 360              		.file 16 "/usr/arm-none-eabi/include/c++/14.2.0/cstring"
+ 361              		.file 17 "/usr/arm-none-eabi/include/c++/14.2.0/cwchar"
+ 362              		.file 18 "/usr/arm-none-eabi/include/c++/14.2.0/clocale"
+ 363              		.file 19 "/usr/arm-none-eabi/include/c++/14.2.0/bits/stl_pair.h"
+ 364              		.file 20 "/usr/arm-none-eabi/include/c++/14.2.0/bits/charconv.h"
+ 365              		.file 21 "/usr/arm-none-eabi/include/c++/14.2.0/bits/predefined_ops.h"
+ 366              		.file 22 "/usr/arm-none-eabi/include/sys/_types.h"
+ 367              		.file 23 "/usr/arm-none-eabi/include/sys/reent.h"
+ 368              		.file 24 "/usr/arm-none-eabi/include/sys/lock.h"
+ 369              		.file 25 "/usr/arm-none-eabi/include/math.h"
+ 370              		.file 26 "/usr/arm-none-eabi/include/stdlib.h"
+ 371              		.file 27 "/usr/arm-none-eabi/include/c++/14.2.0/math.h"
+ 372              		.file 28 "/usr/arm-none-eabi/include/c++/14.2.0/stdlib.h"
+ 373              		.file 29 "/usr/arm-none-eabi/include/c++/14.2.0/arm-none-eabi/thumb/v7e-m+dp/hard/bits/c++config.h
+ 374              		.file 30 "libDaisy/src/daisy_core.h"
+ 375              		.file 31 "libDaisy/src/sys/system.h"
+ 376              		.file 32 "libDaisy/src/per/qspi.h"
+ 377              		.file 33 "libDaisy/src/per/dac.h"
+ 378              		.file 34 "libDaisy/src/per/gpio.h"
+ 379              		.file 35 "libDaisy/src/per/sai.h"
+ 380              		.file 36 "libDaisy/src/hid/audio.h"
+ 381              		.file 37 "libDaisy/src/per/adc.h"
+ 382              		.file 38 "libDaisy/src/hid/usb.h"
+ 383              		.file 39 "libDaisy/src/hid/switch.h"
+ 384              		.file 40 "libDaisy/src/util/wav_format.h"
+ 385              		.file 41 "libDaisy/src/dev/sr_595.h"
+ 386              		.file 42 "libDaisy/src/dev/codec_ak4556.h"
+ 387              		.file 43 "libDaisy/src/dev/max11300.h"
+ 388              		.file 44 "libDaisy/src/daisy_seed.h"
+ 389              		.file 45 "libDaisy/src/dev/sdram.h"
+ 390              		.file 46 "/usr/lib/gcc/arm-none-eabi/14.2.0/include/stdarg.h"
+ 391              		.file 47 "/usr/arm-none-eabi/include/stdio.h"
+ 392              		.file 48 "/usr/arm-none-eabi/include/string.h"
+ 393              		.file 49 "DaisySP/Source/Control/adenv.h"
+ 394              		.file 50 "DaisySP/Source/Utility/dsp.h"
+ 395              		.file 51 "/usr/arm-none-eabi/include/wchar.h"
+ 396              		.file 52 "/usr/arm-none-eabi/include/locale.h"
+ 397              		.file 53 "<built-in>"
+ARM GAS  /tmp/ccPbbhbW.s 			page 11
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 hw.cpp
-     /tmp/ccQew8XQ.s:20     .text._ZN8Hardware4InitEv:00000000 $t
-     /tmp/ccQew8XQ.s:27     .text._ZN8Hardware4InitEv:00000000 _ZN8Hardware4InitEv
-     /tmp/ccQew8XQ.s:224    .text._ZN8Hardware4InitEv:000000fc $d
-     /tmp/ccQew8XQ.s:343    .sdram_bss:003a9800 _ZN8Hardware8buffer_aE
-     /tmp/ccQew8XQ.s:337    .sdram_bss:00000000 _ZN8Hardware8buffer_bE
-     /tmp/ccQew8XQ.s:230    .text._ZN8Hardware19ProcessTestControlsEv:00000000 $t
-     /tmp/ccQew8XQ.s:237    .text._ZN8Hardware19ProcessTestControlsEv:00000000 _ZN8Hardware19ProcessTestControlsEv
-     /tmp/ccQew8XQ.s:334    .sdram_bss:00000000 $d
+     /tmp/ccPbbhbW.s:20     .text._ZN8Hardware4InitEv:00000000 $t
+     /tmp/ccPbbhbW.s:27     .text._ZN8Hardware4InitEv:00000000 _ZN8Hardware4InitEv
+     /tmp/ccPbbhbW.s:224    .text._ZN8Hardware4InitEv:000000fc $d
+     /tmp/ccPbbhbW.s:344    .sdram_bss:003a9800 _ZN8Hardware8buffer_aE
+     /tmp/ccPbbhbW.s:338    .sdram_bss:00000000 _ZN8Hardware8buffer_bE
+     /tmp/ccPbbhbW.s:230    .text._ZN8Hardware19ProcessTestControlsEv:00000000 $t
+     /tmp/ccPbbhbW.s:237    .text._ZN8Hardware19ProcessTestControlsEv:00000000 _ZN8Hardware19ProcessTestControlsEv
+     /tmp/ccPbbhbW.s:335    .sdram_bss:00000000 $d
 
 UNDEFINED SYMBOLS
 _ZN5daisy9DaisySeed4InitEb

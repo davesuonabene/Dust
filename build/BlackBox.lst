@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccWyZVAv.s 			page 1
+ARM GAS  /tmp/ccxj3Qdz.s 			page 1
 
 
    1              		.cpu cortex-m7
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccWyZVAv.s 			page 1
    6:libDaisy/src/hid/switch.h **** #include "sys/system.h"
    7:libDaisy/src/hid/switch.h **** 
    8:libDaisy/src/hid/switch.h **** namespace daisy
-ARM GAS  /tmp/ccWyZVAv.s 			page 2
+ARM GAS  /tmp/ccxj3Qdz.s 			page 2
 
 
    9:libDaisy/src/hid/switch.h **** {
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccWyZVAv.s 			page 1
   13:libDaisy/src/hid/encoder.h ****     @author Stephen Hensley
   14:libDaisy/src/hid/encoder.h ****     @date December 2019
   15:libDaisy/src/hid/encoder.h ****     @ingroup controls
-ARM GAS  /tmp/ccWyZVAv.s 			page 3
+ARM GAS  /tmp/ccxj3Qdz.s 			page 3
 
 
   16:libDaisy/src/hid/encoder.h **** */
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccWyZVAv.s 			page 1
    4:libDaisy/src/dev/codec_ak4556.h **** 
    5:libDaisy/src/dev/codec_ak4556.h **** #include "daisy_core.h"
    6:libDaisy/src/dev/codec_ak4556.h **** #include "per/gpio.h"
-ARM GAS  /tmp/ccWyZVAv.s 			page 4
+ARM GAS  /tmp/ccxj3Qdz.s 			page 4
 
 
    7:libDaisy/src/dev/codec_ak4556.h **** 
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccWyZVAv.s 			page 1
   34:libDaisy/src/sys/system.h ****          ** */
   35:libDaisy/src/sys/system.h ****         void Defaults()
   36:libDaisy/src/sys/system.h ****         {
-ARM GAS  /tmp/ccWyZVAv.s 			page 5
+ARM GAS  /tmp/ccxj3Qdz.s 			page 5
 
 
   37:libDaisy/src/sys/system.h ****             cpu_freq    = SysClkFreq::FREQ_400MHZ;
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccWyZVAv.s 			page 1
   91:libDaisy/src/sys/system.h ****             v6_1,        // v6.1 or greater
   92:libDaisy/src/sys/system.h ****             LAST
   93:libDaisy/src/sys/system.h ****         } version;
-ARM GAS  /tmp/ccWyZVAv.s 			page 6
+ARM GAS  /tmp/ccxj3Qdz.s 			page 6
 
 
   94:libDaisy/src/sys/system.h ****     };
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccWyZVAv.s 			page 1
   93              	.LBE307:
   94              	.LBB308:
   95              	.LBI308:
-ARM GAS  /tmp/ccWyZVAv.s 			page 7
+ARM GAS  /tmp/ccxj3Qdz.s 			page 7
 
 
   96              		.file 9 "libDaisy/src/per/adc.h"
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccWyZVAv.s 			page 1
   54:libDaisy/src/per/adc.h **** 
   55:libDaisy/src/per/adc.h ****     /** Initializes a single ADC pin as an ADC. 
   56:libDaisy/src/per/adc.h ****     \param pin Pin to init.
-ARM GAS  /tmp/ccWyZVAv.s 			page 8
+ARM GAS  /tmp/ccxj3Qdz.s 			page 8
 
 
   57:libDaisy/src/per/adc.h ****     \param speed conversion speed for this pin defaults to 8.5 cycles
@@ -478,7 +478,7 @@ ARM GAS  /tmp/ccWyZVAv.s 			page 1
   97              		.loc 9 110 5 is_stmt 1 view .LVU20
   98              		.loc 9 110 5 is_stmt 0 view .LVU21
   99              	.LBE308:
-ARM GAS  /tmp/ccWyZVAv.s 			page 9
+ARM GAS  /tmp/ccxj3Qdz.s 			page 9
 
 
  100              	.LBB309:
@@ -538,7 +538,7 @@ ARM GAS  /tmp/ccWyZVAv.s 			page 1
   52:libDaisy/src/hid/audio.h ****      * Buffer arranged by float[chn][sample] 
   53:libDaisy/src/hid/audio.h ****      * const so that the user can't modify the input
   54:libDaisy/src/hid/audio.h ****      */
-ARM GAS  /tmp/ccWyZVAv.s 			page 10
+ARM GAS  /tmp/ccxj3Qdz.s 			page 10
 
 
   55:libDaisy/src/hid/audio.h ****     typedef const float* const* InputBuffer;
@@ -598,7 +598,7 @@ ARM GAS  /tmp/ccWyZVAv.s 			page 1
  125              	.LFB4949:
    1:BlackBox.cpp  **** #include "config.h"
    2:BlackBox.cpp  **** #include "hw.h"
-ARM GAS  /tmp/ccWyZVAv.s 			page 11
+ARM GAS  /tmp/ccxj3Qdz.s 			page 11
 
 
    3:BlackBox.cpp  **** #include "screen.h"
@@ -658,7 +658,7 @@ ARM GAS  /tmp/ccWyZVAv.s 			page 1
  161              	.L5:
   19:BlackBox.cpp  ****     {
   20:BlackBox.cpp  ****         // Pass input directly to output
-ARM GAS  /tmp/ccWyZVAv.s 			page 12
+ARM GAS  /tmp/ccxj3Qdz.s 			page 12
 
 
   21:BlackBox.cpp  ****         out[0][i] = in[0][i];
@@ -718,7 +718,7 @@ ARM GAS  /tmp/ccWyZVAv.s 			page 1
  206              		.loc 1 29 14 is_stmt 0 view .LVU47
  207 0000 0948     		ldr	r0, .L16
   27:BlackBox.cpp  ****     // Initialize Hardware
-ARM GAS  /tmp/ccWyZVAv.s 			page 13
+ARM GAS  /tmp/ccxj3Qdz.s 			page 13
 
 
  208              		.loc 1 27 1 view .LVU48
@@ -778,7 +778,7 @@ ARM GAS  /tmp/ccWyZVAv.s 			page 1
  249              		.cfi_endproc
  250              	.LFE4950:
  252              		.section	.text.startup._GLOBAL__sub_I__Z13AudioCallbackPKPKfPPfj,"ax",%progbits
-ARM GAS  /tmp/ccWyZVAv.s 			page 14
+ARM GAS  /tmp/ccxj3Qdz.s 			page 14
 
 
  253              		.align	1
@@ -838,7 +838,7 @@ ARM GAS  /tmp/ccWyZVAv.s 			page 1
   24:libDaisy/src/per/qspi.h **** */
   25:libDaisy/src/per/qspi.h **** 
   26:libDaisy/src/per/qspi.h **** /**
-ARM GAS  /tmp/ccWyZVAv.s 			page 15
+ARM GAS  /tmp/ccxj3Qdz.s 			page 15
 
 
   27:libDaisy/src/per/qspi.h ****  Driver for QSPI peripheral to interface with external flash memory. \n
@@ -898,7 +898,7 @@ ARM GAS  /tmp/ccWyZVAv.s 			page 1
   81:libDaisy/src/per/qspi.h **** 
   82:libDaisy/src/per/qspi.h ****         //SCK,  CE# (active low)
   83:libDaisy/src/per/qspi.h ****         struct
-ARM GAS  /tmp/ccWyZVAv.s 			page 16
+ARM GAS  /tmp/ccxj3Qdz.s 			page 16
 
 
   84:libDaisy/src/per/qspi.h ****         {
@@ -958,7 +958,7 @@ ARM GAS  /tmp/ccWyZVAv.s 			page 1
  138:libDaisy/src/per/qspi.h ****         Smallest erase possible is 4kB at a time. (on IS25LP*)
  139:libDaisy/src/per/qspi.h ****         \param start_addr Address to begin erasing from
  140:libDaisy/src/per/qspi.h ****         \param end_addr  Address to stop erasing at
-ARM GAS  /tmp/ccWyZVAv.s 			page 17
+ARM GAS  /tmp/ccxj3Qdz.s 			page 17
 
 
  141:libDaisy/src/per/qspi.h ****         \return Result::OK or Result::ERR
@@ -1018,7 +1018,7 @@ ARM GAS  /tmp/ccWyZVAv.s 			page 1
   11:libDaisy/src/daisy_core.h **** #pragma clang diagnostic ignored "-Wduplicate-decl-specifier"
   12:libDaisy/src/daisy_core.h **** #elif defined(__GNUC__)
   13:libDaisy/src/daisy_core.h **** #define FORCE_INLINE inline __attribute__((always_inline)) /**< & */
-ARM GAS  /tmp/ccWyZVAv.s 			page 18
+ARM GAS  /tmp/ccxj3Qdz.s 			page 18
 
 
   14:libDaisy/src/daisy_core.h **** #else
@@ -1078,7 +1078,7 @@ ARM GAS  /tmp/ccWyZVAv.s 			page 1
   68:libDaisy/src/daisy_core.h **** */
   69:libDaisy/src/daisy_core.h **** FORCE_INLINE float cube(float x)
   70:libDaisy/src/daisy_core.h **** {
-ARM GAS  /tmp/ccWyZVAv.s 			page 19
+ARM GAS  /tmp/ccxj3Qdz.s 			page 19
 
 
   71:libDaisy/src/daisy_core.h ****     return (x * x) * x;
@@ -1138,7 +1138,7 @@ ARM GAS  /tmp/ccWyZVAv.s 			page 1
  125:libDaisy/src/daisy_core.h **** /**
  126:libDaisy/src/daisy_core.h ****     Converts float to Signed 16-bit
  127:libDaisy/src/daisy_core.h **** */
-ARM GAS  /tmp/ccWyZVAv.s 			page 20
+ARM GAS  /tmp/ccxj3Qdz.s 			page 20
 
 
  128:libDaisy/src/daisy_core.h **** FORCE_INLINE int16_t f2s16(float x)
@@ -1198,7 +1198,7 @@ ARM GAS  /tmp/ccWyZVAv.s 			page 1
  182:libDaisy/src/daisy_core.h ****     PORTF, /**< Port F */
  183:libDaisy/src/daisy_core.h ****     PORTG, /**< Port G */
  184:libDaisy/src/daisy_core.h ****     PORTH, /**< Port H */
-ARM GAS  /tmp/ccWyZVAv.s 			page 21
+ARM GAS  /tmp/ccxj3Qdz.s 			page 21
 
 
  185:libDaisy/src/daisy_core.h ****     PORTI, /**< Port I */
@@ -1248,27 +1248,27 @@ ARM GAS  /tmp/ccWyZVAv.s 			page 1
  323              	.LBE468:
    6:BlackBox.cpp  **** static Hardware   g_hw;
  324              		.loc 1 6 19 discriminator 1 view .LVU67
- 325 000a 2E4A     		ldr	r2, .L20
+ 325 000a 2F4A     		ldr	r2, .L20
  326              	.LBE467:
  327              	.LBE466:
  328              		.loc 1 43 1 view .LVU68
  329 000c 10B4     		push	{r4}
  330              		.cfi_def_cfa_offset 4
  331              		.cfi_offset 4, -4
- 332              	.LBB797:
- 333              	.LBB795:
- 334              	.LBB792:
-ARM GAS  /tmp/ccWyZVAv.s 			page 22
+ 332              	.LBB830:
+ 333              	.LBB828:
+ 334              	.LBB825:
+ARM GAS  /tmp/ccxj3Qdz.s 			page 22
 
 
- 335              	.LBB789:
+ 335              	.LBB822:
  336              	.LBB573:
  337              	.LBB569:
  338              	.LBB510:
  339              	.LBB476:
  340              	.LBB475:
  341              		.loc 11 167 20 view .LVU69
- 342 000e 2E4C     		ldr	r4, .L20+4
+ 342 000e 2F4C     		ldr	r4, .L20+4
  343              	.LBE475:
  344              	.LBE476:
  345              	.LBE510:
@@ -1312,16 +1312,16 @@ ARM GAS  /tmp/ccWyZVAv.s 			page 1
  382              	.LBE515:
  383              	.LBE569:
  384              	.LBE573:
- 385              	.LBE789:
- 386              	.LBE792:
+ 385              	.LBE822:
+ 386              	.LBE825:
    6:BlackBox.cpp  **** static Hardware   g_hw;
  387              		.loc 1 6 19 discriminator 1 view .LVU74
  388 001a 2046     		mov	r0, r4
- 389              	.LBB793:
-ARM GAS  /tmp/ccWyZVAv.s 			page 23
+ 389              	.LBB826:
+ARM GAS  /tmp/ccxj3Qdz.s 			page 23
 
 
- 390              	.LBB790:
+ 390              	.LBB823:
  391              	.LBB574:
  392              	.LBB570:
  393              	.LBB516:
@@ -1378,7 +1378,7 @@ ARM GAS  /tmp/ccWyZVAv.s 			page 1
  444 0022 A4F88410 		strh	r1, [r4, #132]	@ movhi
  445              	.LBE586:
  446              	.LBE585:
-ARM GAS  /tmp/ccWyZVAv.s 			page 24
+ARM GAS  /tmp/ccxj3Qdz.s 			page 24
 
 
  447              	.LBE584:
@@ -1438,7 +1438,7 @@ ARM GAS  /tmp/ccWyZVAv.s 			page 1
  499              		.loc 10 87 21 view .LVU77
  500              	.LBE514:
  501              	.LBE513:
-ARM GAS  /tmp/ccWyZVAv.s 			page 25
+ARM GAS  /tmp/ccxj3Qdz.s 			page 25
 
 
  502              	.LBE553:
@@ -1498,7 +1498,7 @@ ARM GAS  /tmp/ccWyZVAv.s 			page 1
   44:libDaisy/src/per/dac.h ****      ** callback to fill the buffer when it is ready for more samples.
   45:libDaisy/src/per/dac.h ****      ***/
   46:libDaisy/src/per/dac.h ****     enum class Mode
-ARM GAS  /tmp/ccWyZVAv.s 			page 26
+ARM GAS  /tmp/ccxj3Qdz.s 			page 26
 
 
   47:libDaisy/src/per/dac.h ****     {
@@ -1558,7 +1558,7 @@ ARM GAS  /tmp/ccWyZVAv.s 			page 1
  525              	.LBE558:
  526              	.LBB559:
  527              	.LBI477:
-ARM GAS  /tmp/ccWyZVAv.s 			page 27
+ARM GAS  /tmp/ccxj3Qdz.s 			page 27
 
 
  528              		.file 14 "libDaisy/src/per/gpio.h"
@@ -1618,7 +1618,7 @@ ARM GAS  /tmp/ccWyZVAv.s 			page 1
   54:libDaisy/src/per/gpio.h ****         VERY_HIGH,
   55:libDaisy/src/per/gpio.h ****     };
   56:libDaisy/src/per/gpio.h **** 
-ARM GAS  /tmp/ccWyZVAv.s 			page 28
+ARM GAS  /tmp/ccxj3Qdz.s 			page 28
 
 
   57:libDaisy/src/per/gpio.h ****     /** @brief Configuration for a given GPIO */
@@ -1678,7 +1678,7 @@ ARM GAS  /tmp/ccWyZVAv.s 			page 1
  561              		.loc 12 204 15 view .LVU93
  562              		.loc 12 204 15 is_stmt 0 view .LVU94
  563              	.LBE524:
-ARM GAS  /tmp/ccWyZVAv.s 			page 29
+ARM GAS  /tmp/ccxj3Qdz.s 			page 29
 
 
   69:libDaisy/src/per/gpio.h ****         {
@@ -1738,7 +1738,7 @@ ARM GAS  /tmp/ccWyZVAv.s 			page 1
    3:libDaisy/src/per/sai.h **** #define DSY_SAI_H
    4:libDaisy/src/per/sai.h **** 
    5:libDaisy/src/per/sai.h **** #include "util/hal_map.h"
-ARM GAS  /tmp/ccWyZVAv.s 			page 30
+ARM GAS  /tmp/ccxj3Qdz.s 			page 30
 
 
    6:libDaisy/src/per/sai.h **** #include "daisy_core.h"
@@ -1798,7 +1798,7 @@ ARM GAS  /tmp/ccWyZVAv.s 			page 1
   60:libDaisy/src/per/sai.h ****             SAI_16KHZ,
   61:libDaisy/src/per/sai.h ****             SAI_32KHZ,
   62:libDaisy/src/per/sai.h ****             SAI_48KHZ,
-ARM GAS  /tmp/ccWyZVAv.s 			page 31
+ARM GAS  /tmp/ccxj3Qdz.s 			page 31
 
 
   63:libDaisy/src/per/sai.h ****             SAI_96KHZ,
@@ -1858,7 +1858,7 @@ ARM GAS  /tmp/ccWyZVAv.s 			page 1
  615              	.LBE565:
  616              	.LBE564:
  617              	.LBE563:
-ARM GAS  /tmp/ccWyZVAv.s 			page 32
+ARM GAS  /tmp/ccxj3Qdz.s 			page 32
 
 
  618              	.LBE571:
@@ -1918,7 +1918,7 @@ ARM GAS  /tmp/ccWyZVAv.s 			page 1
  666              	.LBE608:
   69:libDaisy/src/per/gpio.h ****         {
  667              		.loc 14 69 57 discriminator 1 view .LVU121
-ARM GAS  /tmp/ccWyZVAv.s 			page 33
+ARM GAS  /tmp/ccxj3Qdz.s 			page 33
 
 
  668 003e C4F8AC30 		str	r3, [r4, #172]
@@ -1978,7 +1978,7 @@ ARM GAS  /tmp/ccWyZVAv.s 			page 1
  719              	.LBE530:
  720              	.LBE532:
  721              	.LBE567:
-ARM GAS  /tmp/ccWyZVAv.s 			page 34
+ARM GAS  /tmp/ccxj3Qdz.s 			page 34
 
 
  722              	.LBB568:
@@ -2038,7 +2038,7 @@ ARM GAS  /tmp/ccWyZVAv.s 			page 1
  774              		.loc 14 69 57 discriminator 1 view .LVU129
  775              	.LBE627:
  776              	.LBE629:
-ARM GAS  /tmp/ccWyZVAv.s 			page 35
+ARM GAS  /tmp/ccxj3Qdz.s 			page 35
 
 
  777              	.LBE631:
@@ -2098,499 +2098,547 @@ ARM GAS  /tmp/ccWyZVAv.s 			page 1
  828              	.LBE676:
  829              	.LBE675:
  830              	.LBE674:
-ARM GAS  /tmp/ccWyZVAv.s 			page 36
+ARM GAS  /tmp/ccxj3Qdz.s 			page 36
 
 
  831              	.LBE673:
  832              	.LBE672:
  833              	.LBE671:
  834              	.LBE670:
- 835              	.LBB687:
- 836              	.LBB688:
- 837              	.LBB689:
- 838              	.LBB690:
- 839              	.LBB691:
- 840              	.LBB692:
- 841              	.LBB693:
- 842              	.LBB694:
+ 835              	.LBB691:
+ 836              	.LBB692:
+ 837              	.LBB693:
+ 838              	.LBB694:
+ 839              	.LBB695:
+ 840              	.LBB696:
+ 841              	.LBB697:
+ 842              	.LBB698:
  843 0066 A4F81011 		strh	r1, [r4, #272]	@ movhi
- 844              	.LBE694:
- 845              	.LBE693:
- 846              	.LBE692:
- 847              	.LBE691:
- 848              	.LBE690:
- 849              	.LBE689:
- 850              	.LBE688:
- 851              	.LBE687:
+ 844              	.LBE698:
+ 845              	.LBE697:
+ 846              	.LBE696:
+ 847              	.LBE695:
+ 848              	.LBE694:
+ 849              	.LBE693:
+ 850              	.LBE692:
+ 851              	.LBE691:
  852              	.LBE647:
  853              	.LBE646:
- 854              	.LBB712:
- 855              	.LBB713:
- 856              	.LBB714:
- 857              	.LBB715:
- 858              	.LBB716:
- 859              	.LBB717:
- 860              	.LBB718:
- 861              	.LBB719:
- 862              	.LBB720:
- 863              	.LBB721:
+ 854              	.LBB723:
+ 855              	.LBB724:
+ 856              	.LBB725:
+ 857              	.LBB726:
+ 858              	.LBB727:
+ 859              	.LBB728:
+ 860              	.LBB729:
+ 861              	.LBB730:
+ 862              	.LBB731:
+ 863              	.LBB732:
  864 006a A4F83411 		strh	r1, [r4, #308]	@ movhi
- 865              	.LBE721:
- 866              	.LBE720:
- 867              	.LBE719:
- 868              	.LBE718:
- 869              	.LBE717:
- 870              	.LBE716:
- 871              	.LBE715:
- 872              	.LBE714:
- 873              	.LBE713:
- 874              	.LBE712:
- 875              	.LBB735:
- 876              	.LBB736:
- 877              	.LBB737:
- 878              	.LBB738:
- 879              	.LBB739:
- 880              	.LBB740:
- 881              	.LBB741:
- 882              	.LBB742:
- 883              	.LBB743:
- 884              	.LBB744:
+ 865              	.LBE732:
+ 866              	.LBE731:
+ 867              	.LBE730:
+ 868              	.LBE729:
+ 869              	.LBE728:
+ 870              	.LBE727:
+ 871              	.LBE726:
+ 872              	.LBE725:
+ 873              	.LBE724:
+ 874              	.LBE723:
+ 875              	.LBB752:
+ 876              	.LBB753:
+ 877              	.LBB754:
+ 878              	.LBB755:
+ 879              	.LBB756:
+ 880              	.LBB757:
+ 881              	.LBB758:
+ 882              	.LBB759:
+ 883              	.LBB760:
+ 884              	.LBB761:
  885 006e A4F85811 		strh	r1, [r4, #344]	@ movhi
- 886              	.LBE744:
- 887              	.LBE743:
-ARM GAS  /tmp/ccWyZVAv.s 			page 37
+ 886              	.LBE761:
+ 887              	.LBE760:
+ARM GAS  /tmp/ccxj3Qdz.s 			page 37
 
 
- 888              	.LBE742:
- 889              	.LBE741:
- 890              	.LBE740:
- 891              	.LBE739:
- 892              	.LBE738:
- 893              	.LBE737:
- 894              	.LBE736:
- 895              	.LBE735:
- 896              	.LBB758:
- 897              	.LBB759:
- 898              	.LBB760:
- 899              	.LBB761:
- 900              	.LBB762:
- 901              	.LBB763:
- 902              	.LBB764:
- 903              	.LBB765:
- 904              	.LBB766:
- 905              	.LBB767:
+ 888              	.LBE759:
+ 889              	.LBE758:
+ 890              	.LBE757:
+ 891              	.LBE756:
+ 892              	.LBE755:
+ 893              	.LBE754:
+ 894              	.LBE753:
+ 895              	.LBE752:
+ 896              	.LBB781:
+ 897              	.LBB782:
+ 898              	.LBB783:
+ 899              	.LBB784:
+ 900              	.LBB785:
+ 901              	.LBB786:
+ 902              	.LBB787:
+ 903              	.LBB788:
+ 904              	.LBB789:
+ 905              	.LBB790:
  906 0072 A4F87C11 		strh	r1, [r4, #380]	@ movhi
- 907              	.LBE767:
- 908              	.LBE766:
- 909              	.LBE765:
- 910              	.LBE764:
- 911              	.LBE763:
- 912              	.LBE762:
- 913              	.LBE761:
- 914              	.LBE760:
- 915              	.LBE759:
- 916              	.LBE758:
- 917              	.LBB781:
- 918              	.LBB710:
- 919              	.LBB704:
- 920              	.LBB668:
- 921              	.LBB666:
- 922              	.LBB664:
- 923              	.LBB662:
- 924              	.LBB660:
- 925              	.LBB658:
+ 907              	.LBE790:
+ 908              	.LBE789:
+ 909              	.LBE788:
+ 910              	.LBE787:
+ 911              	.LBE786:
+ 912              	.LBE785:
+ 913              	.LBE784:
+ 914              	.LBE783:
+ 915              	.LBE782:
+ 916              	.LBE781:
+ 917              		.loc 2 11 8 discriminator 6 view .LVU137
+ 918 0076 C4F89831 		str	r3, [r4, #408]
+ 919              	.LBB810:
+ 920              	.LBB720:
+ 921              	.LBB712:
+ 922              	.LBB668:
+ 923              	.LBB666:
+ 924              	.LBB664:
+ 925              	.LBB662:
+ 926              	.LBB660:
+ 927              	.LBB658:
   69:libDaisy/src/per/gpio.h ****         {
- 926              		.loc 14 69 57 discriminator 1 view .LVU137
- 927 0076 C4F8EC30 		str	r3, [r4, #236]
- 928              	.LVL23:
-  69:libDaisy/src/per/gpio.h ****         {
- 929              		.loc 14 69 57 discriminator 1 view .LVU138
+ 928              		.loc 14 69 18 discriminator 1 view .LVU138
+ 929 007a C4F8E430 		str	r3, [r4, #228]
  930              	.LBE658:
  931              	.LBE660:
  932              	.LBE662:
  933              	.LBE664:
  934              	.LBE666:
  935              	.LBE668:
- 936              	.LBE704:
- 937              	.LBB705:
- 938              	.LBI670:
- 939              		.loc 14 74 5 is_stmt 1 view .LVU139
- 940              	.LBB685:
- 941              	.LBB683:
- 942              	.LBI672:
-ARM GAS  /tmp/ccWyZVAv.s 			page 38
+ 936              	.LBE712:
+ 937              	.LBB713:
+ 938              	.LBB688:
+ 939              	.LBB685:
+ 940              	.LBB682:
+ 941              	.LBB679:
+  69:libDaisy/src/per/gpio.h ****         {
+ 942              		.loc 14 69 57 discriminator 1 view .LVU139
+ARM GAS  /tmp/ccxj3Qdz.s 			page 38
 
 
-  68:libDaisy/src/per/gpio.h ****         : pin(), mode(Mode::INPUT), pull(Pull::NOPULL), speed(Speed::LOW)
- 943              		.loc 14 68 9 view .LVU140
- 944              	.LBB681:
- 945              	.LBB679:
- 946              	.LBB678:
- 947              	.LBI675:
- 948              		.loc 12 204 15 view .LVU141
- 949              		.loc 12 204 15 is_stmt 0 view .LVU142
- 950              	.LBE678:
-  69:libDaisy/src/per/gpio.h ****         {
- 951              		.loc 14 69 57 discriminator 1 view .LVU143
- 952 007a C4F80831 		str	r3, [r4, #264]
- 953              	.LVL24:
-  69:libDaisy/src/per/gpio.h ****         {
- 954              		.loc 14 69 57 discriminator 1 view .LVU144
- 955              	.LBE679:
- 956              	.LBE681:
- 957              	.LBE683:
- 958              	.LBE685:
- 959              	.LBE705:
- 960              	.LBB706:
- 961              	.LBI687:
- 962              		.loc 14 74 5 is_stmt 1 view .LVU145
- 963              	.LBB702:
- 964              	.LBB700:
- 965              	.LBI689:
-  68:libDaisy/src/per/gpio.h ****         : pin(), mode(Mode::INPUT), pull(Pull::NOPULL), speed(Speed::LOW)
- 966              		.loc 14 68 9 view .LVU146
- 967              	.LBB698:
- 968              	.LBB696:
- 969              	.LBB695:
- 970              	.LBI692:
- 971              		.loc 12 204 15 view .LVU147
- 972              		.loc 12 204 15 is_stmt 0 view .LVU148
- 973              	.LBE695:
-  69:libDaisy/src/per/gpio.h ****         {
- 974              		.loc 14 69 57 discriminator 1 view .LVU149
- 975 007e C4F81C31 		str	r3, [r4, #284]
- 976              	.LVL25:
-  69:libDaisy/src/per/gpio.h ****         {
- 977              		.loc 14 69 57 discriminator 1 view .LVU150
- 978              	.LBE696:
- 979              	.LBE698:
- 980              	.LBE700:
- 981              	.LBE702:
- 982              	.LBE706:
- 983              	.LBE710:
- 984              	.LBE781:
- 985              	.LBB782:
- 986              	.LBI712:
-  33:libDaisy/src/hid/switch.h ****     ~Switch() {}
- 987              		.loc 3 33 5 is_stmt 1 view .LVU151
- 988              	.LBB733:
- 989              	.LBB731:
- 990              	.LBI714:
- 991              		.loc 14 74 5 view .LVU152
- 992              	.LBB729:
-ARM GAS  /tmp/ccWyZVAv.s 			page 39
+ 943 007e C4F80831 		str	r3, [r4, #264]
+ 944              	.LBE679:
+ 945              	.LBE682:
+ 946              	.LBE685:
+ 947              	.LBE688:
+ 948              	.LBE713:
+ 949              	.LBB714:
+ 950              	.LBB709:
+ 951              	.LBB706:
+ 952              	.LBB703:
+ 953              	.LBB700:
+ 954 0082 C4F81C31 		str	r3, [r4, #284]
+ 955              	.LBE700:
+ 956              	.LBE703:
+ 957              	.LBE706:
+ 958              	.LBE709:
+ 959              	.LBE714:
+ 960              	.LBE720:
+ 961              	.LBE810:
+ 962              	.LBB811:
+ 963              	.LBB749:
+ 964              	.LBB746:
+ 965              	.LBB743:
+ 966              	.LBB740:
+ 967              	.LBB737:
+ 968              	.LBB734:
+ 969 0086 C4F84031 		str	r3, [r4, #320]
+ 970              	.LBE734:
+ 971              	.LBE737:
+ 972              	.LBE740:
+ 973              	.LBE743:
+ 974              	.LBE746:
+ 975              	.LBE749:
+ 976              	.LBE811:
+ 977              	.LBB812:
+ 978              	.LBB778:
+ 979              	.LBB775:
+ 980              	.LBB772:
+ 981              	.LBB769:
+ 982              	.LBB766:
+ 983              	.LBB763:
+ 984 008a C4F86431 		str	r3, [r4, #356]
+ 985              	.LBE763:
+ 986              	.LBE766:
+ 987              	.LBE769:
+ 988              	.LBE772:
+ 989              	.LBE775:
+ 990              	.LBE778:
+ 991              	.LBE812:
+ 992              	.LBB813:
+ 993              	.LBB807:
+ 994              	.LBB804:
+ 995              	.LBB801:
+ 996              	.LBB798:
+ 997              	.LBB795:
+ 998              	.LBB792:
+ 999 008e C4F88831 		str	r3, [r4, #392]
+ARM GAS  /tmp/ccxj3Qdz.s 			page 39
 
 
- 993              	.LBB727:
- 994              	.LBI716:
-  68:libDaisy/src/per/gpio.h ****         : pin(), mode(Mode::INPUT), pull(Pull::NOPULL), speed(Speed::LOW)
- 995              		.loc 14 68 9 view .LVU153
- 996              	.LBB725:
- 997              	.LBB723:
- 998              	.LBB722:
- 999              	.LBI719:
- 1000              		.loc 12 204 15 view .LVU154
- 1001              		.loc 12 204 15 is_stmt 0 view .LVU155
- 1002              	.LBE722:
-  69:libDaisy/src/per/gpio.h ****         {
- 1003              		.loc 14 69 57 discriminator 1 view .LVU156
- 1004 0082 C4F84031 		str	r3, [r4, #320]
- 1005              	.LVL26:
-  69:libDaisy/src/per/gpio.h ****         {
- 1006              		.loc 14 69 57 discriminator 1 view .LVU157
- 1007              	.LBE723:
- 1008              	.LBE725:
- 1009              	.LBE727:
- 1010              	.LBE729:
- 1011              	.LBE731:
- 1012              	.LBE733:
- 1013              	.LBE782:
- 1014              	.LBB783:
- 1015              	.LBI735:
-  33:libDaisy/src/hid/switch.h ****     ~Switch() {}
- 1016              		.loc 3 33 5 is_stmt 1 view .LVU158
- 1017              	.LBB756:
- 1018              	.LBB754:
- 1019              	.LBI737:
- 1020              		.loc 14 74 5 view .LVU159
- 1021              	.LBB752:
- 1022              	.LBB750:
- 1023              	.LBI739:
-  68:libDaisy/src/per/gpio.h ****         : pin(), mode(Mode::INPUT), pull(Pull::NOPULL), speed(Speed::LOW)
- 1024              		.loc 14 68 9 view .LVU160
- 1025              	.LBB748:
- 1026              	.LBB746:
- 1027              	.LBB745:
- 1028              	.LBI742:
- 1029              		.loc 12 204 15 view .LVU161
- 1030              		.loc 12 204 15 is_stmt 0 view .LVU162
- 1031              	.LBE745:
-  69:libDaisy/src/per/gpio.h ****         {
- 1032              		.loc 14 69 57 discriminator 1 view .LVU163
- 1033 0086 C4F86431 		str	r3, [r4, #356]
- 1034              	.LVL27:
-  69:libDaisy/src/per/gpio.h ****         {
- 1035              		.loc 14 69 57 discriminator 1 view .LVU164
- 1036              	.LBE746:
- 1037              	.LBE748:
- 1038              	.LBE750:
- 1039              	.LBE752:
- 1040              	.LBE754:
- 1041              	.LBE756:
- 1042              	.LBE783:
-ARM GAS  /tmp/ccWyZVAv.s 			page 40
-
-
- 1043              	.LBB784:
- 1044              	.LBI758:
-  33:libDaisy/src/hid/switch.h ****     ~Switch() {}
- 1045              		.loc 3 33 5 is_stmt 1 view .LVU165
- 1046              	.LBB779:
- 1047              	.LBB777:
- 1048              	.LBI760:
- 1049              		.loc 14 74 5 view .LVU166
- 1050              	.LBB775:
- 1051              	.LBB773:
- 1052              	.LBI762:
-  68:libDaisy/src/per/gpio.h ****         : pin(), mode(Mode::INPUT), pull(Pull::NOPULL), speed(Speed::LOW)
- 1053              		.loc 14 68 9 view .LVU167
- 1054              	.LBB771:
- 1055              	.LBB769:
- 1056              	.LBB768:
- 1057              	.LBI765:
- 1058              		.loc 12 204 15 view .LVU168
- 1059              		.loc 12 204 15 is_stmt 0 view .LVU169
- 1060              	.LBE768:
-  69:libDaisy/src/per/gpio.h ****         {
- 1061              		.loc 14 69 57 discriminator 1 view .LVU170
- 1062 008a C4F88831 		str	r3, [r4, #392]
- 1063              	.LVL28:
-  69:libDaisy/src/per/gpio.h ****         {
- 1064              		.loc 14 69 57 discriminator 1 view .LVU171
- 1065              	.LBE769:
- 1066              	.LBE771:
- 1067              	.LBE773:
- 1068              	.LBE775:
- 1069              	.LBE777:
- 1070              	.LBE779:
- 1071              	.LBE784:
- 1072              		.loc 2 11 8 discriminator 6 view .LVU172
- 1073 008e 84F8AC31 		strb	r3, [r4, #428]
- 1074 0092 C4F8B831 		str	r3, [r4, #440]
- 1075              	.LVL29:
- 1076              		.loc 2 11 8 discriminator 6 view .LVU173
- 1077              	.LBE790:
- 1078              	.LBE793:
+ 1000              	.LBE792:
+ 1001              	.LBE795:
+ 1002              	.LBE798:
+ 1003              	.LBE801:
+ 1004              	.LBE804:
+ 1005              	.LBE807:
+ 1006              	.LBE813:
+ 1007              		.loc 2 11 8 discriminator 6 view .LVU140
+ 1008 0092 C4F89C31 		str	r3, [r4, #412]
+ 1009 0096 84F8AC31 		strb	r3, [r4, #428]
+ 1010 009a C4F8B831 		str	r3, [r4, #440]
+ 1011              	.LBE823:
+ 1012              	.LBE826:
    6:BlackBox.cpp  **** static Hardware   g_hw;
- 1079              		.loc 1 6 19 discriminator 1 view .LVU174
- 1080 0096 0D49     		ldr	r1, .L20+8
- 1081              	.LBB794:
- 1082              	.LBB791:
- 1083              	.LBB785:
- 1084              	.LBB711:
- 1085              	.LBB707:
- 1086              	.LBB669:
- 1087              	.LBB667:
- 1088              	.LBB665:
- 1089              	.LBB663:
- 1090              	.LBB661:
- 1091              	.LBB659:
+ 1013              		.loc 1 6 19 discriminator 1 view .LVU141
+ 1014 009e 0C49     		ldr	r1, .L20+8
+ 1015              	.LBB827:
+ 1016              	.LBB824:
+ 1017              	.LBB814:
+ 1018              	.LBB721:
+ 1019              	.LBB715:
+ 1020              	.LBB669:
+ 1021              	.LBB667:
+ 1022              	.LBB665:
+ 1023              	.LBB663:
+ 1024              	.LBB661:
+ 1025              	.LBB659:
   69:libDaisy/src/per/gpio.h ****         {
- 1092              		.loc 14 69 37 discriminator 1 view .LVU175
- 1093 0098 C4E93933 		strd	r3, r3, [r4, #228]
-ARM GAS  /tmp/ccWyZVAv.s 			page 41
+ 1026              		.loc 14 69 57 discriminator 1 view .LVU142
+ 1027 00a0 C4E93A33 		strd	r3, r3, [r4, #232]
+ 1028              	.LVL23:
+  69:libDaisy/src/per/gpio.h ****         {
+ 1029              		.loc 14 69 57 discriminator 1 view .LVU143
+ 1030              	.LBE659:
+ 1031              	.LBE661:
+ 1032              	.LBE663:
+ 1033              	.LBE665:
+ 1034              	.LBE667:
+ 1035              	.LBE669:
+ 1036              	.LBE715:
+ 1037              	.LBB716:
+ 1038              	.LBI670:
+ 1039              		.loc 14 74 5 is_stmt 1 view .LVU144
+ 1040              	.LBB689:
+ 1041              	.LBB686:
+ 1042              	.LBI672:
+  68:libDaisy/src/per/gpio.h ****         : pin(), mode(Mode::INPUT), pull(Pull::NOPULL), speed(Speed::LOW)
+ 1043              		.loc 14 68 9 view .LVU145
+ 1044              	.LBB683:
+ 1045              	.LBB680:
+ 1046              	.LBB678:
+ 1047              	.LBI675:
+ 1048              		.loc 12 204 15 view .LVU146
+ 1049              		.loc 12 204 15 is_stmt 0 view .LVU147
+ 1050              	.LBE678:
+ 1051              	.LBE680:
+ 1052              	.LBE683:
+ARM GAS  /tmp/ccxj3Qdz.s 			page 40
 
 
- 1094              	.LBE659:
- 1095              	.LBE661:
- 1096              	.LBE663:
- 1097              	.LBE665:
- 1098              	.LBE667:
- 1099              	.LBE669:
- 1100              	.LBE707:
- 1101              	.LBB708:
- 1102              	.LBB686:
- 1103              	.LBB684:
- 1104              	.LBB682:
- 1105              	.LBB680:
- 1106 009c C4E94033 		strd	r3, r3, [r4, #256]
- 1107              	.LBE680:
- 1108              	.LBE682:
- 1109              	.LBE684:
- 1110              	.LBE686:
- 1111              	.LBE708:
- 1112              	.LBB709:
- 1113              	.LBB703:
- 1114              	.LBB701:
- 1115              	.LBB699:
- 1116              	.LBB697:
- 1117 00a0 C4E94533 		strd	r3, r3, [r4, #276]
- 1118              	.LBE697:
- 1119              	.LBE699:
- 1120              	.LBE701:
- 1121              	.LBE703:
- 1122              	.LBE709:
- 1123              	.LBE711:
- 1124              	.LBE785:
- 1125              	.LBB786:
- 1126              	.LBB734:
- 1127              	.LBB732:
- 1128              	.LBB730:
- 1129              	.LBB728:
- 1130              	.LBB726:
- 1131              	.LBB724:
- 1132 00a4 C4E94E33 		strd	r3, r3, [r4, #312]
- 1133              	.LBE724:
- 1134              	.LBE726:
- 1135              	.LBE728:
- 1136              	.LBE730:
- 1137              	.LBE732:
- 1138              	.LBE734:
- 1139              	.LBE786:
- 1140              	.LBB787:
- 1141              	.LBB757:
- 1142              	.LBB755:
- 1143              	.LBB753:
- 1144              	.LBB751:
- 1145              	.LBB749:
- 1146              	.LBB747:
- 1147 00a8 C4E95733 		strd	r3, r3, [r4, #348]
- 1148              	.LBE747:
- 1149              	.LBE749:
- 1150              	.LBE751:
-ARM GAS  /tmp/ccWyZVAv.s 			page 42
+ 1053              	.LBE686:
+ 1054              	.LBE689:
+ 1055              	.LBE716:
+ 1056              	.LBB717:
+ 1057              	.LBI691:
+ 1058              		.loc 14 74 5 is_stmt 1 view .LVU148
+ 1059              	.LBB710:
+ 1060              	.LBB707:
+ 1061              	.LBI693:
+  68:libDaisy/src/per/gpio.h ****         : pin(), mode(Mode::INPUT), pull(Pull::NOPULL), speed(Speed::LOW)
+ 1062              		.loc 14 68 9 view .LVU149
+ 1063              	.LBB704:
+ 1064              	.LBB701:
+ 1065              	.LBB699:
+ 1066              	.LBI696:
+ 1067              		.loc 12 204 15 view .LVU150
+ 1068              		.loc 12 204 15 is_stmt 0 view .LVU151
+ 1069              	.LBE699:
+ 1070              	.LBE701:
+ 1071              	.LBE704:
+ 1072              	.LBE707:
+ 1073              	.LBE710:
+ 1074              	.LBE717:
+ 1075              	.LBE721:
+ 1076              	.LBE814:
+ 1077              	.LBB815:
+ 1078              	.LBI723:
+  33:libDaisy/src/hid/switch.h ****     ~Switch() {}
+ 1079              		.loc 3 33 5 is_stmt 1 view .LVU152
+ 1080              	.LBB750:
+ 1081              	.LBB747:
+ 1082              	.LBI725:
+ 1083              		.loc 14 74 5 view .LVU153
+ 1084              	.LBB744:
+ 1085              	.LBB741:
+ 1086              	.LBI727:
+  68:libDaisy/src/per/gpio.h ****         : pin(), mode(Mode::INPUT), pull(Pull::NOPULL), speed(Speed::LOW)
+ 1087              		.loc 14 68 9 view .LVU154
+ 1088              	.LBB738:
+ 1089              	.LBB735:
+ 1090              	.LBB733:
+ 1091              	.LBI730:
+ 1092              		.loc 12 204 15 view .LVU155
+ 1093              		.loc 12 204 15 is_stmt 0 view .LVU156
+ 1094              	.LBE733:
+ 1095              	.LBE735:
+ 1096              	.LBE738:
+ 1097              	.LBE741:
+ 1098              	.LBE744:
+ 1099              	.LBE747:
+ 1100              	.LBE750:
+ 1101              	.LBE815:
+ 1102              	.LBB816:
+ 1103              	.LBI752:
+  33:libDaisy/src/hid/switch.h ****     ~Switch() {}
+ 1104              		.loc 3 33 5 is_stmt 1 view .LVU157
+ 1105              	.LBB779:
+ARM GAS  /tmp/ccxj3Qdz.s 			page 41
 
 
- 1151              	.LBE753:
- 1152              	.LBE755:
- 1153              	.LBE757:
- 1154              	.LBE787:
- 1155              	.LBB788:
- 1156              	.LBB780:
- 1157              	.LBB778:
- 1158              	.LBB776:
- 1159              	.LBB774:
- 1160              	.LBB772:
- 1161              	.LBB770:
- 1162 00ac C4E96033 		strd	r3, r3, [r4, #384]
- 1163              	.LBE770:
- 1164              	.LBE772:
- 1165              	.LBE774:
- 1166              	.LBE776:
- 1167              	.LBE778:
- 1168              	.LBE780:
- 1169              	.LBE788:
- 1170              		.loc 2 11 8 discriminator 6 view .LVU176
- 1171 00b0 C4E96633 		strd	r3, r3, [r4, #408]
- 1172 00b4 C4E96933 		strd	r3, r3, [r4, #420]
- 1173 00b8 C4E96C33 		strd	r3, r3, [r4, #432]
- 1174              	.LBE791:
- 1175              	.LBE794:
- 1176              	.LBE795:
- 1177              	.LBE797:
- 1178              		.loc 1 43 1 view .LVU177
- 1179 00bc 5DF8044B 		ldr	r4, [sp], #4
- 1180              		.cfi_restore 4
- 1181              		.cfi_def_cfa_offset 0
- 1182              	.LBB798:
- 1183              	.LBB796:
+ 1106              	.LBB776:
+ 1107              	.LBI754:
+ 1108              		.loc 14 74 5 view .LVU158
+ 1109              	.LBB773:
+ 1110              	.LBB770:
+ 1111              	.LBI756:
+  68:libDaisy/src/per/gpio.h ****         : pin(), mode(Mode::INPUT), pull(Pull::NOPULL), speed(Speed::LOW)
+ 1112              		.loc 14 68 9 view .LVU159
+ 1113              	.LBB767:
+ 1114              	.LBB764:
+ 1115              	.LBB762:
+ 1116              	.LBI759:
+ 1117              		.loc 12 204 15 view .LVU160
+ 1118              		.loc 12 204 15 is_stmt 0 view .LVU161
+ 1119              	.LBE762:
+ 1120              	.LBE764:
+ 1121              	.LBE767:
+ 1122              	.LBE770:
+ 1123              	.LBE773:
+ 1124              	.LBE776:
+ 1125              	.LBE779:
+ 1126              	.LBE816:
+ 1127              	.LBB817:
+ 1128              	.LBI781:
+  33:libDaisy/src/hid/switch.h ****     ~Switch() {}
+ 1129              		.loc 3 33 5 is_stmt 1 view .LVU162
+ 1130              	.LBB808:
+ 1131              	.LBB805:
+ 1132              	.LBI783:
+ 1133              		.loc 14 74 5 view .LVU163
+ 1134              	.LBB802:
+ 1135              	.LBB799:
+ 1136              	.LBI785:
+  68:libDaisy/src/per/gpio.h ****         : pin(), mode(Mode::INPUT), pull(Pull::NOPULL), speed(Speed::LOW)
+ 1137              		.loc 14 68 9 view .LVU164
+ 1138              	.LBB796:
+ 1139              	.LBB793:
+ 1140              	.LBB791:
+ 1141              	.LBI788:
+ 1142              		.loc 12 204 15 view .LVU165
+ 1143              		.loc 12 204 15 is_stmt 0 view .LVU166
+ 1144              	.LBE791:
+ 1145              	.LBE793:
+ 1146              	.LBE796:
+ 1147              	.LBE799:
+ 1148              	.LBE802:
+ 1149              	.LBE805:
+ 1150              	.LBE808:
+ 1151              	.LBE817:
+ 1152              	.LBB818:
+ 1153              	.LBB722:
+ 1154              	.LBB718:
+ 1155              	.LBB690:
+ 1156              	.LBB687:
+ 1157              	.LBB684:
+ 1158              	.LBB681:
+  69:libDaisy/src/per/gpio.h ****         {
+ARM GAS  /tmp/ccxj3Qdz.s 			page 42
+
+
+ 1159              		.loc 14 69 37 discriminator 1 view .LVU167
+ 1160 00a4 C4E94033 		strd	r3, r3, [r4, #256]
+ 1161              	.LBE681:
+ 1162              	.LBE684:
+ 1163              	.LBE687:
+ 1164              	.LBE690:
+ 1165              	.LBE718:
+ 1166              	.LBB719:
+ 1167              	.LBB711:
+ 1168              	.LBB708:
+ 1169              	.LBB705:
+ 1170              	.LBB702:
+ 1171 00a8 C4E94533 		strd	r3, r3, [r4, #276]
+ 1172              	.LBE702:
+ 1173              	.LBE705:
+ 1174              	.LBE708:
+ 1175              	.LBE711:
+ 1176              	.LBE719:
+ 1177              	.LBE722:
+ 1178              	.LBE818:
+ 1179              	.LBB819:
+ 1180              	.LBB751:
+ 1181              	.LBB748:
+ 1182              	.LBB745:
+ 1183              	.LBB742:
+ 1184              	.LBB739:
+ 1185              	.LBB736:
+ 1186 00ac C4E94E33 		strd	r3, r3, [r4, #312]
+ 1187              	.LBE736:
+ 1188              	.LBE739:
+ 1189              	.LBE742:
+ 1190              	.LBE745:
+ 1191              	.LBE748:
+ 1192              	.LBE751:
+ 1193              	.LBE819:
+ 1194              	.LBB820:
+ 1195              	.LBB780:
+ 1196              	.LBB777:
+ 1197              	.LBB774:
+ 1198              	.LBB771:
+ 1199              	.LBB768:
+ 1200              	.LBB765:
+ 1201 00b0 C4E95733 		strd	r3, r3, [r4, #348]
+ 1202              	.LBE765:
+ 1203              	.LBE768:
+ 1204              	.LBE771:
+ 1205              	.LBE774:
+ 1206              	.LBE777:
+ 1207              	.LBE780:
+ 1208              	.LBE820:
+ 1209              	.LBB821:
+ 1210              	.LBB809:
+ 1211              	.LBB806:
+ 1212              	.LBB803:
+ 1213              	.LBB800:
+ 1214              	.LBB797:
+ 1215              	.LBB794:
+ARM GAS  /tmp/ccxj3Qdz.s 			page 43
+
+
+ 1216 00b4 C4E96033 		strd	r3, r3, [r4, #384]
+ 1217              	.LBE794:
+ 1218              	.LBE797:
+ 1219              	.LBE800:
+ 1220              	.LBE803:
+ 1221              	.LBE806:
+ 1222              	.LBE809:
+ 1223              	.LBE821:
+ 1224              		.loc 2 11 8 discriminator 6 view .LVU168
+ 1225 00b8 C4E96933 		strd	r3, r3, [r4, #420]
+ 1226 00bc C4E96C33 		strd	r3, r3, [r4, #432]
+ 1227              	.LBE824:
+ 1228              	.LBE827:
+ 1229              	.LBE828:
+ 1230              	.LBE830:
+ 1231              		.loc 1 43 1 view .LVU169
+ 1232 00c0 5DF8044B 		ldr	r4, [sp], #4
+ 1233              		.cfi_restore 4
+ 1234              		.cfi_def_cfa_offset 0
+ 1235              	.LBB831:
+ 1236              	.LBB829:
    6:BlackBox.cpp  **** static Hardware   g_hw;
- 1184              		.loc 1 6 19 discriminator 1 view .LVU178
- 1185 00c0 FFF7FEBF 		b	__aeabi_atexit
- 1186              	.LVL30:
- 1187              	.L21:
- 1188              		.align	2
- 1189              	.L20:
- 1190 00c4 00000000 		.word	__dso_handle
- 1191 00c8 00000000 		.word	_ZL4g_hw
- 1192 00cc 00000000 		.word	_ZN8HardwareD1Ev
- 1193              	.LBE796:
- 1194              	.LBE798:
- 1195              		.cfi_endproc
- 1196              	.LFE5557:
- 1198              		.section	.init_array,"aw",%init_array
- 1199              		.align	2
- 1200 0000 00000000 		.word	_GLOBAL__sub_I__Z13AudioCallbackPKPKfPPfj(target1)
- 1201              		.section	.bss._ZL8g_screen,"aw",%nobits
- 1202              		.align	2
- 1205              	_ZL8g_screen:
- 1206 0000 00000000 		.space	8
- 1206      00000000 
- 1207              		.section	.bss._ZL4g_hw,"aw",%nobits
- 1208              		.align	2
-ARM GAS  /tmp/ccWyZVAv.s 			page 43
+ 1237              		.loc 1 6 19 discriminator 1 view .LVU170
+ 1238 00c4 FFF7FEBF 		b	__aeabi_atexit
+ 1239              	.LVL24:
+ 1240              	.L21:
+ 1241              		.align	2
+ 1242              	.L20:
+ 1243 00c8 00000000 		.word	__dso_handle
+ 1244 00cc 00000000 		.word	_ZL4g_hw
+ 1245 00d0 00000000 		.word	_ZN8HardwareD1Ev
+ 1246              	.LBE829:
+ 1247              	.LBE831:
+ 1248              		.cfi_endproc
+ 1249              	.LFE5557:
+ 1251              		.section	.init_array,"aw",%init_array
+ 1252              		.align	2
+ 1253 0000 00000000 		.word	_GLOBAL__sub_I__Z13AudioCallbackPKPKfPPfj(target1)
+ 1254              		.section	.bss._ZL8g_screen,"aw",%nobits
+ 1255              		.align	2
+ 1258              	_ZL8g_screen:
+ 1259 0000 00000000 		.space	8
+ 1259      00000000 
+ 1260              		.section	.bss._ZL4g_hw,"aw",%nobits
+ 1261              		.align	2
+ 1264              	_ZL4g_hw:
+ 1265 0000 00000000 		.space	444
+ 1265      00000000 
+ 1265      00000000 
+ 1265      00000000 
+ 1265      00000000 
+ 1266              		.text
+ 1267              	.Letext0:
+ 1268              		.file 16 "/usr/arm-none-eabi/include/machine/_default_types.h"
+ 1269              		.file 17 "/usr/arm-none-eabi/include/sys/_stdint.h"
+ 1270              		.file 18 "/usr/arm-none-eabi/include/stdint.h"
+ 1271              		.file 19 "/usr/lib/gcc/arm-none-eabi/14.2.0/include/stddef.h"
+ARM GAS  /tmp/ccxj3Qdz.s 			page 44
 
 
- 1211              	_ZL4g_hw:
- 1212 0000 00000000 		.space	444
- 1212      00000000 
- 1212      00000000 
- 1212      00000000 
- 1212      00000000 
- 1213              		.text
- 1214              	.Letext0:
- 1215              		.file 16 "/usr/arm-none-eabi/include/machine/_default_types.h"
- 1216              		.file 17 "/usr/arm-none-eabi/include/sys/_stdint.h"
- 1217              		.file 18 "/usr/arm-none-eabi/include/stdint.h"
- 1218              		.file 19 "/usr/lib/gcc/arm-none-eabi/14.2.0/include/stddef.h"
- 1219              		.file 20 "/usr/arm-none-eabi/include/c++/14.2.0/cmath"
- 1220              		.file 21 "/usr/arm-none-eabi/include/c++/14.2.0/bits/std_abs.h"
- 1221              		.file 22 "/usr/arm-none-eabi/include/c++/14.2.0/cstdlib"
- 1222              		.file 23 "/usr/arm-none-eabi/include/c++/14.2.0/cstdint"
- 1223              		.file 24 "/usr/arm-none-eabi/include/c++/14.2.0/type_traits"
- 1224              		.file 25 "/usr/arm-none-eabi/include/c++/14.2.0/debug/debug.h"
- 1225              		.file 26 "/usr/arm-none-eabi/include/c++/14.2.0/cstdarg"
- 1226              		.file 27 "/usr/arm-none-eabi/include/c++/14.2.0/cstdio"
- 1227              		.file 28 "/usr/arm-none-eabi/include/c++/14.2.0/cstring"
- 1228              		.file 29 "/usr/arm-none-eabi/include/c++/14.2.0/cwchar"
- 1229              		.file 30 "/usr/arm-none-eabi/include/c++/14.2.0/clocale"
- 1230              		.file 31 "/usr/arm-none-eabi/include/c++/14.2.0/bits/stl_pair.h"
- 1231              		.file 32 "/usr/arm-none-eabi/include/c++/14.2.0/bits/charconv.h"
- 1232              		.file 33 "/usr/arm-none-eabi/include/c++/14.2.0/bits/predefined_ops.h"
- 1233              		.file 34 "/usr/arm-none-eabi/include/sys/_types.h"
- 1234              		.file 35 "/usr/arm-none-eabi/include/sys/reent.h"
- 1235              		.file 36 "/usr/arm-none-eabi/include/sys/lock.h"
- 1236              		.file 37 "/usr/arm-none-eabi/include/math.h"
- 1237              		.file 38 "/usr/arm-none-eabi/include/stdlib.h"
- 1238              		.file 39 "/usr/arm-none-eabi/include/c++/14.2.0/math.h"
- 1239              		.file 40 "/usr/arm-none-eabi/include/c++/14.2.0/stdlib.h"
- 1240              		.file 41 "/usr/arm-none-eabi/include/c++/14.2.0/arm-none-eabi/thumb/v7e-m+dp/hard/bits/c++config.h
- 1241              		.file 42 "libDaisy/src/util/wav_format.h"
- 1242              		.file 43 "libDaisy/src/dev/sr_595.h"
- 1243              		.file 44 "libDaisy/src/dev/max11300.h"
- 1244              		.file 45 "libDaisy/src/dev/sdram.h"
- 1245              		.file 46 "/usr/lib/gcc/arm-none-eabi/14.2.0/include/stdarg.h"
- 1246              		.file 47 "/usr/arm-none-eabi/include/stdio.h"
- 1247              		.file 48 "/usr/arm-none-eabi/include/string.h"
- 1248              		.file 49 "DaisySP/Source/Control/adenv.h"
- 1249              		.file 50 "DaisySP/Source/Utility/dsp.h"
- 1250              		.file 51 "/usr/arm-none-eabi/include/wchar.h"
- 1251              		.file 52 "/usr/arm-none-eabi/include/locale.h"
- 1252              		.file 53 "processing.h"
- 1253              		.file 54 "screen.h"
- 1254              		.file 55 "<built-in>"
-ARM GAS  /tmp/ccWyZVAv.s 			page 44
+ 1272              		.file 20 "/usr/arm-none-eabi/include/c++/14.2.0/cmath"
+ 1273              		.file 21 "/usr/arm-none-eabi/include/c++/14.2.0/bits/std_abs.h"
+ 1274              		.file 22 "/usr/arm-none-eabi/include/c++/14.2.0/cstdlib"
+ 1275              		.file 23 "/usr/arm-none-eabi/include/c++/14.2.0/cstdint"
+ 1276              		.file 24 "/usr/arm-none-eabi/include/c++/14.2.0/type_traits"
+ 1277              		.file 25 "/usr/arm-none-eabi/include/c++/14.2.0/debug/debug.h"
+ 1278              		.file 26 "/usr/arm-none-eabi/include/c++/14.2.0/cstdarg"
+ 1279              		.file 27 "/usr/arm-none-eabi/include/c++/14.2.0/cstdio"
+ 1280              		.file 28 "/usr/arm-none-eabi/include/c++/14.2.0/cstring"
+ 1281              		.file 29 "/usr/arm-none-eabi/include/c++/14.2.0/cwchar"
+ 1282              		.file 30 "/usr/arm-none-eabi/include/c++/14.2.0/clocale"
+ 1283              		.file 31 "/usr/arm-none-eabi/include/c++/14.2.0/bits/stl_pair.h"
+ 1284              		.file 32 "/usr/arm-none-eabi/include/c++/14.2.0/bits/charconv.h"
+ 1285              		.file 33 "/usr/arm-none-eabi/include/c++/14.2.0/bits/predefined_ops.h"
+ 1286              		.file 34 "/usr/arm-none-eabi/include/sys/_types.h"
+ 1287              		.file 35 "/usr/arm-none-eabi/include/sys/reent.h"
+ 1288              		.file 36 "/usr/arm-none-eabi/include/sys/lock.h"
+ 1289              		.file 37 "/usr/arm-none-eabi/include/math.h"
+ 1290              		.file 38 "/usr/arm-none-eabi/include/stdlib.h"
+ 1291              		.file 39 "/usr/arm-none-eabi/include/c++/14.2.0/math.h"
+ 1292              		.file 40 "/usr/arm-none-eabi/include/c++/14.2.0/stdlib.h"
+ 1293              		.file 41 "/usr/arm-none-eabi/include/c++/14.2.0/arm-none-eabi/thumb/v7e-m+dp/hard/bits/c++config.h
+ 1294              		.file 42 "libDaisy/src/util/wav_format.h"
+ 1295              		.file 43 "libDaisy/src/dev/sr_595.h"
+ 1296              		.file 44 "libDaisy/src/dev/max11300.h"
+ 1297              		.file 45 "libDaisy/src/dev/sdram.h"
+ 1298              		.file 46 "/usr/lib/gcc/arm-none-eabi/14.2.0/include/stdarg.h"
+ 1299              		.file 47 "/usr/arm-none-eabi/include/stdio.h"
+ 1300              		.file 48 "/usr/arm-none-eabi/include/string.h"
+ 1301              		.file 49 "DaisySP/Source/Control/adenv.h"
+ 1302              		.file 50 "DaisySP/Source/Utility/dsp.h"
+ 1303              		.file 51 "/usr/arm-none-eabi/include/wchar.h"
+ 1304              		.file 52 "/usr/arm-none-eabi/include/locale.h"
+ 1305              		.file 53 "processing.h"
+ 1306              		.file 54 "screen.h"
+ 1307              		.file 55 "<built-in>"
+ARM GAS  /tmp/ccxj3Qdz.s 			page 45
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 BlackBox.cpp
-     /tmp/ccWyZVAv.s:20     .text._ZN8HardwareD2Ev:00000000 $t
-     /tmp/ccWyZVAv.s:27     .text._ZN8HardwareD2Ev:00000000 _ZN8HardwareD2Ev
-     /tmp/ccWyZVAv.s:27     .text._ZN8HardwareD2Ev:00000000 _ZN8HardwareD1Ev
-     /tmp/ccWyZVAv.s:116    .text._Z13AudioCallbackPKPKfPPfj:00000000 $t
-     /tmp/ccWyZVAv.s:123    .text._Z13AudioCallbackPKPKfPPfj:00000000 _Z13AudioCallbackPKPKfPPfj
-     /tmp/ccWyZVAv.s:186    .text._Z13AudioCallbackPKPKfPPfj:00000034 $d
-     /tmp/ccWyZVAv.s:1211   .bss._ZL4g_hw:00000000 _ZL4g_hw
-     /tmp/ccWyZVAv.s:191    .text.startup.main:00000000 $t
-     /tmp/ccWyZVAv.s:198    .text.startup.main:00000000 main
-     /tmp/ccWyZVAv.s:246    .text.startup.main:00000028 $d
-     /tmp/ccWyZVAv.s:1205   .bss._ZL8g_screen:00000000 _ZL8g_screen
-     /tmp/ccWyZVAv.s:253    .text.startup._GLOBAL__sub_I__Z13AudioCallbackPKPKfPPfj:00000000 $t
-     /tmp/ccWyZVAv.s:259    .text.startup._GLOBAL__sub_I__Z13AudioCallbackPKPKfPPfj:00000000 _GLOBAL__sub_I__Z13AudioCallbackPKPKfPPfj
-     /tmp/ccWyZVAv.s:1190   .text.startup._GLOBAL__sub_I__Z13AudioCallbackPKPKfPPfj:000000c4 $d
-     /tmp/ccWyZVAv.s:1199   .init_array:00000000 $d
-     /tmp/ccWyZVAv.s:1202   .bss._ZL8g_screen:00000000 $d
-     /tmp/ccWyZVAv.s:1208   .bss._ZL4g_hw:00000000 $d
+     /tmp/ccxj3Qdz.s:20     .text._ZN8HardwareD2Ev:00000000 $t
+     /tmp/ccxj3Qdz.s:27     .text._ZN8HardwareD2Ev:00000000 _ZN8HardwareD2Ev
+     /tmp/ccxj3Qdz.s:27     .text._ZN8HardwareD2Ev:00000000 _ZN8HardwareD1Ev
+     /tmp/ccxj3Qdz.s:116    .text._Z13AudioCallbackPKPKfPPfj:00000000 $t
+     /tmp/ccxj3Qdz.s:123    .text._Z13AudioCallbackPKPKfPPfj:00000000 _Z13AudioCallbackPKPKfPPfj
+     /tmp/ccxj3Qdz.s:186    .text._Z13AudioCallbackPKPKfPPfj:00000034 $d
+     /tmp/ccxj3Qdz.s:1264   .bss._ZL4g_hw:00000000 _ZL4g_hw
+     /tmp/ccxj3Qdz.s:191    .text.startup.main:00000000 $t
+     /tmp/ccxj3Qdz.s:198    .text.startup.main:00000000 main
+     /tmp/ccxj3Qdz.s:246    .text.startup.main:00000028 $d
+     /tmp/ccxj3Qdz.s:1258   .bss._ZL8g_screen:00000000 _ZL8g_screen
+     /tmp/ccxj3Qdz.s:253    .text.startup._GLOBAL__sub_I__Z13AudioCallbackPKPKfPPfj:00000000 $t
+     /tmp/ccxj3Qdz.s:259    .text.startup._GLOBAL__sub_I__Z13AudioCallbackPKPKfPPfj:00000000 _GLOBAL__sub_I__Z13AudioCallbackPKPKfPPfj
+     /tmp/ccxj3Qdz.s:1243   .text.startup._GLOBAL__sub_I__Z13AudioCallbackPKPKfPPfj:000000c8 $d
+     /tmp/ccxj3Qdz.s:1252   .init_array:00000000 $d
+     /tmp/ccxj3Qdz.s:1255   .bss._ZL8g_screen:00000000 $d
+     /tmp/ccxj3Qdz.s:1261   .bss._ZL4g_hw:00000000 $d
                            .group:00000000 _ZN8HardwareD5Ev
 
 UNDEFINED SYMBOLS

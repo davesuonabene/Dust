@@ -23,8 +23,8 @@ struct Hardware
     Switch    button3;
 
     // --- Testing Variables ---
-    int enc1_count = 0;
-    int enc2_count = 0;
+    int volatile enc1_count = 0;
+    int volatile enc2_count = 0;
 
     float     sample_rate;
 

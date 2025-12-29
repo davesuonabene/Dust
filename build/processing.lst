@@ -1,4 +1,4 @@
-ARM GAS  /tmp/cc7yCIpr.s 			page 1
+ARM GAS  /tmp/ccAQ1SRC.s 			page 1
 
 
    1              		.cpu cortex-m7
@@ -58,7 +58,7 @@ ARM GAS  /tmp/cc7yCIpr.s 			page 1
   27:processing.cpp ****     {"Div",     TYPE_PARAM, PARAM_DIVISION, nullptr, 0}
   28:processing.cpp **** };
   29:processing.cpp **** const int kMenuBpmEditSize = sizeof(kMenuBpmEdit) / sizeof(kMenuBpmEdit[0]);
-ARM GAS  /tmp/cc7yCIpr.s 			page 2
+ARM GAS  /tmp/ccAQ1SRC.s 			page 2
 
 
   30:processing.cpp **** 
@@ -118,7 +118,7 @@ ARM GAS  /tmp/cc7yCIpr.s 			page 1
   36 0000 7047     		bx	lr
   37              		.cfi_endproc
   38              	.LFE4900:
-ARM GAS  /tmp/cc7yCIpr.s 			page 3
+ARM GAS  /tmp/ccAQ1SRC.s 			page 3
 
 
   40 0002 00BF     		.section	.text._ZN10Processing15UpdateBufferLenEv,"ax",%progbits
@@ -178,7 +178,7 @@ ARM GAS  /tmp/cc7yCIpr.s 			page 1
   82:processing.cpp ****     buffer_len_samples = (uint32_t)(loop_len_sec * sample_rate_);
   83              		.loc 1 82 50 view .LVU18
   84 002a 67EE877A 		vmul.f32	s15, s15, s14
-ARM GAS  /tmp/cc7yCIpr.s 			page 4
+ARM GAS  /tmp/ccAQ1SRC.s 			page 4
 
 
   82:processing.cpp ****     buffer_len_samples = (uint32_t)(loop_len_sec * sample_rate_);
@@ -238,7 +238,7 @@ ARM GAS  /tmp/cc7yCIpr.s 			page 1
   88:processing.cpp **** void Processing::UpdateGrainParams() {
  135              		.loc 1 88 38 is_stmt 1 view -0
  136              		.cfi_startproc
-ARM GAS  /tmp/cc7yCIpr.s 			page 5
+ARM GAS  /tmp/ccAQ1SRC.s 			page 5
 
 
  137              		@ args = 0, pretend = 0, frame = 0
@@ -298,7 +298,7 @@ ARM GAS  /tmp/cc7yCIpr.s 			page 1
   47:processing.h  **** extern const int kMenuBpmEditSize;
   48:processing.h  **** extern const MenuItem kMenuPostEdit[];
   49:processing.h  **** extern const int kMenuPostEditSize;
-ARM GAS  /tmp/cc7yCIpr.s 			page 6
+ARM GAS  /tmp/ccAQ1SRC.s 			page 6
 
 
   50:processing.h  **** extern const MenuItem kMenuGrainsEdit[];
@@ -358,7 +358,7 @@ ARM GAS  /tmp/cc7yCIpr.s 			page 1
  104:processing.h  ****         float Process()
  105:processing.h  ****         {
  106:processing.h  ****             seed_ = (seed_ * 1664525L + 1013904223L) & 0xFFFFFFFF;
-ARM GAS  /tmp/cc7yCIpr.s 			page 7
+ARM GAS  /tmp/ccAQ1SRC.s 			page 7
 
 
  144              		.loc 2 106 28 is_stmt 0 view .LVU31
@@ -418,7 +418,7 @@ ARM GAS  /tmp/cc7yCIpr.s 			page 1
  188 0028 DFED1C4A 		vldr.32	s9, .L12+12
  189              		.loc 2 107 20 view .LVU46
  190 002c F8EE677A 		vcvt.f32.u32	s15, s15
-ARM GAS  /tmp/cc7yCIpr.s 			page 8
+ARM GAS  /tmp/ccAQ1SRC.s 			page 8
 
 
  191              	.LBE44:
@@ -478,7 +478,7 @@ ARM GAS  /tmp/cc7yCIpr.s 			page 1
  104:processing.h  ****         {
  240              		.loc 2 104 15 view .LVU58
  241              	.LBB46:
-ARM GAS  /tmp/cc7yCIpr.s 			page 9
+ARM GAS  /tmp/ccAQ1SRC.s 			page 9
 
 
  106:processing.h  ****             return (float)seed_ / 4294967295.0f;
@@ -538,7 +538,7 @@ ARM GAS  /tmp/cc7yCIpr.s 			page 1
  282 0082 0122     		movcc	r2, #1
  283              		.loc 1 96 5 view .LVU78
  284 0084 012B     		cmp	r3, #1
-ARM GAS  /tmp/cc7yCIpr.s 			page 10
+ARM GAS  /tmp/ccAQ1SRC.s 			page 10
 
 
  285 0086 38BF     		it	cc
@@ -598,7 +598,7 @@ ARM GAS  /tmp/cc7yCIpr.s 			page 1
  334              		.loc 1 56 11 view .LVU85
  335 000a 2948     		ldr	r0, .L18+4
  336              	.LVL16:
-ARM GAS  /tmp/cc7yCIpr.s 			page 11
+ARM GAS  /tmp/ccAQ1SRC.s 			page 11
 
 
   56:processing.cpp ****     sample_rate_ = hw.sample_rate;
@@ -658,7 +658,7 @@ ARM GAS  /tmp/cc7yCIpr.s 			page 1
  372              		.loc 1 59 29 is_stmt 0 view .LVU104
  373 0032 6362     		str	r3, [r4, #36]	@ float
   59:processing.cpp ****     params[PARAM_PITCH] = 1.0f; params[PARAM_GRAIN_SIZE] = 0.1f; params[PARAM_GRAINS] = 10.0f; 
-ARM GAS  /tmp/cc7yCIpr.s 			page 12
+ARM GAS  /tmp/ccAQ1SRC.s 			page 12
 
 
  374              		.loc 1 59 37 is_stmt 1 view .LVU105
@@ -718,7 +718,7 @@ ARM GAS  /tmp/cc7yCIpr.s 			page 1
  410              		.loc 1 62 19 discriminator 1 view .LVU123
   63:processing.cpp ****         effective_params[i] = params[i]; 
  411              		.loc 1 63 29 is_stmt 0 view .LVU124
-ARM GAS  /tmp/cc7yCIpr.s 			page 13
+ARM GAS  /tmp/ccAQ1SRC.s 			page 13
 
 
  412 0048 FFF7FEFF 		bl	memset
@@ -778,7 +778,7 @@ ARM GAS  /tmp/cc7yCIpr.s 			page 1
   67:processing.cpp ****     last_looper_toggle = 0;
  453              		.loc 1 67 23 view .LVU138
   69:processing.cpp ****     UpdateBufferLen();
-ARM GAS  /tmp/cc7yCIpr.s 			page 14
+ARM GAS  /tmp/ccAQ1SRC.s 			page 14
 
 
  454              		.loc 1 69 23 is_stmt 0 view .LVU139
@@ -838,7 +838,7 @@ ARM GAS  /tmp/cc7yCIpr.s 			page 1
  500              		.cfi_startproc
  501              		@ args = 0, pretend = 0, frame = 0
  502              		@ frame_needed = 0, uses_anonymous_args = 0
-ARM GAS  /tmp/cc7yCIpr.s 			page 15
+ARM GAS  /tmp/ccAQ1SRC.s 			page 15
 
 
  100:processing.cpp ****     float pre_gain = effective_params[PARAM_PRE_GAIN] * 2.0f; 
@@ -898,7 +898,7 @@ ARM GAS  /tmp/cc7yCIpr.s 			page 1
   34:DaisySP/Source/Utility/dsp.h **** //Convert from semitones to other units. e.g. 2 ^ (kOneTwelfth * x)
   35:DaisySP/Source/Utility/dsp.h **** static constexpr float kOneTwelfth = 1.f / 12.f;
   36:DaisySP/Source/Utility/dsp.h **** 
-ARM GAS  /tmp/cc7yCIpr.s 			page 16
+ARM GAS  /tmp/ccAQ1SRC.s 			page 16
 
 
   37:DaisySP/Source/Utility/dsp.h **** /** efficient floating point min/max
@@ -958,7 +958,7 @@ ARM GAS  /tmp/cc7yCIpr.s 			page 1
  541              		.loc 1 103 5 is_stmt 1 view .LVU161
  103:processing.cpp ****     float stereo = effective_params[PARAM_STEREO]; float spray = effective_params[PARAM_SPRAY];
  542              		.loc 1 103 11 is_stmt 0 view .LVU162
-ARM GAS  /tmp/cc7yCIpr.s 			page 17
+ARM GAS  /tmp/ccAQ1SRC.s 			page 17
 
 
  543 0022 33EE033A 		vadd.f32	s6, s6, s6
@@ -1018,7 +1018,7 @@ ARM GAS  /tmp/cc7yCIpr.s 			page 1
  106:processing.cpp ****     
  582              		.loc 1 106 27 view .LVU178
  583 0040 30EE207A 		vadd.f32	s14, s0, s1
-ARM GAS  /tmp/cc7yCIpr.s 			page 18
+ARM GAS  /tmp/ccAQ1SRC.s 			page 18
 
 
  584              	.LVL34:
@@ -1078,7 +1078,7 @@ ARM GAS  /tmp/cc7yCIpr.s 			page 1
  618              	.LBB108:
  619              	.LBI104:
   51:DaisySP/Source/Utility/dsp.h **** {
-ARM GAS  /tmp/cc7yCIpr.s 			page 19
+ARM GAS  /tmp/ccAQ1SRC.s 			page 19
 
 
  620              		.loc 3 51 14 is_stmt 1 view .LVU190
@@ -1138,7 +1138,7 @@ ARM GAS  /tmp/cc7yCIpr.s 			page 1
  662              		.loc 2 106 39 view .LVU203
  663 0070 01FB0528 		mla	r8, r1, r5, r2
  664              		.loc 2 107 13 is_stmt 1 view .LVU204
-ARM GAS  /tmp/cc7yCIpr.s 			page 20
+ARM GAS  /tmp/ccAQ1SRC.s 			page 20
 
 
  665              	.LVL43:
@@ -1198,7 +1198,7 @@ ARM GAS  /tmp/cc7yCIpr.s 			page 1
  708 0096 F5D1     		bne	.L30
  709              	.LVL47:
  710              	.L29:
-ARM GAS  /tmp/cc7yCIpr.s 			page 21
+ARM GAS  /tmp/ccAQ1SRC.s 			page 21
 
 
  115:processing.cpp ****         for(int i = 0; i < MAX_GRAINS; i++) { 
@@ -1258,7 +1258,7 @@ ARM GAS  /tmp/cc7yCIpr.s 			page 1
  748              		.loc 2 106 13 view .LVU238
  106:processing.h  ****             return (float)seed_ / 4294967295.0f;
  749              		.loc 2 106 28 is_stmt 0 view .LVU239
-ARM GAS  /tmp/cc7yCIpr.s 			page 22
+ARM GAS  /tmp/ccAQ1SRC.s 			page 22
 
 
  750 00a8 9949     		ldr	r1, .L99+4
@@ -1318,7 +1318,7 @@ ARM GAS  /tmp/cc7yCIpr.s 			page 1
  125:processing.cpp ****         for(int i = 0; i < MAX_GRAINS; i++) { 
  793              		.loc 1 125 9 discriminator 2 view .LVU257
  794              		.loc 1 126 13 is_stmt 0 view .LVU258
-ARM GAS  /tmp/cc7yCIpr.s 			page 23
+ARM GAS  /tmp/ccAQ1SRC.s 			page 23
 
 
  795 00c8 92F800C0 		ldrb	ip, [r2]	@ zero_extendqisi2
@@ -1378,7 +1378,7 @@ ARM GAS  /tmp/cc7yCIpr.s 			page 1
  834              	.LBB255:
  132:processing.cpp ****     for(int i = 0; i < MAX_GRAINS; i++) { 
  835              		.loc 1 132 22 discriminator 1 view .LVU275
-ARM GAS  /tmp/cc7yCIpr.s 			page 24
+ARM GAS  /tmp/ccAQ1SRC.s 			page 24
 
 
  836              	.LBE255:
@@ -1438,7 +1438,7 @@ ARM GAS  /tmp/cc7yCIpr.s 			page 1
   87:processing.h  ****             float   samp_a = buffer[i_idx];
  878              		.loc 2 87 39 is_stmt 0 view .LVU289
  879 0118 B8EEC76A 		vcvt.f32.s32	s12, s14
-ARM GAS  /tmp/cc7yCIpr.s 			page 25
+ARM GAS  /tmp/ccAQ1SRC.s 			page 25
 
 
  880              	.LBB230:
@@ -1498,7 +1498,7 @@ ARM GAS  /tmp/cc7yCIpr.s 			page 1
  919              	.LBB227:
   61:processing.h  ****             return (1.0f - pos) * 2.0f;
  920              		.loc 2 61 13 view .LVU305
-ARM GAS  /tmp/cc7yCIpr.s 			page 26
+ARM GAS  /tmp/ccAQ1SRC.s 			page 26
 
 
  921 014c 00F1DA80 		bmi	.L95
@@ -1558,7 +1558,7 @@ ARM GAS  /tmp/cc7yCIpr.s 			page 1
  960 0188 C3ED017A 		vstr.32	s15, [r3, #4]
  961              	.LVL69:
   94:processing.h  ****             env_pos += env_inc;
-ARM GAS  /tmp/cc7yCIpr.s 			page 27
+ARM GAS  /tmp/ccAQ1SRC.s 			page 27
 
 
  962              		.loc 2 94 28 is_stmt 1 discriminator 1 view .LVU321
@@ -1618,7 +1618,7 @@ ARM GAS  /tmp/cc7yCIpr.s 			page 1
  1001              	.LBE221:
  1002              	.LBB235:
  1003              	.LBB236:
-ARM GAS  /tmp/cc7yCIpr.s 			page 28
+ARM GAS  /tmp/ccAQ1SRC.s 			page 28
 
 
   85:processing.h  ****             int32_t i_idx  = (int32_t)read_pos;
@@ -1678,7 +1678,7 @@ ARM GAS  /tmp/cc7yCIpr.s 			page 1
  1044 01f2 B8EEC76A 		vcvt.f32.s32	s12, s14
  1045              	.LBB244:
  1046              	.LBB240:
-ARM GAS  /tmp/cc7yCIpr.s 			page 29
+ARM GAS  /tmp/ccAQ1SRC.s 			page 29
 
 
   61:processing.h  ****             return (1.0f - pos) * 2.0f;
@@ -1738,7 +1738,7 @@ ARM GAS  /tmp/cc7yCIpr.s 			page 1
  1085              		.loc 2 61 13 view .LVU367
  1086 0226 6AD4     		bmi	.L96
   62:processing.h  ****         }
-ARM GAS  /tmp/cc7yCIpr.s 			page 30
+ARM GAS  /tmp/ccAQ1SRC.s 			page 30
 
 
  1087              		.loc 2 62 13 view .LVU368
@@ -1798,7 +1798,7 @@ ARM GAS  /tmp/cc7yCIpr.s 			page 1
   94:processing.h  ****             env_pos += env_inc;
  1127              		.loc 2 94 28 is_stmt 1 discriminator 1 view .LVU383
  1128 0264 F1EE10FA 		vmrs	APSR_nzcv, FPSCR
-ARM GAS  /tmp/cc7yCIpr.s 			page 31
+ARM GAS  /tmp/ccAQ1SRC.s 			page 31
 
 
  1129 0268 08D5     		bpl	.L58
@@ -1858,7 +1858,7 @@ ARM GAS  /tmp/cc7yCIpr.s 			page 1
  1167              		.loc 1 132 22 discriminator 1 view .LVU399
  1168 02a2 1833     		adds	r3, r3, #24
  1169              		.loc 1 134 15 discriminator 1 view .LVU400
-ARM GAS  /tmp/cc7yCIpr.s 			page 32
+ARM GAS  /tmp/ccAQ1SRC.s 			page 32
 
 
  1170 02a4 74EEA74A 		vadd.f32	s9, s9, s15
@@ -1918,7 +1918,7 @@ ARM GAS  /tmp/cc7yCIpr.s 			page 1
  1209 02d6 E7EE007A 		vfma.f32	s15, s14, s0
  1210              		.loc 1 140 34 view .LVU418
  1211 02da E7EE203A 		vfma.f32	s7, s14, s1
-ARM GAS  /tmp/cc7yCIpr.s 			page 33
+ARM GAS  /tmp/ccAQ1SRC.s 			page 33
 
 
  139:processing.cpp ****     outr = (inr_g * (1.0f - mix) + wet_r * mix) * post_gain;
@@ -1978,7 +1978,7 @@ ARM GAS  /tmp/cc7yCIpr.s 			page 1
   61:processing.h  ****             return (1.0f - pos) * 2.0f;
  1257              		.loc 2 61 41 view .LVU431
  1258              	.LBE242:
-ARM GAS  /tmp/cc7yCIpr.s 			page 34
+ARM GAS  /tmp/ccAQ1SRC.s 			page 34
 
 
  1259              	.LBE246:
@@ -2038,7 +2038,7 @@ ARM GAS  /tmp/cc7yCIpr.s 			page 1
  1307              		.loc 2 73 26 view .LVU440
  1308 0334 03EB4302 		add	r2, r3, r3, lsl #1
  1309              	.LBE125:
-ARM GAS  /tmp/cc7yCIpr.s 			page 35
+ARM GAS  /tmp/ccAQ1SRC.s 			page 35
 
 
  1310              	.LBE124:
@@ -2098,7 +2098,7 @@ ARM GAS  /tmp/cc7yCIpr.s 			page 1
  1353              		.loc 2 73 13 view .LVU453
   75:processing.h  ****             read_pos     = start_pos;
  1354              		.loc 2 75 32 is_stmt 0 discriminator 1 view .LVU454
-ARM GAS  /tmp/cc7yCIpr.s 			page 36
+ARM GAS  /tmp/ccAQ1SRC.s 			page 36
 
 
  1355 035c 90ED017A 		vldr.32	s14, [r0, #4]	@ int
@@ -2158,7 +2158,7 @@ ARM GAS  /tmp/cc7yCIpr.s 			page 1
  1395              	.LBE136:
  1396              	.LBE149:
  1397              	.LBB150:
-ARM GAS  /tmp/cc7yCIpr.s 			page 37
+ARM GAS  /tmp/ccAQ1SRC.s 			page 37
 
 
  1398              	.LBB114:
@@ -2218,7 +2218,7 @@ ARM GAS  /tmp/cc7yCIpr.s 			page 1
  1443              		.loc 2 78 13 view .LVU480
  1444              	.LBE130:
  1445              	.LBE139:
-ARM GAS  /tmp/cc7yCIpr.s 			page 38
+ARM GAS  /tmp/ccAQ1SRC.s 			page 38
 
 
  1446              	.LBE154:
@@ -2278,7 +2278,7 @@ ARM GAS  /tmp/cc7yCIpr.s 			page 1
  1491              	.LVL106:
   79:processing.h  ****             env_inc      = 1.0f / (float)size_samples;
  1492              		.loc 2 79 13 is_stmt 1 view .LVU492
-ARM GAS  /tmp/cc7yCIpr.s 			page 39
+ARM GAS  /tmp/ccAQ1SRC.s 			page 39
 
 
   80:processing.h  ****         }
@@ -2338,7 +2338,7 @@ ARM GAS  /tmp/cc7yCIpr.s 			page 1
  1537              	.LBB202:
  1538              	.LBB175:
  1539              		.loc 2 107 20 view .LVU505
-ARM GAS  /tmp/cc7yCIpr.s 			page 40
+ARM GAS  /tmp/ccAQ1SRC.s 			page 40
 
 
  1540 0402 B8EE677A 		vcvt.f32.u32	s14, s15
@@ -2398,7 +2398,7 @@ ARM GAS  /tmp/cc7yCIpr.s 			page 1
   73:processing.h  ****             while(start_pos < 0.0f) start_pos += (float)buffer_len;
  1582              		.loc 2 73 26 view .LVU519
  1583 042a 01F832C0 		strb	ip, [r1, r2, lsl #3]
-ARM GAS  /tmp/cc7yCIpr.s 			page 41
+ARM GAS  /tmp/ccAQ1SRC.s 			page 41
 
 
   74:processing.h  ****             while(start_pos >= (float)buffer_len) start_pos -= (float)buffer_len;
@@ -2458,7 +2458,7 @@ ARM GAS  /tmp/cc7yCIpr.s 			page 1
  1625              		.loc 2 107 20 is_stmt 0 view .LVU533
  1626 0466 07EE108A 		vmov	s14, r8	@ int
  1627              	.LBE168:
-ARM GAS  /tmp/cc7yCIpr.s 			page 42
+ARM GAS  /tmp/ccAQ1SRC.s 			page 42
 
 
  1628              	.LBE206:
@@ -2518,7 +2518,7 @@ ARM GAS  /tmp/cc7yCIpr.s 			page 1
  1673              	.LBB211:
  1674              	.LBB170:
  1675              		.loc 2 107 35 is_stmt 0 view .LVU545
-ARM GAS  /tmp/cc7yCIpr.s 			page 43
+ARM GAS  /tmp/ccAQ1SRC.s 			page 43
 
 
  1676 0486 67EE057A 		vmul.f32	s15, s14, s10
@@ -2578,7 +2578,7 @@ ARM GAS  /tmp/cc7yCIpr.s 			page 1
  1719              		.loc 2 80 13 view .LVU557
  1720              	.LBE187:
  1721              	.LBE197:
-ARM GAS  /tmp/cc7yCIpr.s 			page 44
+ARM GAS  /tmp/ccAQ1SRC.s 			page 44
 
 
  1722              	.LBE214:
@@ -2638,7 +2638,7 @@ ARM GAS  /tmp/cc7yCIpr.s 			page 1
  1771              	.LBI267:
  1772              		.loc 1 141 1 view .LVU566
  1773              	.LBB268:
-ARM GAS  /tmp/cc7yCIpr.s 			page 45
+ARM GAS  /tmp/ccAQ1SRC.s 			page 45
 
 
   51:processing.cpp **** Processing::Grain Processing::grains_l[MAX_GRAINS];
@@ -2698,7 +2698,7 @@ ARM GAS  /tmp/cc7yCIpr.s 			page 1
  1817              		.loc 2 57 12 view .LVU577
  1818 001a 0022     		movs	r2, #0
  1819              	.LBE275:
-ARM GAS  /tmp/cc7yCIpr.s 			page 46
+ARM GAS  /tmp/ccAQ1SRC.s 			page 46
 
 
  1820              	.LBE277:
@@ -2758,7 +2758,7 @@ ARM GAS  /tmp/cc7yCIpr.s 			page 1
  1869              		.global	kMenuMain
  1870              		.section	.rodata.str1.4,"aMS",%progbits,1
  1871              		.align	2
-ARM GAS  /tmp/cc7yCIpr.s 			page 47
+ARM GAS  /tmp/ccAQ1SRC.s 			page 47
 
 
  1872              	.LC1:
@@ -2818,7 +2818,7 @@ ARM GAS  /tmp/cc7yCIpr.s 			page 1
  1924 0058 06000000 		.word	6
  1925 005c 00000000 		.word	0
  1926 0060 00000000 		.word	0
-ARM GAS  /tmp/cc7yCIpr.s 			page 48
+ARM GAS  /tmp/ccAQ1SRC.s 			page 48
 
 
  1927 0064 1C000000 		.word	.LC6
@@ -2878,7 +2878,7 @@ ARM GAS  /tmp/cc7yCIpr.s 			page 1
  1981 0034 00000000 		.word	0
  1982 0038 00000000 		.word	0
  1983 003c 44000000 		.word	.LC11
-ARM GAS  /tmp/cc7yCIpr.s 			page 49
+ARM GAS  /tmp/ccAQ1SRC.s 			page 49
 
 
  1984 0040 00       		.byte	0
@@ -2938,7 +2938,7 @@ ARM GAS  /tmp/cc7yCIpr.s 			page 1
  2046 0010 00000000 		.word	0
  2047 0014 34000000 		.word	.LC9
  2048 0018 00       		.byte	0
-ARM GAS  /tmp/cc7yCIpr.s 			page 50
+ARM GAS  /tmp/ccAQ1SRC.s 			page 50
 
 
  2049 0019 000000   		.space	3
@@ -2998,7 +2998,7 @@ ARM GAS  /tmp/cc7yCIpr.s 			page 1
  2105              		.file 16 "/usr/arm-none-eabi/include/c++/14.2.0/cstdio"
  2106              		.file 17 "/usr/arm-none-eabi/include/c++/14.2.0/bits/stl_pair.h"
  2107              		.file 18 "/usr/arm-none-eabi/include/c++/14.2.0/bits/charconv.h"
-ARM GAS  /tmp/cc7yCIpr.s 			page 51
+ARM GAS  /tmp/ccAQ1SRC.s 			page 51
 
 
  2108              		.file 19 "/usr/arm-none-eabi/include/c++/14.2.0/cstring"
@@ -3037,58 +3037,58 @@ ARM GAS  /tmp/cc7yCIpr.s 			page 1
  2141              		.file 52 "libDaisy/src/dev/sdram.h"
  2142              		.file 53 "hw.h"
  2143              		.file 54 "<built-in>"
-ARM GAS  /tmp/cc7yCIpr.s 			page 52
+ARM GAS  /tmp/ccAQ1SRC.s 			page 52
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 processing.cpp
-     /tmp/cc7yCIpr.s:20     .text._ZN10Processing8ControlsER8Hardware:00000000 $t
-     /tmp/cc7yCIpr.s:27     .text._ZN10Processing8ControlsER8Hardware:00000000 _ZN10Processing8ControlsER8Hardware
-     /tmp/cc7yCIpr.s:41     .text._ZN10Processing15UpdateBufferLenEv:00000000 $t
-     /tmp/cc7yCIpr.s:48     .text._ZN10Processing15UpdateBufferLenEv:00000000 _ZN10Processing15UpdateBufferLenEv
-     /tmp/cc7yCIpr.s:119    .text._ZN10Processing15UpdateBufferLenEv:00000054 $d
-     /tmp/cc7yCIpr.s:125    .text._ZN10Processing17UpdateGrainParamsEv:00000000 $t
-     /tmp/cc7yCIpr.s:132    .text._ZN10Processing17UpdateGrainParamsEv:00000000 _ZN10Processing17UpdateGrainParamsEv
-     /tmp/cc7yCIpr.s:293    .text._ZN10Processing17UpdateGrainParamsEv:00000090 $d
-     /tmp/cc7yCIpr.s:301    .rodata._ZN10Processing4InitER8Hardware.str1.4:00000000 $d
-     /tmp/cc7yCIpr.s:305    .text._ZN10Processing4InitER8Hardware:00000000 $t
-     /tmp/cc7yCIpr.s:312    .text._ZN10Processing4InitER8Hardware:00000000 _ZN10Processing4InitER8Hardware
-     /tmp/cc7yCIpr.s:479    .text._ZN10Processing4InitER8Hardware:000000ac $d
-     /tmp/cc7yCIpr.s:2089   .sdram_bss:00000000 _ZN10Processing6bufferE
-     /tmp/cc7yCIpr.s:489    .text._ZN10Processing9GetSampleERfS0_ff:00000000 $t
-     /tmp/cc7yCIpr.s:496    .text._ZN10Processing9GetSampleERfS0_ff:00000000 _ZN10Processing9GetSampleERfS0_ff
-     /tmp/cc7yCIpr.s:1275   .text._ZN10Processing9GetSampleERfS0_ff:0000030c $d
-     /tmp/cc7yCIpr.s:1860   .bss._ZN10Processing8grains_lE:00000000 _ZN10Processing8grains_lE
-     /tmp/cc7yCIpr.s:1853   .bss._ZN10Processing8grains_rE:00000000 _ZN10Processing8grains_rE
-     /tmp/cc7yCIpr.s:1295   .text._ZN10Processing9GetSampleERfS0_ff:00000328 $t
-     /tmp/cc7yCIpr.s:1757   .text.startup._GLOBAL__sub_I_kMenuGenericEdit:00000000 $t
-     /tmp/cc7yCIpr.s:1763   .text.startup._GLOBAL__sub_I_kMenuGenericEdit:00000000 _GLOBAL__sub_I_kMenuGenericEdit
-     /tmp/cc7yCIpr.s:1840   .text.startup._GLOBAL__sub_I_kMenuGenericEdit:00000028 $d
-     /tmp/cc7yCIpr.s:1846   .init_array:00000000 $d
-     /tmp/cc7yCIpr.s:1850   .bss._ZN10Processing8grains_rE:00000000 $d
-     /tmp/cc7yCIpr.s:1857   .bss._ZN10Processing8grains_lE:00000000 $d
-     /tmp/cc7yCIpr.s:1867   .rodata.kMenuMainSize:00000000 kMenuMainSize
-     /tmp/cc7yCIpr.s:1864   .rodata.kMenuMainSize:00000000 $d
-     /tmp/cc7yCIpr.s:1896   .rodata.kMenuMain:00000000 kMenuMain
-     /tmp/cc7yCIpr.s:1871   .rodata.str1.4:00000000 $d
-     /tmp/cc7yCIpr.s:1893   .rodata.kMenuMain:00000000 $d
-     /tmp/cc7yCIpr.s:2040   .rodata.kMenuPostEdit:00000000 kMenuPostEdit
-     /tmp/cc7yCIpr.s:2005   .rodata.kMenuBpmEdit:00000000 kMenuBpmEdit
-     /tmp/cc7yCIpr.s:1964   .rodata.kMenuGrainsEdit:00000000 kMenuGrainsEdit
-     /tmp/cc7yCIpr.s:1944   .rodata.kMenuGrainsEditSize:00000000 kMenuGrainsEditSize
-     /tmp/cc7yCIpr.s:1941   .rodata.kMenuGrainsEditSize:00000000 $d
-     /tmp/cc7yCIpr.s:1961   .rodata.kMenuGrainsEdit:00000000 $d
-     /tmp/cc7yCIpr.s:1994   .rodata.kMenuBpmEditSize:00000000 kMenuBpmEditSize
-     /tmp/cc7yCIpr.s:1991   .rodata.kMenuBpmEditSize:00000000 $d
-     /tmp/cc7yCIpr.s:2002   .rodata.kMenuBpmEdit:00000000 $d
-     /tmp/cc7yCIpr.s:2029   .rodata.kMenuPostEditSize:00000000 kMenuPostEditSize
-     /tmp/cc7yCIpr.s:2026   .rodata.kMenuPostEditSize:00000000 $d
-     /tmp/cc7yCIpr.s:2037   .rodata.kMenuPostEdit:00000000 $d
-     /tmp/cc7yCIpr.s:2064   .rodata.kMenuGenericEditSize:00000000 kMenuGenericEditSize
-     /tmp/cc7yCIpr.s:2061   .rodata.kMenuGenericEditSize:00000000 $d
-     /tmp/cc7yCIpr.s:2071   .rodata.kMenuGenericEdit:00000000 kMenuGenericEdit
-     /tmp/cc7yCIpr.s:2068   .rodata.kMenuGenericEdit:00000000 $d
-     /tmp/cc7yCIpr.s:2086   .sdram_bss:00000000 $d
+     /tmp/ccAQ1SRC.s:20     .text._ZN10Processing8ControlsER8Hardware:00000000 $t
+     /tmp/ccAQ1SRC.s:27     .text._ZN10Processing8ControlsER8Hardware:00000000 _ZN10Processing8ControlsER8Hardware
+     /tmp/ccAQ1SRC.s:41     .text._ZN10Processing15UpdateBufferLenEv:00000000 $t
+     /tmp/ccAQ1SRC.s:48     .text._ZN10Processing15UpdateBufferLenEv:00000000 _ZN10Processing15UpdateBufferLenEv
+     /tmp/ccAQ1SRC.s:119    .text._ZN10Processing15UpdateBufferLenEv:00000054 $d
+     /tmp/ccAQ1SRC.s:125    .text._ZN10Processing17UpdateGrainParamsEv:00000000 $t
+     /tmp/ccAQ1SRC.s:132    .text._ZN10Processing17UpdateGrainParamsEv:00000000 _ZN10Processing17UpdateGrainParamsEv
+     /tmp/ccAQ1SRC.s:293    .text._ZN10Processing17UpdateGrainParamsEv:00000090 $d
+     /tmp/ccAQ1SRC.s:301    .rodata._ZN10Processing4InitER8Hardware.str1.4:00000000 $d
+     /tmp/ccAQ1SRC.s:305    .text._ZN10Processing4InitER8Hardware:00000000 $t
+     /tmp/ccAQ1SRC.s:312    .text._ZN10Processing4InitER8Hardware:00000000 _ZN10Processing4InitER8Hardware
+     /tmp/ccAQ1SRC.s:479    .text._ZN10Processing4InitER8Hardware:000000ac $d
+     /tmp/ccAQ1SRC.s:2089   .sdram_bss:00000000 _ZN10Processing6bufferE
+     /tmp/ccAQ1SRC.s:489    .text._ZN10Processing9GetSampleERfS0_ff:00000000 $t
+     /tmp/ccAQ1SRC.s:496    .text._ZN10Processing9GetSampleERfS0_ff:00000000 _ZN10Processing9GetSampleERfS0_ff
+     /tmp/ccAQ1SRC.s:1275   .text._ZN10Processing9GetSampleERfS0_ff:0000030c $d
+     /tmp/ccAQ1SRC.s:1860   .bss._ZN10Processing8grains_lE:00000000 _ZN10Processing8grains_lE
+     /tmp/ccAQ1SRC.s:1853   .bss._ZN10Processing8grains_rE:00000000 _ZN10Processing8grains_rE
+     /tmp/ccAQ1SRC.s:1295   .text._ZN10Processing9GetSampleERfS0_ff:00000328 $t
+     /tmp/ccAQ1SRC.s:1757   .text.startup._GLOBAL__sub_I_kMenuGenericEdit:00000000 $t
+     /tmp/ccAQ1SRC.s:1763   .text.startup._GLOBAL__sub_I_kMenuGenericEdit:00000000 _GLOBAL__sub_I_kMenuGenericEdit
+     /tmp/ccAQ1SRC.s:1840   .text.startup._GLOBAL__sub_I_kMenuGenericEdit:00000028 $d
+     /tmp/ccAQ1SRC.s:1846   .init_array:00000000 $d
+     /tmp/ccAQ1SRC.s:1850   .bss._ZN10Processing8grains_rE:00000000 $d
+     /tmp/ccAQ1SRC.s:1857   .bss._ZN10Processing8grains_lE:00000000 $d
+     /tmp/ccAQ1SRC.s:1867   .rodata.kMenuMainSize:00000000 kMenuMainSize
+     /tmp/ccAQ1SRC.s:1864   .rodata.kMenuMainSize:00000000 $d
+     /tmp/ccAQ1SRC.s:1896   .rodata.kMenuMain:00000000 kMenuMain
+     /tmp/ccAQ1SRC.s:1871   .rodata.str1.4:00000000 $d
+     /tmp/ccAQ1SRC.s:1893   .rodata.kMenuMain:00000000 $d
+     /tmp/ccAQ1SRC.s:2040   .rodata.kMenuPostEdit:00000000 kMenuPostEdit
+     /tmp/ccAQ1SRC.s:2005   .rodata.kMenuBpmEdit:00000000 kMenuBpmEdit
+     /tmp/ccAQ1SRC.s:1964   .rodata.kMenuGrainsEdit:00000000 kMenuGrainsEdit
+     /tmp/ccAQ1SRC.s:1944   .rodata.kMenuGrainsEditSize:00000000 kMenuGrainsEditSize
+     /tmp/ccAQ1SRC.s:1941   .rodata.kMenuGrainsEditSize:00000000 $d
+     /tmp/ccAQ1SRC.s:1961   .rodata.kMenuGrainsEdit:00000000 $d
+     /tmp/ccAQ1SRC.s:1994   .rodata.kMenuBpmEditSize:00000000 kMenuBpmEditSize
+     /tmp/ccAQ1SRC.s:1991   .rodata.kMenuBpmEditSize:00000000 $d
+     /tmp/ccAQ1SRC.s:2002   .rodata.kMenuBpmEdit:00000000 $d
+     /tmp/ccAQ1SRC.s:2029   .rodata.kMenuPostEditSize:00000000 kMenuPostEditSize
+     /tmp/ccAQ1SRC.s:2026   .rodata.kMenuPostEditSize:00000000 $d
+     /tmp/ccAQ1SRC.s:2037   .rodata.kMenuPostEdit:00000000 $d
+     /tmp/ccAQ1SRC.s:2064   .rodata.kMenuGenericEditSize:00000000 kMenuGenericEditSize
+     /tmp/ccAQ1SRC.s:2061   .rodata.kMenuGenericEditSize:00000000 $d
+     /tmp/ccAQ1SRC.s:2071   .rodata.kMenuGenericEdit:00000000 kMenuGenericEdit
+     /tmp/ccAQ1SRC.s:2068   .rodata.kMenuGenericEdit:00000000 $d
+     /tmp/ccAQ1SRC.s:2086   .sdram_bss:00000000 $d
 
 UNDEFINED SYMBOLS
 memset
