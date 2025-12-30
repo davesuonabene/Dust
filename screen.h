@@ -13,9 +13,8 @@ struct Screen
     uint32_t blink_start  = 0;
 
     void Init(daisy::DaisySeed &seed);
-
     void Blink(uint32_t now);
 
-    // Main UI rendering
+    // Draws the main UI (Menu / Edit Params)
     void DrawStatus(Processing &proc, Hardware &hw);
 };
