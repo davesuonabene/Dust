@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccyh1ZDZ.s 			page 1
+ARM GAS  /tmp/ccK4MfGZ.s 			page 1
 
 
    1              		.cpu cortex-m7
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccyh1ZDZ.s 			page 1
   46              	.LVL1:
   10:hw.cpp        ****     seed.SetAudioBlockSize(4);
   47              		.loc 1 10 5 is_stmt 1 view .LVU4
-ARM GAS  /tmp/ccyh1ZDZ.s 			page 2
+ARM GAS  /tmp/ccK4MfGZ.s 			page 2
 
 
   48              		.loc 1 10 27 is_stmt 0 view .LVU5
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccyh1ZDZ.s 			page 1
   16:hw.cpp        ****     
   17:hw.cpp        ****     // Encoder 2: Pins 7, 8, 9 (A, B, Click)
   18:hw.cpp        ****     encoder2.Init(seed.GetPin(8), seed.GetPin(7), seed.GetPin(9), seed.AudioCallbackRate());
-ARM GAS  /tmp/ccyh1ZDZ.s 			page 3
+ARM GAS  /tmp/ccK4MfGZ.s 			page 3
 
 
   96              		.loc 1 18 5 is_stmt 1 view .LVU22
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccyh1ZDZ.s 			page 1
  146 00a2 04F59670 		add	r0, r4, #300
  147 00a6 FFF7FEFF 		bl	_ZN5daisy6Switch4InitENS_3PinEf
  148              	.LVL16:
-ARM GAS  /tmp/ccyh1ZDZ.s 			page 4
+ARM GAS  /tmp/ccK4MfGZ.s 			page 4
 
 
   23:hw.cpp        ****     button2.Init(seed.GetPin(2), seed.AudioCallbackRate());
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccyh1ZDZ.s 			page 1
   10:hw.h          **** 
   11:hw.h          **** struct Hardware
   12:hw.h          **** {
-ARM GAS  /tmp/ccyh1ZDZ.s 			page 5
+ARM GAS  /tmp/ccK4MfGZ.s 			page 5
 
 
   13:hw.h          ****     DaisySeed seed;
@@ -273,7 +273,7 @@ ARM GAS  /tmp/ccyh1ZDZ.s 			page 1
   42:hw.h          **** 
   43:hw.h          ****     void Init();
   44:hw.h          ****     
-  45:hw.h          ****     // Process controls (Debouncing & Encoder updates)
+  45:hw.h          ****     // Updates encoders and buttons (Debounce)
   46:hw.h          ****     void ProcessControls(); 
   47:hw.h          ****     
   48:hw.h          ****     // Helper to swap buffers after recording
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccyh1ZDZ.s 			page 1
  193 00e2 0023     		movs	r3, #0
   63:hw.h          ****         loop_length = 0;
   64:hw.h          ****         play_pos    = 0;
-ARM GAS  /tmp/ccyh1ZDZ.s 			page 6
+ARM GAS  /tmp/ccK4MfGZ.s 			page 6
 
 
   65:hw.h          ****         rec_pos     = 0;
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccyh1ZDZ.s 			page 1
  238              	.LVL25:
  239              	.LFB4892:
   29:hw.cpp        **** 
-ARM GAS  /tmp/ccyh1ZDZ.s 			page 7
+ARM GAS  /tmp/ccK4MfGZ.s 			page 7
 
 
   30:hw.cpp        **** void Hardware::ProcessControls()
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccyh1ZDZ.s 			page 1
  283 002a FFF7FEBF 		b	_ZN5daisy6Switch8DebounceEv
  284              	.LVL32:
   36:hw.cpp        ****     button3.Debounce();
-ARM GAS  /tmp/ccyh1ZDZ.s 			page 8
+ARM GAS  /tmp/ccK4MfGZ.s 			page 8
 
 
  285              		.loc 1 36 21 view .LVU85
@@ -478,7 +478,7 @@ ARM GAS  /tmp/ccyh1ZDZ.s 			page 1
  336              		.file 35 "libDaisy/src/hid/audio.h"
  337              		.file 36 "libDaisy/src/per/adc.h"
  338              		.file 37 "libDaisy/src/hid/usb.h"
-ARM GAS  /tmp/ccyh1ZDZ.s 			page 9
+ARM GAS  /tmp/ccK4MfGZ.s 			page 9
 
 
  339              		.file 38 "libDaisy/src/hid/switch.h"
@@ -497,19 +497,19 @@ ARM GAS  /tmp/ccyh1ZDZ.s 			page 1
  352              		.file 51 "/usr/arm-none-eabi/include/wchar.h"
  353              		.file 52 "/usr/arm-none-eabi/include/locale.h"
  354              		.file 53 "<built-in>"
-ARM GAS  /tmp/ccyh1ZDZ.s 			page 10
+ARM GAS  /tmp/ccK4MfGZ.s 			page 10
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 hw.cpp
-     /tmp/ccyh1ZDZ.s:20     .text._ZN8Hardware4InitEv:00000000 $t
-     /tmp/ccyh1ZDZ.s:27     .text._ZN8Hardware4InitEv:00000000 _ZN8Hardware4InitEv
-     /tmp/ccyh1ZDZ.s:224    .text._ZN8Hardware4InitEv:000000fc $d
-     /tmp/ccyh1ZDZ.s:300    .sdram_bss:003a9800 _ZN8Hardware8buffer_aE
-     /tmp/ccyh1ZDZ.s:294    .sdram_bss:00000000 _ZN8Hardware8buffer_bE
-     /tmp/ccyh1ZDZ.s:230    .text._ZN8Hardware15ProcessControlsEv:00000000 $t
-     /tmp/ccyh1ZDZ.s:237    .text._ZN8Hardware15ProcessControlsEv:00000000 _ZN8Hardware15ProcessControlsEv
-     /tmp/ccyh1ZDZ.s:291    .sdram_bss:00000000 $d
+     /tmp/ccK4MfGZ.s:20     .text._ZN8Hardware4InitEv:00000000 $t
+     /tmp/ccK4MfGZ.s:27     .text._ZN8Hardware4InitEv:00000000 _ZN8Hardware4InitEv
+     /tmp/ccK4MfGZ.s:224    .text._ZN8Hardware4InitEv:000000fc $d
+     /tmp/ccK4MfGZ.s:300    .sdram_bss:003a9800 _ZN8Hardware8buffer_aE
+     /tmp/ccK4MfGZ.s:294    .sdram_bss:00000000 _ZN8Hardware8buffer_bE
+     /tmp/ccK4MfGZ.s:230    .text._ZN8Hardware15ProcessControlsEv:00000000 $t
+     /tmp/ccK4MfGZ.s:237    .text._ZN8Hardware15ProcessControlsEv:00000000 _ZN8Hardware15ProcessControlsEv
+     /tmp/ccK4MfGZ.s:291    .sdram_bss:00000000 $d
 
 UNDEFINED SYMBOLS
 _ZN5daisy9DaisySeed4InitEb

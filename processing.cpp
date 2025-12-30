@@ -7,43 +7,45 @@
 using namespace daisy;
 using namespace daisysp;
 
-// --- Menu Definitions ---
-
-// Page 1: Mix
-const MenuItem kItemsMix[] = {
-    {"Pre Gain", TYPE_PARAM, PARAM_PRE_GAIN},
-    {"Post Gain",TYPE_PARAM, PARAM_POST_GAIN},
-    {"Mix",      TYPE_PARAM, PARAM_MIX},
-    {"Fbk",      TYPE_PARAM, PARAM_FEEDBACK}
+// --- Menu Tree Definition ---
+const MenuItem kMenuGenericEdit[] = {
+    {"BACK",    TYPE_BACK,  0,             kMenuMain, 0},
+    {"Map Amt", TYPE_PARAM, PARAM_MAP_AMT, nullptr, 0}
 };
+const int kMenuGenericEditSize = sizeof(kMenuGenericEdit) / sizeof(kMenuGenericEdit[0]);
 
-// Page 2: Granular
-const MenuItem kItemsGrain[] = {
-    {"Pitch",    TYPE_PARAM, PARAM_PITCH},
-    {"Size",     TYPE_PARAM, PARAM_GRAIN_SIZE},
-    {"Density",  TYPE_PARAM, PARAM_GRAINS},
-    {"Spray",    TYPE_PARAM, PARAM_SPRAY},
-    {"Stereo",   TYPE_PARAM, PARAM_STEREO}
+const MenuItem kMenuPostEdit[] = {
+    {"BACK",    TYPE_BACK,  0,              kMenuMain, 0},
+    {"Map Amt", TYPE_PARAM, PARAM_MAP_AMT,  nullptr, 0}, 
+    {"Pre",     TYPE_PARAM, PARAM_PRE_GAIN, nullptr, 0}
 };
+const int kMenuPostEditSize = sizeof(kMenuPostEdit) / sizeof(kMenuPostEdit[0]);
 
-// Page 3: Time
-const MenuItem kItemsTime[] = {
-    {"BPM",      TYPE_PARAM, PARAM_BPM},
-    {"Div",      TYPE_PARAM, PARAM_DIVISION}
+const MenuItem kMenuBpmEdit[] = {
+    {"BACK",    TYPE_BACK,  0,              kMenuMain, 0},
+    {"Map Amt", TYPE_PARAM, PARAM_MAP_AMT,  nullptr, 0},
+    {"Div",     TYPE_PARAM, PARAM_DIVISION, nullptr, 0}
 };
+const int kMenuBpmEditSize = sizeof(kMenuBpmEdit) / sizeof(kMenuBpmEdit[0]);
 
-// Advanced Menu (Secondary Page)
-const MenuItem kItemsAdvanced[] = {
-    {"Map Amt",  TYPE_PARAM, PARAM_MAP_AMT}
+const MenuItem kMenuGrainsEdit[] = {
+    {"BACK",    TYPE_BACK,  0,              kMenuMain, 0},
+    {"Map Amt", TYPE_PARAM, PARAM_MAP_AMT,  nullptr, 0},
+    {"Spray",   TYPE_PARAM, PARAM_SPRAY,    nullptr, 0},
+    {"Stereo",  TYPE_PARAM, PARAM_STEREO,   nullptr, 0}
 };
+const int kMenuGrainsEditSize = sizeof(kMenuGrainsEdit) / sizeof(kMenuGrainsEdit[0]);
 
-// Page Registry
-const MenuPage kPages[] = {
-    {"MIX",   kItemsMix,   sizeof(kItemsMix)/sizeof(MenuItem)},
-    {"GRAIN", kItemsGrain, sizeof(kItemsGrain)/sizeof(MenuItem)},
-    {"TIME",  kItemsTime,  sizeof(kItemsTime)/sizeof(MenuItem)}
+const MenuItem kMenuMain[] = {
+    {"Post",    TYPE_PARAM_SUBMENU, PARAM_POST_GAIN,    kMenuPostEdit,    kMenuPostEditSize},
+    {"Fbk",     TYPE_PARAM,         PARAM_FEEDBACK,     nullptr,          0},
+    {"Mix",     TYPE_PARAM,         PARAM_MIX,          nullptr,          0},
+    {"BPM",     TYPE_PARAM_SUBMENU, PARAM_BPM,          kMenuBpmEdit,     kMenuBpmEditSize},
+    {"Pitch",   TYPE_PARAM,         PARAM_PITCH,        nullptr,          0},
+    {"Size",    TYPE_PARAM,         PARAM_GRAIN_SIZE,   nullptr,          0},
+    {"Grains",  TYPE_PARAM_SUBMENU, PARAM_GRAINS,       kMenuGrainsEdit,  kMenuGrainsEditSize}
 };
-const int kNumPages = sizeof(kPages) / sizeof(MenuPage);
+const int kMenuMainSize = sizeof(kMenuMain) / sizeof(kMenuMain[0]);
 
 float DSY_SDRAM_BSS Processing::buffer[MAX_BUFFER_SAMPLES];
 Processing::Grain Processing::grains_l[MAX_GRAINS];
@@ -53,138 +55,98 @@ void Processing::Init(Hardware &hw)
 {
     memset(buffer, 0, MAX_BUFFER_SAMPLES * sizeof(float));
     sample_rate_ = hw.sample_rate;
-    
-    // Defaults
     params[PARAM_PRE_GAIN] = 0.5f; params[PARAM_FEEDBACK] = 0.5f; params[PARAM_MIX] = 0.5f;
     params[PARAM_POST_GAIN] = 0.5f; params[PARAM_BPM] = 120.0f; params[PARAM_DIVISION] = 1.0f; 
     params[PARAM_PITCH] = 1.0f; params[PARAM_GRAIN_SIZE] = 0.1f; params[PARAM_GRAINS] = 10.0f; 
     params[PARAM_SPRAY] = 0.0f; params[PARAM_STEREO] = 0.0f;
-    
     for(int i=0; i<PARAM_COUNT; i++) {
         knob_map_amounts[i] = 0.0f; 
         effective_params[i] = params[i]; 
     }
-    
+    snprintf(parent_menu_name, sizeof(parent_menu_name), " ");
     division_idx = 0; params[PARAM_DIVISION] = (float)division_vals[division_idx];
-    
-    // UI Init
-    current_page_idx = 0;
-    advanced_mode = false;
-    SetPage(0);
-    
-    // Control Init
-    enc1_holding = false;
-    enc1_hold_time = 0.0f;
-
+    last_looper_toggle = 0;
+    long_press_active = false;
     UpdateBufferLen();
     UpdateGrainParams();
-}
-
-void Processing::SetPage(int page_idx) {
-    if (page_idx < 0) page_idx = kNumPages - 1;
-    if (page_idx >= kNumPages) page_idx = 0;
-    
-    current_page_idx = page_idx;
-    current_page_name = kPages[current_page_idx].name;
-    current_menu_items = kPages[current_page_idx].items;
-    current_menu_size = kPages[current_page_idx].num_items;
-    selected_item_idx = 0;
-    ui_state = STATE_MENU_NAV;
-}
-
-void Processing::SetAdvancedMode(bool enabled) {
-    advanced_mode = enabled;
-    ui_state = STATE_MENU_NAV;
-    selected_item_idx = 0;
-    
-    if (advanced_mode) {
-        current_page_name = "ADVANCED";
-        current_menu_items = kItemsAdvanced;
-        current_menu_size = sizeof(kItemsAdvanced)/sizeof(MenuItem);
-    } else {
-        // Return to last active page
-        SetPage(current_page_idx);
-    }
 }
 
 void Processing::Controls(Hardware &hw)
 {
-    // --- Encoder 1: Interaction Logic ---
-
-    // 1. Hold Time Accumulation
-    bool enc1_pressed = hw.encoder1.Pressed();
-    if (enc1_pressed) {
-        // Increment based on actual Callback Rate (approx 12kHz for block size 4)
-        enc1_hold_time += 1.0f / hw.seed.AudioCallbackRate();
-
-        // Trigger HOLD ACTION immediately when threshold is crossed
-        if (enc1_hold_time > 0.6f && !enc1_holding) {
-            SetAdvancedMode(!advanced_mode);
-            enc1_holding = true; // Mark as handled so we don't trigger again or trigger click on release
+    // --- Encoder 1 (Navigation / Value) ---
+    int inc1 = hw.encoder1.Increment();
+    if (ui_state == STATE_MENU_NAV) {
+        selected_item_idx += inc1;
+        if(selected_item_idx < 0) selected_item_idx = 0;
+        if(selected_item_idx >= current_menu_size) selected_item_idx = current_menu_size - 1;
+        
+        // Scroll view if needed
+        if(selected_item_idx < view_top_item_idx) view_top_item_idx = selected_item_idx;
+        if(selected_item_idx >= view_top_item_idx + 4) view_top_item_idx = selected_item_idx - 3;
+    } else if (ui_state == STATE_PARAM_EDIT) {
+        // Edit Parameter
+        float &val = params[edit_param_target];
+        // Logic for specific params (simplified)
+        float step = 0.01f;
+        if (edit_param_target == PARAM_BPM) step = 1.0f;
+        
+        val += (float)inc1 * step;
+        
+        // Clamp and special logic
+        if(edit_param_target == PARAM_DIVISION) {
+             division_idx += inc1;
+             if(division_idx < 0) division_idx = 0;
+             if(division_idx > 3) division_idx = 3;
+             val = (float)division_vals[division_idx];
+        } else {
+             // Generic clamp
+             if(edit_param_target == PARAM_BPM) { if(val < 20) val = 20; if(val > 300) val = 300; }
+             else { val = fclamp(val, 0.0f, 1.0f); }
         }
     }
-
-    // 2. Release Logic (Click)
-    if (hw.encoder1.FallingEdge()) {
-        // Only trigger click if the hold action was NOT triggered
-        if (!enc1_holding) {
-            // --- SHORT CLICK: Toggle Edit Mode ---
-            if (ui_state == STATE_MENU_NAV) {
-                 const MenuItem &item = current_menu_items[selected_item_idx];
-                 if (item.type == TYPE_PARAM) {
-                     edit_param_target = item.param_id;
-                     ui_state = STATE_PARAM_EDIT;
-                 }
-            } else if (ui_state == STATE_PARAM_EDIT) {
+    
+    // --- Button 1 (Select / Enter / Back / Hold) ---
+    // BUG FIX: Detect Hold vs Click
+    if(hw.button1.Pressed()) {
+        if(hw.button1.TimeHeldMs() > 500 && !long_press_active) {
+            long_press_active = true;
+            // Hold Action: Go Up to Main Menu? Or Reset?
+            // For now, just a distinct action or ignore
+            if(ui_state == STATE_PARAM_EDIT) {
+                ui_state = STATE_MENU_NAV; // Cancel edit
+            } else {
+                 // Maybe jump to root?
+                 // current_menu = kMenuMain;
+            }
+        }
+    } else if(hw.button1.FallingEdge()) {
+        // RELEASE
+        if(long_press_active) {
+            // Hold was triggered, so suppress the click action
+            long_press_active = false; 
+        } else {
+            // Short Press (Click)
+            const MenuItem &item = current_menu[selected_item_idx];
+            
+            if(ui_state == STATE_MENU_NAV) {
+                if(item.type == TYPE_PARAM || item.type == TYPE_PARAM_SUBMENU) {
+                    edit_param_target = item.param_id;
+                    ui_state = STATE_PARAM_EDIT;
+                } else if(item.type == TYPE_SUBMENU) {
+                    // Enter Submenu (Not fully implemented in struct, but logic similar)
+                } else if(item.type == TYPE_BACK) {
+                    // Go Back
+                    current_menu = item.submenu; // Assuming back link stored here
+                    current_menu_size = kMenuMainSize; // Simplified
+                    selected_item_idx = 0;
+                    view_top_item_idx = 0;
+                }
+            } else {
+                // In Edit Mode -> Click to Exit
                 ui_state = STATE_MENU_NAV;
             }
         }
     }
-
-    // 3. Reset Hold State on Release
-    if (!enc1_pressed) {
-        enc1_hold_time = 0.0f;
-        enc1_holding = false;
-    }
-
-
-    // --- Encoder 2: Page Navigation ---
-    // Only works if NOT in Advanced Mode and NOT editing a parameter
-    if (!advanced_mode && ui_state == STATE_MENU_NAV) {
-        int page_inc = hw.encoder2.Increment();
-        if (page_inc != 0) {
-            SetPage(current_page_idx + page_inc);
-        }
-    }
-
-
-    // --- Encoder 1: Value / Selection ---
-    int enc1_inc = hw.encoder1.Increment();
-    
-    if (ui_state == STATE_MENU_NAV)
-    {
-        // Navigate List
-        if (enc1_inc != 0) {
-            selected_item_idx += enc1_inc;
-            if (selected_item_idx < 0) selected_item_idx = 0;
-            if (selected_item_idx >= current_menu_size) selected_item_idx = current_menu_size - 1;
-        }
-    }
-    else if (ui_state == STATE_PARAM_EDIT)
-    {
-        // Change Value
-        if (enc1_inc != 0) {
-            float scale = 0.01f;
-            if (hw.encoder1.Pressed()) scale = 0.05f; // Faster if pressed while turning
-            
-            params[edit_param_target] += (float)enc1_inc * scale;
-            params[edit_param_target] = fclamp(params[edit_param_target], 0.0f, 1.0f);
-            effective_params[edit_param_target] = params[edit_param_target];
-        }
-    }
-
-    UpdateBufferLen();
-    UpdateGrainParams();
 }
 
 void Processing::UpdateBufferLen() {

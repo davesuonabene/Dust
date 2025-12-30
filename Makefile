@@ -1,5 +1,5 @@
 # Project Name
-TARGET = BlackBox
+TARGET = dust
 
 # Sources
 CPP_SOURCES = dust.cpp \

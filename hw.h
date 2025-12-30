@@ -42,7 +42,7 @@ struct Hardware
 
     void Init();
     
-    // Process controls (Debouncing & Encoder updates)
+    // Updates encoders and buttons (Debounce)
     void ProcessControls(); 
     
     // Helper to swap buffers after recording
