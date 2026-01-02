@@ -14,7 +14,7 @@ void AudioCallback(AudioHandle::InputBuffer  in,
     // 1. Process Hardware
     g_hw.ProcessControls();
     
-    // 2. Process UI Logic (Encoders mapping to Params)
+    // 2. Process UI Logic
     g_proc.Controls(g_hw);
 
     // 3. Audio Processing

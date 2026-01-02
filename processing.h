@@ -15,7 +15,7 @@ enum Param {
     PARAM_COUNT
 };
 
-enum MenuItemType { TYPE_PARAM, TYPE_ACTION };
+enum MenuItemType { TYPE_PARAM };
 
 // --- Menu Structures ---
 struct MenuItem {
@@ -32,6 +32,7 @@ struct MenuPage {
 
 struct Processing
 {
+    // --- Inner Classes ---
     struct Grain {
         bool     active = false;
         float    read_pos;
@@ -79,10 +80,19 @@ struct Processing
     };
 
     enum UiState { STATE_MENU_NAV, STATE_PARAM_EDIT };
+    enum LooperState { LP_EMPTY, LP_REC, LP_PLAY, LP_STOP };
 
-    // --- Audio Data ---
-    static float    DSY_SDRAM_BSS buffer[MAX_BUFFER_SAMPLES];
-    uint32_t        write_pos = 0;
+    // --- Audio Buffers ---
+    float* active_buffer;   // Buffer currently being granulated
+    float* rec_buffer;      // Buffer currently being recorded to
+    
+    uint32_t    rec_pos = 0;
+    uint32_t    play_pos = 0;    
+    uint32_t    loop_len = 0;    
+    LooperState looper_state = LP_EMPTY;
+
+    // --- Granular State ---
+    uint32_t        write_pos = 0;      
     uint32_t        buffer_len_samples = 48000;
     
     static Grain    grains_l[MAX_GRAINS];
@@ -114,18 +124,24 @@ struct Processing
     int             view_top_item_idx = 0;
     int             edit_param_target = 0;
 
-    // --- Control State (BlackBox Style) ---
+    // --- Control State ---
     bool            enc1_holding = false;
     uint32_t        enc1_hold_start = 0;
-    const uint32_t  kHoldTimeMs = 500;
     
+    // Button 1 (Looper) Logic
+    uint32_t        btn1_release_time = 0;
+    bool            btn1_handled = false;
+    bool            btn1_held_event = false; // Prevents release trigger after hold
+
+    const uint32_t  kHoldTimeMs = 500;
     bool            trigger_blink = false;
 
     void Init(Hardware &hw);
     void Controls(Hardware &hw);
     void GetSample(float &outl, float &outr, float inl, float inr);
     
-    // Internal helpers
+    // Helpers
+    void ResetLooper(Hardware &hw);
     void UpdateBufferLen();
     void UpdateGrainParams();
     void SetPage(int page_idx);
